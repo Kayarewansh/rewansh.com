@@ -1,1387 +1,617 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Rewansh | AI Marketing Strategist Turning Brands Into Movements</title>
-<meta name="description" content="Rewansh is an AI-powered marketing strategist helping US founders, D2C brands, and SaaS companies build content systems, lead generation, and growth infrastructure that converts. Book a free strategy call."/>
-<link rel="canonical" href="https://rewansh.com/"/>
-<meta name="robots" content="index, follow"/>
-<meta name="author" content="Rewansh Kayare"/>
-<!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="Rewansh"/>
-<meta property="og:title" content="Rewansh | AI Marketing Strategist Turning Brands Into Movements"/>
-<meta property="og:description" content="AI-powered marketing strategy and growth systems for US founders, D2C brands, and SaaS companies. Raw marketing truth. Real business results."/>
-<meta property="og:image" content="https://rewansh.com/og-image.jpg"/>
-<meta property="og:url" content="https://rewansh.com/"/>
-<meta property="og:locale" content="en_US"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Rewansh | AI Marketing Strategist Turning Brands Into Movements"/>
-<meta name="twitter:description" content="AI-powered marketing strategy and growth systems for US founders, D2C brands, and SaaS companies."/>
-<meta name="twitter:image" content="https://rewansh.com/og-image.jpg"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://rewansh.com/#person",
-      "name": "Rewansh Kayare",
-      "alternateName": "Rewansh",
-      "url": "https://rewansh.com/",
-      "email": "mailto:kayarerewansh@gmail.com",
-      "jobTitle": "Digital Marketing Strategist & AI Consultant",
-      "description": "AI-powered marketing strategist helping US founders, D2C brands, and SaaS companies build content systems, lead generation, and growth infrastructure that converts.",
-      "sameAs": [
-        "https://instagram.com/rewanshpro",
-        "https://in.linkedin.com/in/rewansh",
-        "https://www.youtube.com/@RewanshKayare"
-      ]
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://rewansh.com/#service",
-      "name": "Rewansh — AI Marketing Strategy",
-      "url": "https://rewansh.com/",
-      "image": "https://rewansh.com/og-image.jpg",
-      "priceRange": "$997-$5997",
-      "areaServed": "US",
-      "provider": { "@id": "https://rewansh.com/#person" },
-      "email": "kayarerewansh@gmail.com",
-      "makesOffer": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Powered Content Systems" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing Strategy & Consulting" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal Brand Development" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lead Generation & Automation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Products & Courses" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Done-For-You Marketing" } }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you work with clients outside the US?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes — while Rewansh specializes in the US market, he works with clients globally, primarily across English-speaking markets including the UK, Canada, and Australia." }
-        },
-        {
-          "@type": "Question",
-          "name": "How long before I see results?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Most clients see meaningful traction within 30–60 days. Content systems and automation start producing leads within weeks, while brand authority and organic growth compound over 3–6 months." }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes you different from other agencies?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Rewansh works with a small number of clients at a time, giving each direct access to him rather than a junior account manager, and applies AI tools most agencies haven't adopted yet." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you require long-term contracts?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The Growth and Done-For-You plans have a 3-month minimum because meaningful results take time; after that it's month-to-month. The Strategy Session is a one-time engagement." }
-        },
-        {
-          "@type": "Question",
-          "name": "What industries do you specialize in?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Rewansh primarily works with D2C brands, SaaS founders, course creators, coaches, and personal brand builders selling products or services online." }
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rewansh | Results-Driven Scale for Modern Enterprises</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#e6c364", // Gold
+                        "on-primary": "#131411",
+                        "secondary": "#1A1F45", // Deep Navy
+                        "on-secondary": "#ffffff",
+                        "background": "#F9FAFB", // Soft off-white
+                        "surface": "#ffffff",
+                        "on-surface": "#1A1F45",
+                        "on-surface-variant": "#4B5563", // Gray
+                        "outline": "#E5E7EB",
+                        "accent-gold": "#C5A04D"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "stack-lg": "40px",
+                        "stack-sm": "12px",
+                        "section-gap": "140px",
+                        "container-max": "1240px",
+                        "stack-md": "24px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "display": ["Inter", "sans-serif"]
+                    }
+                }
+            }
         }
-      ]
-    }
-  ]
-}
-</script>
+    </script>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;}
-:root{
-  --navy:#06091A;--navy2:#0C1130;--indigo:#1A1F45;
-  --gold:#C9A84C;--gold-light:#E2C47A;--gold-dim:rgba(201,168,76,0.15);
-  --white:#F9F7F2;--muted:rgba(249,247,242,0.5);--faint:rgba(249,247,242,0.07);
-}
-html{scroll-behavior:smooth;}
-body{background:var(--navy);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden;}
-
-/* PRELOADER */
-#preloader{position:fixed;inset:0;background:var(--navy);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,visibility 0.6s ease;}
-#preloader.hidden{opacity:0;visibility:hidden;}
-.preloader-name{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;letter-spacing:8px;color:var(--white);overflow:hidden;}
-.preloader-name span{display:inline-block;transform:translateY(100%);animation:pre-rise 0.8s cubic-bezier(0.23,1,0.32,1) 0.3s forwards;}
-.preloader-bar{width:120px;height:1px;background:rgba(201,168,76,0.2);margin-top:24px;overflow:hidden;}
-.preloader-fill{height:100%;background:var(--gold);animation:pre-fill 1.8s cubic-bezier(0.23,1,0.32,1) forwards;}
-@keyframes pre-rise{to{transform:translateY(0);}}
-@keyframes pre-fill{from{width:0;}to{width:100%;}}
-
-/* CURSOR */
-.cursor{position:fixed;width:8px;height:8px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform 0.1s;}
-.cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(201,168,76,0.4);border-radius:50%;pointer-events:none;z-index:9997;transform:translate(-50%,-50%);transition:width 0.3s,height 0.3s,border-color 0.3s,background 0.3s;}
-.cursor-ring.hovered{width:56px;height:56px;border-color:var(--gold);background:rgba(201,168,76,0.05);}
-@media(hover:none){.cursor,.cursor-ring{display:none;}}
-
-/* RIPPLE */
-.ripple{position:fixed;border-radius:50%;background:rgba(201,168,76,0.15);pointer-events:none;transform:translate(-50%,-50%) scale(0);animation:ripple-out 0.7s ease-out forwards;z-index:9996;}
-@keyframes ripple-out{to{transform:translate(-50%,-50%) scale(6);opacity:0;}}
-
-/* STICKY CTA BAR */
-#sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(6,9,26,0.96);backdrop-filter:blur(20px);border-top:0.5px solid rgba(201,168,76,0.15);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;transform:translateY(100%);transition:transform 0.5s cubic-bezier(0.23,1,0.32,1);}
-#sticky-bar.visible{transform:translateY(0);}
-@media(max-width:640px){#sticky-bar{padding:12px 20px;flex-direction:column;gap:10px;}}
-
-/* SCROLL PROGRESS */
-#scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));z-index:500;width:0%;transition:width 0.1s;}
-
-/* COOKIE BANNER */
-#cookie-banner{position:fixed;bottom:80px;left:20px;right:20px;max-width:480px;background:var(--navy2);border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:20px 24px;z-index:400;display:flex;flex-direction:column;gap:14px;box-shadow:0 20px 60px rgba(0,0,0,0.5);transform:translateY(20px);opacity:0;transition:all 0.5s cubic-bezier(0.23,1,0.32,1);}
-#cookie-banner.visible{transform:translateY(0);opacity:1;}
-
-/* BACK TO TOP */
-#back-top{position:fixed;bottom:90px;right:24px;width:44px;height:44px;background:rgba(201,168,76,0.1);border:0.5px solid rgba(201,168,76,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:300;opacity:0;transform:translateY(10px);transition:all 0.4s ease;}
-#back-top.visible{opacity:1;transform:translateY(0);}
-#back-top:hover{background:rgba(201,168,76,0.2);border-color:var(--gold);}
-
-/* TYPOGRAPHY */
-.display{font-family:'Playfair Display',Georgia,serif;}
-.gradient-text{background:linear-gradient(135deg,#C9A84C 0%,#E2C47A 50%,#C9A84C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.eyebrow{font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;}
-.gold-diamond{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;}
-.gold-rule{display:flex;align-items:center;gap:12px;margin-bottom:28px;}
-.gold-rule-line{height:0.5px;width:40px;background:var(--gold);opacity:0.5;}
-.tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:100px;background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);color:var(--gold);display:inline-block;}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;transition:all 0.4s ease;}
-nav.scrolled{background:rgba(6,9,26,0.94);backdrop-filter:blur(24px);border-bottom:0.5px solid rgba(201,168,76,0.12);}
-.nav-link{color:rgba(249,247,242,0.5);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:color 0.3s;position:relative;}
-.nav-link::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s ease;}
-.nav-link:hover{color:var(--gold);}
-.nav-link:hover::after{width:100%;}
-
-/* BUTTONS */
-.btn-gold{background:var(--gold);color:var(--navy);font-weight:600;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 36px;transition:all 0.4s cubic-bezier(0.23,1,0.32,1);display:inline-block;text-decoration:none;position:relative;overflow:hidden;}
-.btn-gold::before{content:'';position:absolute;inset:0;background:var(--gold-light);transform:translateX(-100%);transition:transform 0.4s cubic-bezier(0.23,1,0.32,1);}
-.btn-gold:hover::before{transform:translateX(0);}
-.btn-gold span{position:relative;z-index:1;}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(201,168,76,0.25);}
-.btn-outline{border:0.5px solid rgba(201,168,76,0.5);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 36px;transition:all 0.4s cubic-bezier(0.23,1,0.32,1);display:inline-block;text-decoration:none;position:relative;overflow:hidden;}
-.btn-outline::before{content:'';position:absolute;inset:0;background:rgba(201,168,76,0.08);transform:translateX(-100%);transition:transform 0.4s cubic-bezier(0.23,1,0.32,1);}
-.btn-outline:hover::before{transform:translateX(0);}
-.btn-outline span{position:relative;z-index:1;}
-.btn-outline:hover{border-color:var(--gold);transform:translateY(-2px);}
-
-/* HERO */
-.hero-bg{background:radial-gradient(ellipse at 75% 30%,rgba(201,168,76,0.07) 0%,transparent 55%),radial-gradient(ellipse at 15% 80%,rgba(26,31,69,0.7) 0%,transparent 60%),var(--navy);}
-.hero-word{display:inline-block;overflow:hidden;}
-.hero-word span{display:inline-block;transform:translateY(110%);animation:word-rise 1s cubic-bezier(0.23,1,0.32,1) forwards;}
-@keyframes word-rise{to{transform:translateY(0);}}
-@keyframes fade-up{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
-@keyframes fade-down{from{opacity:0;transform:translateY(-16px);}to{opacity:1;transform:translateY(0);}}
-@keyframes float1{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-18px) rotate(3deg);}}
-@keyframes float2{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
-.float1{animation:float1 6s ease-in-out infinite;}
-.float2{animation:float2 8s ease-in-out infinite;}
-@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.7);}}
-.pulse-dot{animation:pulse-dot 2s ease-in-out infinite;}
-@keyframes scroll-fade{0%,100%{opacity:0;transform:scaleY(0);transform-origin:top;}50%{opacity:1;transform:scaleY(1);}}
-.scroll-indicator{width:1px;height:60px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scroll-fade 2s ease-in-out infinite;}
-#particle-canvas{position:absolute;inset:0;pointer-events:none;opacity:0.5;}
-
-/* REVEAL ANIMATIONS */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s cubic-bezier(0.23,1,0.32,1),transform 0.8s cubic-bezier(0.23,1,0.32,1);}
-.reveal.visible{opacity:1;transform:translateY(0);}
-.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity 0.8s cubic-bezier(0.23,1,0.32,1),transform 0.8s cubic-bezier(0.23,1,0.32,1);}
-.reveal-left.visible{opacity:1;transform:translateX(0);}
-.reveal-right{opacity:0;transform:translateX(40px);transition:opacity 0.8s cubic-bezier(0.23,1,0.32,1),transform 0.8s cubic-bezier(0.23,1,0.32,1);}
-.reveal-right.visible{opacity:1;transform:translateX(0);}
-.stagger-child{opacity:0;transform:translateY(32px);transition:opacity 0.6s cubic-bezier(0.23,1,0.32,1),transform 0.6s cubic-bezier(0.23,1,0.32,1);}
-.stagger-parent.visible .stagger-child:nth-child(1){opacity:1;transform:none;transition-delay:0s;}
-.stagger-parent.visible .stagger-child:nth-child(2){opacity:1;transform:none;transition-delay:0.1s;}
-.stagger-parent.visible .stagger-child:nth-child(3){opacity:1;transform:none;transition-delay:0.2s;}
-.stagger-parent.visible .stagger-child:nth-child(4){opacity:1;transform:none;transition-delay:0.3s;}
-.stagger-parent.visible .stagger-child:nth-child(5){opacity:1;transform:none;transition-delay:0.4s;}
-.stagger-parent.visible .stagger-child:nth-child(6){opacity:1;transform:none;transition-delay:0.5s;}
-
-/* CARDS */
-.card{background:rgba(255,255,255,0.02);border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;transition:all 0.5s cubic-bezier(0.23,1,0.32,1);position:relative;overflow:hidden;}
-.card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,0.06),transparent);opacity:0;transition:opacity 0.4s ease;}
-.card:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-6px);box-shadow:0 24px 64px rgba(0,0,0,0.4);}
-.card:hover::before{opacity:1;}
-
-/* PRICING CARDS */
-.pricing-card{background:rgba(255,255,255,0.02);border:0.5px solid rgba(201,168,76,0.12);border-radius:16px;padding:40px 32px;transition:all 0.5s cubic-bezier(0.23,1,0.32,1);position:relative;overflow:hidden;}
-.pricing-card.featured{border-color:rgba(201,168,76,0.5);background:rgba(201,168,76,0.04);}
-.pricing-card:hover{transform:translateY(-6px);box-shadow:0 24px 64px rgba(0,0,0,0.4);border-color:rgba(201,168,76,0.4);}
-.pricing-card.featured:hover{box-shadow:0 24px 64px rgba(201,168,76,0.15);}
-.popular-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:5px 16px;font-weight:600;border-radius:0 0 8px 8px;}
-
-/* SLIDER */
-.slides-track{display:flex;transition:transform 0.7s cubic-bezier(0.23,1,0.32,1);}
-.slide{min-width:100%;}
-.slider-dot{width:6px;height:6px;border-radius:50%;background:rgba(201,168,76,0.25);cursor:pointer;transition:all 0.4s cubic-bezier(0.23,1,0.32,1);}
-.slider-dot.active{width:24px;border-radius:3px;background:var(--gold);}
-.progress-bar{height:1px;background:rgba(201,168,76,0.15);position:relative;overflow:hidden;}
-.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform 0.7s cubic-bezier(0.23,1,0.32,1);}
-
-/* TICKER */
-.ticker-wrap{overflow:hidden;border-top:0.5px solid rgba(201,168,76,0.1);border-bottom:0.5px solid rgba(201,168,76,0.1);padding:14px 0;background:rgba(201,168,76,0.02);}
-.ticker{display:flex;gap:60px;animation:ticker 30s linear infinite;white-space:nowrap;}
-.ticker:hover{animation-play-state:paused;}
-@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.ticker-item{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(201,168,76,0.45);display:flex;align-items:center;gap:16px;}
-.ticker-diamond{width:4px;height:4px;background:var(--gold);transform:rotate(45deg);opacity:0.35;flex-shrink:0;}
-
-/* STATS */
-.stat-num{font-family:'Playfair Display',serif;font-size:56px;font-weight:400;color:var(--gold);line-height:1;}
-.stat-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(249,247,242,0.28);margin-top:6px;}
-
-/* FAQ */
-.faq-item{border-bottom:0.5px solid rgba(201,168,76,0.1);overflow:hidden;}
-.faq-question{display:flex;align-items:center;justify-content:space-between;padding:22px 0;cursor:pointer;transition:color 0.3s;}
-.faq-question:hover{color:var(--gold);}
-.faq-icon{width:24px;height:24px;border:0.5px solid rgba(201,168,76,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.3s;}
-.faq-icon svg{transition:transform 0.3s;}
-.faq-item.open .faq-icon{background:rgba(201,168,76,0.1);border-color:var(--gold);}
-.faq-item.open .faq-icon svg{transform:rotate(45deg);}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.23,1,0.32,1);}
-.faq-answer-inner{padding-bottom:20px;font-size:14px;line-height:1.85;color:var(--muted);}
-
-/* FORM */
-.form-input{background:rgba(255,255,255,0.03);border:0.5px solid rgba(201,168,76,0.15);color:var(--white);border-radius:6px;padding:14px 18px;font-size:14px;width:100%;transition:all 0.3s ease;font-family:'Inter',sans-serif;}
-.form-input:focus{outline:none;border-color:rgba(201,168,76,0.5);box-shadow:0 0 0 3px rgba(201,168,76,0.06);}
-.form-input::placeholder{color:rgba(249,247,242,0.2);}
-.form-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(249,247,242,0.3);margin-bottom:8px;display:block;}
-
-/* TESTIMONIAL */
-.testimonial-card{background:rgba(255,255,255,0.02);border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px;transition:all 0.5s cubic-bezier(0.23,1,0.32,1);}
-.testimonial-card:hover{border-color:rgba(201,168,76,0.3);transform:translateY(-4px);}
-.quote-mark{font-family:'Playfair Display',serif;font-size:72px;color:var(--gold);opacity:0.2;line-height:0.6;margin-bottom:20px;}
-
-/* NEWSLETTER */
-.newsletter-wrap{background:linear-gradient(135deg,rgba(201,168,76,0.06),rgba(26,31,69,0.4));border:0.5px solid rgba(201,168,76,0.2);border-radius:16px;padding:64px 48px;text-align:center;}
-
-/* CASE STUDY */
-.case-card{background:rgba(255,255,255,0.02);border:0.5px solid rgba(201,168,76,0.1);border-radius:12px;overflow:hidden;transition:all 0.4s cubic-bezier(0.23,1,0.32,1);}
-.case-card:hover{border-color:rgba(201,168,76,0.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,0.35);}
-.case-header{padding:28px 28px 20px;border-bottom:0.5px solid rgba(201,168,76,0.08);}
-.case-body{padding:24px 28px;}
-.case-metric{display:flex;align-items:baseline;gap:4px;}
-.case-metric-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:var(--gold);}
-.case-metric-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
-
-/* MAGNETIC */
-.magnetic{transition:transform 0.3s cubic-bezier(0.23,1,0.32,1);}
-
-/* LAYOUT */
-.container{max-width:1200px;margin:0 auto;padding:0 40px;}
-section{padding:100px 0;border-bottom:0.5px solid rgba(249,247,242,0.05);}
-.section-alt{background:var(--navy2);}
-.section-deep{background:#04060F;}
-#mobile-menu{display:none;}
-#mobile-menu.open{display:flex;}
-
-@media(min-width:769px) and (max-width:1024px){
-  .container{padding:0 28px;}
-  .two-col{gap:40px!important;}
-  .bento-grid{grid-template-columns:repeat(2,1fr)!important;}
-  .bento-grid>div{grid-column:span 1!important;min-height:auto!important;}
-  .footer-grid{grid-template-columns:repeat(2,1fr)!important;gap:40px!important;}
-}
-@media(max-width:768px){
-  .container{padding:0 20px;}
-  section{padding:70px 0;}
-  .two-col{grid-template-columns:1fr!important;gap:48px!important;}
-  .three-col{grid-template-columns:1fr!important;}
-  .four-col{grid-template-columns:repeat(2,1fr)!important;}
-  .bento-grid{grid-template-columns:1fr!important;}
-  .bento-grid>div{grid-column:auto!important;min-height:auto!important;}
-  .footer-grid{grid-template-columns:1fr 1fr!important;gap:40px!important;}
-  .newsletter-wrap{padding:40px 24px!important;}
-  .hero-name{font-size:clamp(48px,12vw,80px)!important;}
-  #sticky-bar .sticky-text{display:none;}
-}
-@media(max-width:480px){
-  .four-col{grid-template-columns:1fr!important;}
-  .footer-grid{grid-template-columns:1fr!important;}
-}
-</style>
+        body {
+            background-color: #F9FAFB;
+            color: #1A1F45;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .bento-item {
+            background: white;
+            border: 1px solid #E5E7EB;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border-color: #e6c364;
+        }
+        .ticker-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 60px;
+        }
+        .ticker-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 60px;
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
 </head>
-<body>
-
-<!-- PRELOADER -->
-<div id="preloader">
-  <div class="preloader-name"><span>REWANSH</span></div>
-  <div class="preloader-bar"><div class="preloader-fill"></div></div>
+<body class="font-body text-base">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
+<div class="flex justify-between items-center max-w-[1240px] mx-auto px-margin-mobile py-5">
+<a class="text-2xl font-extrabold tracking-tighter text-secondary" href="/">REWANSH<span class="text-primary">.</span></a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="#about">Philosophy</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="#services">Solutions</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="#results">Impact</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="#faq">Insights</a>
+<a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="#">Consultation</a>
 </div>
-
-<!-- SCROLL PROGRESS -->
-<div id="scroll-progress"></div>
-
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursor-ring"></div>
-
-<!-- BACK TO TOP -->
-<div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+<button class="md:hidden text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
-
-<!-- STICKY CTA BAR -->
-<div id="sticky-bar">
-  <span class="sticky-text" style="font-size:13px;color:var(--muted);">Ready to turn your brand into a movement?</span>
-  <div style="display:flex;gap:12px;align-items:center;">
-    <a href="#contact" class="btn-gold magnetic" style="padding:11px 24px;font-size:10px;"><span>Book a Free Strategy Call →</span></a>
-  </div>
-</div>
-
-<!-- COOKIE BANNER -->
-<div id="cookie-banner">
-  <p style="font-size:13px;color:var(--muted);line-height:1.6;">We use cookies to enhance your experience and analyze site performance. By continuing, you agree to our <a href="#" style="color:var(--gold);text-decoration:none;">Privacy Policy</a>.</p>
-  <div style="display:flex;gap:10px;">
-    <button onclick="acceptCookie()" class="btn-gold" style="padding:10px 20px;font-size:10px;border:none;cursor:pointer;"><span>Accept</span></button>
-    <button onclick="declineCookie()" style="padding:10px 20px;font-size:10px;background:none;border:0.5px solid rgba(249,247,242,0.15);color:rgba(249,247,242,0.5);cursor:pointer;border-radius:0;letter-spacing:1px;text-transform:uppercase;">Decline</button>
-  </div>
-</div>
-
-<!-- ═══ NAV ═══ -->
-<nav id="navbar">
-  <div class="container">
-    <div style="display:flex;align-items:center;justify-content:space-between;height:68px;">
-      <a href="#" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:500;color:var(--white);text-decoration:none;letter-spacing:1px;">Rew<span style="color:var(--gold);">a</span>nsh</a>
-      <div style="display:flex;gap:32px;align-items:center;" class="hidden md:flex">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#results" class="nav-link">Results</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <div style="display:flex;align-items:center;gap:14px;">
-        <a href="#contact" class="btn-gold magnetic hidden sm:inline-block" style="padding:10px 22px;font-size:10px;"><span>Free Strategy Call</span></a>
-        <button id="hamburger" class="md:hidden" style="background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-          <div style="width:22px;height:1px;background:var(--white);margin-bottom:6px;transition:all 0.3s;"></div>
-          <div style="width:22px;height:1px;background:var(--white);margin-bottom:6px;"></div>
-          <div style="width:14px;height:1px;background:var(--white);transition:all 0.3s;"></div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div id="mobile-menu" style="flex-direction:column;padding:16px 20px 24px;border-top:0.5px solid rgba(201,168,76,0.1);">
-    <a href="#about" class="nav-link" style="padding:13px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);display:block;" onclick="closeMenu()">About</a>
-    <a href="#services" class="nav-link" style="padding:13px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);display:block;" onclick="closeMenu()">Services</a>
-    <a href="#pricing" class="nav-link" style="padding:13px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);display:block;" onclick="closeMenu()">Pricing</a>
-    <a href="#results" class="nav-link" style="padding:13px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);display:block;" onclick="closeMenu()">Results</a>
-    <a href="#faq" class="nav-link" style="padding:13px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);display:block;" onclick="closeMenu()">FAQ</a>
-    <a href="#contact" class="nav-link" style="padding:13px 0;display:block;" onclick="closeMenu()">Contact</a>
-    <a href="#contact" class="btn-gold" style="margin-top:16px;text-align:center;padding:13px;font-size:10px;" onclick="closeMenu()"><span>Free Strategy Call</span></a>
-  </div>
 </nav>
-
-<!-- ═══ HERO ═══ -->
-<section class="hero-bg" style="min-height:100vh;display:flex;align-items:center;padding-top:68px;border-bottom:0.5px solid rgba(201,168,76,0.1);position:relative;overflow:hidden;">
-  <canvas id="particle-canvas"></canvas>
-  <div class="float1" style="position:absolute;top:15%;right:10%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;"></div>
-  <div class="float2" style="position:absolute;bottom:20%;right:28%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(26,31,69,0.5) 0%,transparent 70%);pointer-events:none;"></div>
-
-  <div class="container" style="padding-top:60px;padding-bottom:100px;position:relative;z-index:1;">
-    <div style="max-width:820px;">
-
-      <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:36px;padding:8px 20px;border:0.5px solid rgba(201,168,76,0.2);background:rgba(201,168,76,0.04);border-radius:100px;animation:fade-down 0.8s cubic-bezier(0.23,1,0.32,1) 0.3s both;">
-        <div class="pulse-dot" style="width:6px;height:6px;background:var(--gold);border-radius:50%;"></div>
-        <span style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;">Digital Strategist · AI Growth Partner · US Market</span>
-      </div>
-
-      <h1 class="display hero-name" style="font-size:clamp(52px,8vw,112px);font-weight:400;line-height:1.02;letter-spacing:-2px;margin-bottom:32px;">
-        <div class="hero-word"><span style="animation-delay:0.1s;">Turning</span></div><br/>
-        <div class="hero-word gradient-text" style="font-weight:400;"><span style="animation-delay:0.25s;">Brands Into</span></div><br/>
-        <div class="hero-word"><span style="animation-delay:0.4s;">Movements.</span></div>
-      </h1>
-
-      <!-- Social proof inline -->
-      <div style="display:flex;align-items:center;gap:16px;margin-bottom:28px;animation:fade-up 1s cubic-bezier(0.23,1,0.32,1) 0.5s both;">
-        <div style="display:flex;">
-          <div style="width:32px;height:32px;border-radius:50%;background:rgba(201,168,76,0.15);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--gold);margin-right:-8px;font-family:'Playfair Display',serif;">J</div>
-          <div style="width:32px;height:32px;border-radius:50%;background:rgba(201,168,76,0.1);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--gold);margin-right:-8px;font-family:'Playfair Display',serif;">S</div>
-          <div style="width:32px;height:32px;border-radius:50%;background:rgba(201,168,76,0.08);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--gold);font-family:'Playfair Display',serif;">D</div>
-        </div>
-        <div>
-          <div style="display:flex;gap:2px;margin-bottom:2px;">
-            <span style="color:var(--gold);font-size:12px;">★★★★★</span>
-          </div>
-          <span style="font-size:12px;color:var(--muted);">Trusted by 50+ US entrepreneurs</span>
-        </div>
-      </div>
-
-      <p style="font-size:18px;line-height:1.85;color:var(--muted);max-width:540px;margin-bottom:48px;animation:fade-up 1s cubic-bezier(0.23,1,0.32,1) 0.6s both;">Raw marketing truth. Real business results. Rewansh helps US founders and growth teams build AI-powered marketing systems — content, funnels, and lead generation — engineered to convert and scale.</p>
-
-      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:64px;animation:fade-up 1s cubic-bezier(0.23,1,0.32,1) 0.75s both;">
-        <a href="#contact" class="btn-gold magnetic"><span>Book Free Strategy Call →</span></a>
-        <a href="#services" class="btn-outline magnetic"><span>Explore Services</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;">
-    <div class="scroll-indicator"></div>
-    <span style="font-size:9px;letter-spacing:4px;color:rgba(201,168,76,0.3);text-transform:uppercase;">Scroll</span>
-  </div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker">
-    <span class="ticker-item">Digital Marketing<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">AI Strategy<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Brand Building<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Content Systems<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Lead Generation<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Marketing Automation<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Growth Strategy<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Digital PR<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Digital Marketing<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">AI Strategy<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Brand Building<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Content Systems<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Lead Generation<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Marketing Automation<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Growth Strategy<span class="ticker-diamond"></span></span>
-    <span class="ticker-item">Digital PR<span class="ticker-diamond"></span></span>
-  </div>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+<div class="max-w-[1240px] mx-auto px-margin-mobile relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary/5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-secondary font-bold text-[11px] uppercase tracking-widest">Enterprise Growth Partner</span>
 </div>
-
-<!-- ═══ START HERE ═══ -->
-<section style="padding:60px 0;border-bottom:0.5px solid rgba(249,247,242,0.05);">
-  <div class="container">
-    <div class="reveal" style="text-align:center;margin-bottom:40px;">
-      <div class="eyebrow">New Here?</div>
-      <h2 class="display" style="font-size:32px;font-weight:400;">Start Here — Find Your Path</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;" class="stagger-parent reveal">
-      <a href="#services" style="text-decoration:none;" class="stagger-child">
-        <div class="card" style="padding:28px 24px;cursor:pointer;">
-          <div style="font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">I'm a founder</div>
-          <div style="font-size:16px;font-weight:500;color:var(--white);margin-bottom:8px;">Building my brand from scratch</div>
-          <div style="font-size:12px;color:var(--muted);">→ Start with Personal Brand Development</div>
-        </div>
-      </a>
-      <a href="#services" style="text-decoration:none;" class="stagger-child">
-        <div class="card" style="padding:28px 24px;cursor:pointer;">
-          <div style="font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">I run a D2C brand</div>
-          <div style="font-size:16px;font-weight:500;color:var(--white);margin-bottom:8px;">Need content that actually converts</div>
-          <div style="font-size:12px;color:var(--muted);">→ Start with AI Content Systems</div>
-        </div>
-      </a>
-      <a href="#services" style="text-decoration:none;" class="stagger-child">
-        <div class="card" style="padding:28px 24px;cursor:pointer;">
-          <div style="font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">I'm scaling fast</div>
-          <div style="font-size:16px;font-weight:500;color:var(--white);margin-bottom:8px;">Need systems and automation</div>
-          <div style="font-size:12px;color:var(--muted);">→ Start with Lead Generation & Automation</div>
-        </div>
-      </a>
-      <a href="#contact" style="text-decoration:none;" class="stagger-child">
-        <div class="card" style="padding:28px 24px;cursor:pointer;">
-          <div style="font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">Not sure yet</div>
-          <div style="font-size:16px;font-weight:500;color:var(--white);margin-bottom:8px;">Let's figure it out together</div>
-          <div style="font-size:12px;color:var(--muted);">→ Book a Free Strategy Call</div>
-        </div>
-      </a>
-    </div>
-  </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-secondary leading-[1.1] tracking-tight">
+                        Architecting <span class="text-primary">Scale</span> Through Intelligence.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        We partner with ambitious enterprises to deploy AI-driven operational systems and marketing infrastructure that drives measurable, compounding results.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<a class="px-10 py-5 bg-primary text-secondary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-accent-gold transition-all shadow-lg" href="#">
+                            Secure Your Strategy Call <span class="material-symbols-outlined text-xl">trending_up</span>
+</a>
+<a class="px-10 py-5 border-2 border-secondary text-secondary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-secondary hover:text-white transition-all" href="#">
+                            Our Methodology
+                        </a>
+</div>
+<div class="flex items-center gap-6 pt-4">
+<div class="flex -space-x-3">
+<img alt="Executive 1" class="w-12 h-12 rounded-full border-4 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvUxy3Fj0cX_5HnEHIiz69rqG5bhuZ55ouoZeo-4pRDXbyl9xhzOZIDBzsbz4Rr7UM_h6V4Bfcc55s63lbcGcbwiFG3bvxS_cmcXH1PPA3CF9ij_nkUayLfhzEAe4_vUGuwxyfaFLcAttjUvG6tMYtQuD42rRui4w3VTCJgKq2dZIeyPrHXZfQzMOahvxp60SI12ZACyD-07O5KBjSeNzHVFxSQ_WuQT-QqjuL-r9b05cPL6SH2gdG0iydNSGk4ub4DWhurouGnEgh"/>
+<img alt="Executive 2" class="w-12 h-12 rounded-full border-4 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA3BeK-w2AUj1Uv_zX87bG1nJmPgWo-HRNl9mHHlwTiDriHM0oGPyYqTqSvxjpa5fbU4Wjnh1hhFMYM33DuGHe-e2frVtWI5DYvWlQABbjvAGcng8cyOkjVUNAJpA8xzKQ4srrqe7IrR6LTMBjJzpB60K0nVQ8u32q9AXSfLRWqL4ie018Ex0YvbrC-3YhQa_meZRm0j9z9QhT9fWNhD95WxQDid21WdJDQZ_49JgmQ1TWjxogqK6RLVEquG7-CghQJHW5xaXR8BG_"/>
+<img alt="Executive 3" class="w-12 h-12 rounded-full border-4 border-white object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClTUMBj4vLxrfm-rL52z5KkbHIw6ZpbtSv5asB4uyYrrnfeM9hpYqbQsFjUe0z8W5UQpZavd51AWvFwxFt6bKgWxp3YHQ7rUoFgPSM6ESK7RIpmWss6cYPnT6mpMmbpR9wGFndMW3Y8o_2pA_jZmGEbsdkBFcO_q7AIgj5zCOw4qNZdpuYQnb5OjDYo7JJOkHKaowH6iGZmi9VlaOq84ihNNQ5AEqzV6EbEIxeY2jenTgKF-np3-A1S5Z94WlfDpc1LEfDatE0b1Eb"/>
+</div>
+<div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs font-bold text-secondary/60 uppercase tracking-wider">Trusted by Fortune 500 Leaders</p>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Modern Boardroom Strategy" class="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ_SPOzegLxCBXgPtmtT9u0qskPD7Kt3vmKPlQg3rr-_d2r22qBZoHQdQx9vjAWo2qfht0JROK94tUBfhgeYZKNhDKPU6mFZMx3h02kQ3D5GCw8-J2n43T4I6JWtzcxMS-FYg0X1ykMvjCwaFl6y8BtZLkuQSgcLluMWpLQqzq4QGkqR4GpiKIUXvea46RFp-fXDys87ldCNIYvCwrvW_8Sgsz7nsX6s0uL0_k3wr4GyAJdwv9CkuYoKUCyrrDt-6RfqEkR6umrD6n"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent"></div>
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-xl shadow-xl border border-outline max-w-[240px]">
+<p class="text-4xl font-extrabold text-secondary">94%</p>
+<p class="text-sm font-semibold text-on-surface-variant mt-2 leading-snug">Average efficiency increase in partner workflows.</p>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ ABOUT ═══ -->
-<section id="about" class="section-alt">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="two-col">
-      <div class="reveal-left">
-        <div class="eyebrow">Who I Am</div>
-        <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-        <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;line-height:1.2;margin-bottom:28px;">Not another<br/><em class="gradient-text">marketing guru.</em></h2>
-        <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:18px;">I'm <strong style="color:var(--white);">Rewansh</strong> — a digital marketing strategist and AI practitioner who has spent years inside the real machinery of brands, campaigns, and business systems.</p>
-        <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:18px;">I work with US-based entrepreneurs and fast-growing companies tired of vague strategy — ready for AI-powered systems that actually move numbers.</p>
-        <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:36px;">No recycled playbooks. No corporate fluff. Just raw, honest marketing built on what actually works in today's AI-accelerated world. Whether you're a solo founder or a scaling team, the goal is the same: eliminate guesswork and build growth infrastructure that compounds.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;">
-          <span class="tag">Google Certified</span>
-          <span class="tag">Meta Blueprint</span>
-          <span class="tag">AI Marketing</span>
-          <span class="tag">HubSpot</span>
-        </div>
-        <a href="#contact" class="btn-gold magnetic"><span>Let's Work Together</span></a>
-      </div>
-      <div class="reveal-right" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-        <div class="card" style="padding:28px 22px;grid-column:span 2;">
-          <div class="display gradient-text" style="font-size:36px;font-weight:400;margin-bottom:6px;">rewansh.com</div>
-          <div style="font-size:10px;letter-spacing:3px;color:rgba(249,247,242,0.28);text-transform:uppercase;">Official Hub · US Market</div>
-        </div>
-        <div class="card" style="padding:26px 20px;"><div style="font-size:22px;font-weight:500;color:var(--white);margin-bottom:4px;">Agency</div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;">Operations</div></div>
-        <div class="card" style="padding:26px 20px;"><div class="display gradient-text" style="font-size:22px;font-weight:400;margin-bottom:4px;">AI-First</div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;">Approach</div></div>
-        <div class="card" style="padding:26px 20px;"><div class="display gradient-text" style="font-size:22px;font-weight:400;margin-bottom:4px;">Content</div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;">Systems</div></div>
-        <div class="card" style="padding:26px 20px;"><div style="font-size:22px;font-weight:500;color:var(--white);margin-bottom:4px;">Growth</div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;">Strategy</div></div>
-      </div>
-    </div>
-  </div>
+<!-- Trusted By Section -->
+<section class="py-12 border-y border-outline bg-white">
+<div class="ticker-container opacity-40 grayscale contrast-125">
+<div class="ticker-content">
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">GlobalFinance</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">TechInnovate</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">PrimeMedia</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">NexusCorp</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">VertexSystems</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">GlobalFinance</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">TechInnovate</span>
+<span class="text-2xl font-black text-secondary tracking-widest uppercase">PrimeMedia</span>
+</div>
+</div>
 </section>
-
-<!-- ═══ SERVICES ═══ -->
-<section id="services">
-  <div class="container">
-    <div class="reveal" style="margin-bottom:64px;">
-      <div class="eyebrow">What I Do</div>
-      <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-      <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;line-height:1.2;max-width:500px;">Services built for <em class="gradient-text">serious growth.</em></h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:18px;" class="stagger-parent reveal bento-grid">
-      <div class="card stagger-child" style="grid-column:span 4;padding:44px 38px;border-color:rgba(201,168,76,0.3);min-height:280px;display:flex;flex-direction:column;justify-content:space-between;">
-        <div>
-          <div style="font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Most Popular</div>
-          <div style="width:46px;height:46px;border-radius:8px;background:rgba(201,168,76,0.1);border:0.5px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
-            <svg width="20" height="20" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:500;margin-bottom:14px;">AI-Powered Content Systems</h3>
-          <p style="font-size:14px;line-height:1.85;color:var(--muted);max-width:420px;">End-to-end content machines powered by AI — from ideation to distribution. Reels, email sequences, lead magnets that convert.</p>
-        </div>
-        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;"><span class="tag">AI Tools</span><span class="tag">Content Machine</span></div>
-      </div>
-      <div class="card stagger-child" style="grid-column:span 2;padding:38px 30px;">
-        <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
-          <svg width="18" height="18" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:500;margin-bottom:12px;">Marketing Strategy & Consulting</h3>
-        <p style="font-size:13px;line-height:1.85;color:var(--muted);">Full-funnel strategies for US markets. Audience mapping, conversion architecture, built on data and AI — not guesswork.</p>
-        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;"><span class="tag">Funnel Design</span><span class="tag">Brand Strategy</span></div>
-      </div>
-      <div class="card stagger-child" style="grid-column:span 2;padding:38px 30px;">
-        <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
-          <svg width="18" height="18" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:500;margin-bottom:12px;">Personal Brand Development</h3>
-        <p style="font-size:13px;line-height:1.85;color:var(--muted);">Build authority in your space. Profile, content strategy, and audience growth systems for Instagram, LinkedIn, and YouTube.</p>
-        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;"><span class="tag">Instagram</span><span class="tag">LinkedIn</span></div>
-      </div>
-      <div class="card stagger-child" style="grid-column:span 2;padding:38px 30px;">
-        <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
-          <svg width="18" height="18" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:500;margin-bottom:12px;">Lead Generation & Automation</h3>
-        <p style="font-size:13px;line-height:1.85;color:var(--muted);">Automated pipelines that bring qualified leads to your inbox. DM automation, email sequences, outreach systems that work 24/7.</p>
-        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;"><span class="tag">DM Automation</span><span class="tag">Email Funnels</span></div>
-      </div>
-      <div class="card stagger-child" style="grid-column:span 2;padding:38px 30px;">
-        <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
-          <svg width="18" height="18" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:500;margin-bottom:12px;">Digital Products & Courses</h3>
-        <p style="font-size:13px;line-height:1.85;color:var(--muted);">Notion templates, systems, and digital courses. Done-for-you simplicity that sells on Stan Store and Gumroad.</p>
-        <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;"><span class="tag">Notion</span><span class="tag">Stan Store</span></div>
-      </div>
-      <div class="card stagger-child" style="grid-column:span 6;padding:44px 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;background:rgba(201,168,76,0.03);border-color:rgba(201,168,76,0.25);">
-        <div style="width:46px;height:46px;border-radius:8px;background:rgba(201,168,76,0.1);border:0.5px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg width="20" height="20" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-        </div>
-        <div style="flex:1;min-width:240px;">
-          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:500;margin-bottom:8px;">Done-For-You Marketing</h3>
-          <p style="font-size:13px;line-height:1.85;color:var(--muted);max-width:560px;">Full-service content creation and campaign management. You focus on your business — I handle growth end-to-end.</p>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;flex-shrink:0;"><span class="tag">Done-For-You</span><span class="tag">Full Service</span></div>
-      </div>
-    </div>
-  </div>
+<!-- Philosophy Section -->
+<section class="py-section-gap" id="about">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<img alt="Executive Strategy Session" class="relative rounded-2xl shadow-xl object-cover h-[500px] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA71jCnrqIVe0zxQln4EUyhrv-EYQLK1JIxgMwUZKaApqEeSEDxMLlrva0-KAg1E-dijaqcW1vBYsgG9o5c4fH7bj-ixRtjA_Qdm51gaCfwz6vhPQ_NPnSOqvj4ulK9lTSjC6zZ96ONzJWqAaN1WIK4tgXFmTyA9sYANwatgjvvLoCm2W7wPA0tU0BLPZgA5F9SSQ8RcbhMf_NXpjtbwqfbWHGDklJeRS-YTuJjGvkEZu3o72UxHjSEeiStVd3NnF0kdQ3Ff6Ld5uqn"/>
+</div>
+<div class="space-y-8">
+<div>
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mb-4">The Rewansh Philosophy</p>
+<h2 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight">
+                                More than an agency. <br/><span class="text-on-surface-variant/40 italic">A catalyst for scale.</span>
+</h2>
+</div>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Rewansh represents the intersection of sophisticated strategic consulting and cutting-edge AI implementation. We don't just provide recommendations; we build the machinery of growth.</p>
+<p>Our mandate is clear: eliminate operational friction and maximize market dominance for the world's most ambitious organizations through results-driven technology systems.</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 rounded-xl border border-outline bg-white hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary mb-2">military_tech</span>
+<p class="text-sm font-bold text-secondary uppercase tracking-wider">Certified Alpha</p>
+<p class="text-xs text-on-surface-variant mt-1">Tier-1 Strategy Standards</p>
+</div>
+<div class="p-6 rounded-xl border border-outline bg-white hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary mb-2">hub</span>
+<p class="text-sm font-bold text-secondary uppercase tracking-wider">AI-Integrated</p>
+<p class="text-xs text-on-surface-variant mt-1">Next-Gen Implementation</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ PRICING ═══ -->
-<section id="pricing" class="section-alt">
-  <div class="container">
-    <div class="reveal" style="margin-bottom:64px;text-align:center;">
-      <div class="eyebrow">Investment</div>
-      <div class="gold-rule" style="justify-content:center;"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-      <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;line-height:1.2;margin-bottom:14px;">Simple, <em class="gradient-text">transparent pricing.</em></h2>
-      <p style="font-size:15px;color:var(--muted);max-width:480px;margin:0 auto;">No hidden fees. No long-term contracts. Just results.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:960px;margin:0 auto;" class="stagger-parent reveal">
-
-      <div class="pricing-card stagger-child">
-        <div style="font-size:10px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:16px;">Starter</div>
-        <div class="display" style="font-size:52px;font-weight:400;color:var(--white);margin-bottom:4px;">$997</div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:28px;">One-time strategy session</div>
-        <div style="height:0.5px;background:rgba(201,168,76,0.1);margin-bottom:28px;"></div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>90-minute deep strategy session</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Full marketing audit & roadmap</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>AI tool stack recommendations</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>30-day action plan</li>
-        </ul>
-        <a href="#contact" class="btn-outline" style="width:100%;text-align:center;display:block;"><span>Get Started</span></a>
-      </div>
-
-      <div class="pricing-card featured stagger-child" style="position:relative;padding-top:52px;">
-        <div class="popular-badge">Most Popular</div>
-        <div style="font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">Growth</div>
-        <div class="display" style="font-size:52px;font-weight:400;color:var(--white);margin-bottom:4px;">$2,997</div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:28px;">Per month · 3 month minimum</div>
-        <div style="height:0.5px;background:rgba(201,168,76,0.2);margin-bottom:28px;"></div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--white);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Full content system setup</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--white);"><span style="color:var(--gold);flex-shrink:0;">✦</span>12 pieces of content monthly</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--white);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Lead generation automation</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--white);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Weekly strategy calls</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--white);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Monthly performance reports</li>
-        </ul>
-        <a href="#contact" class="btn-gold" style="width:100%;text-align:center;display:block;"><span>Start Growing →</span></a>
-      </div>
-
-      <div class="pricing-card stagger-child">
-        <div style="font-size:10px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:16px;">Done-For-You</div>
-        <div class="display" style="font-size:52px;font-weight:400;color:var(--white);margin-bottom:4px;">$5,997</div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:28px;">Per month · Full service</div>
-        <div style="height:0.5px;background:rgba(201,168,76,0.1);margin-bottom:28px;"></div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px;">
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Everything in Growth</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Full campaign management</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Paid ads setup & management</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Priority Slack access</li>
-          <li style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);"><span style="color:var(--gold);flex-shrink:0;">✦</span>Bi-weekly strategy calls</li>
-        </ul>
-        <a href="#contact" class="btn-outline" style="width:100%;text-align:center;display:block;"><span>Apply Now</span></a>
-      </div>
-
-    </div>
-    <p style="text-align:center;font-size:12px;color:rgba(249,247,242,0.25);margin-top:24px;letter-spacing:1px;">Not sure which plan? <a href="#contact" style="color:var(--gold);text-decoration:none;">Book a free 30-min call</a> and we'll figure it out together.</p>
-  </div>
+<!-- Services Section (Bento Grid) -->
+<section class="py-section-gap bg-secondary/5" id="services">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="text-center mb-16 space-y-4">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Core Solutions</p>
+<h2 class="text-4xl md:text-5xl font-extrabold text-secondary">The Scale Infrastructure.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+<!-- Hero Bento Item -->
+<div class="md:col-span-6 lg:col-span-7 bento-item p-10 rounded-2xl flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="w-12 h-12 bg-secondary text-primary rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-3xl font-extrabold text-secondary mb-4 leading-tight">Enterprise AI Integration &amp; Automation</h3>
+<p class="text-on-surface-variant text-lg max-w-md">Transforming fragmented operations into a unified, high-velocity AI-driven engine. From custom LLMs to automated supply chains.</p>
+</div>
+<div class="mt-10 flex gap-3">
+<span class="px-4 py-2 bg-secondary/5 rounded-full text-[10px] font-bold text-secondary uppercase tracking-widest">Workflow Optimization</span>
+<span class="px-4 py-2 bg-secondary/5 rounded-full text-[10px] font-bold text-secondary uppercase tracking-widest">Custom AI Ops</span>
+</div>
+</div>
+<!-- Small Bento Item 1 -->
+<div class="md:col-span-3 lg:col-span-5 bento-item p-10 rounded-2xl">
+<div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">insights</span>
+</div>
+<h3 class="text-2xl font-extrabold text-secondary mb-4 leading-tight">Strategic Market Acquisition</h3>
+<p class="text-on-surface-variant">Sophisticated go-to-market strategies for high-stakes environments. We build the funnel, you own the market.</p>
+</div>
+<!-- Small Bento Item 2 -->
+<div class="md:col-span-3 lg:col-span-4 bento-item p-10 rounded-2xl">
+<div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</div>
+<h3 class="text-xl font-extrabold text-secondary mb-3">Executive Branding</h3>
+<p class="text-on-surface-variant text-sm">Positioning founders and executives as industry visionaries through hyper-curated content systems.</p>
+</div>
+<!-- Medium Bento Item -->
+<div class="md:col-span-6 lg:col-span-8 bento-item p-10 rounded-2xl bg-secondary !border-secondary flex items-center">
+<div class="grid md:grid-cols-2 gap-10 items-center">
+<div class="space-y-6">
+<h3 class="text-2xl font-extrabold text-white leading-tight">Full-Service Growth Management</h3>
+<p class="text-white/70 text-sm">Our "Done-For-You" model. We take complete ownership of your growth metrics, allowing your leadership to focus on vision.</p>
+<button class="px-6 py-3 bg-primary text-secondary font-bold text-xs rounded hover:scale-105 transition-transform">Inquire about Partnership</button>
+</div>
+<div class="relative hidden md:block">
+<img alt="Data Analytics" class="rounded-xl shadow-2xl opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6I1BGQcXmWBMHLkyiJsJfmwZKVW7nMiXAod_dDP2qpRj6dHnqmVd3Lm1Iiwu-xB3daKkdsvKQ_nqoDmm0KWWGqsybKxNa4lYr5mg5671uX_UYr9vewNJ93Ikr3ThfKwp4lF68Lp8VcmNioLAJeRyQpk8EFTKGW1y5TaI8CSKwTBnb1v2cWgDn4rk-0tXrH3KaqdpXko0MQ9jawnL1nTcWo6JA_6KV8X9GANri61XP0jfUdcESq130oLjb41JORemYPYMA9tzZgsSC"/>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ PROCESS SLIDER ═══ -->
-<section id="process">
-  <div class="container">
-    <div class="reveal" style="margin-bottom:48px;">
-      <div class="eyebrow">How It Works</div>
-      <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-      <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;max-width:500px;">A process built for <em class="gradient-text">real outcomes.</em></h2>
-    </div>
-    <div class="progress-bar reveal"><div class="progress-fill" id="slider-progress"></div></div>
-    <div style="overflow:hidden;" id="slider-container">
-      <div class="slides-track" id="slides-track">
-        <div class="slide" style="padding:48px 0;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="two-col">
-            <div><div style="font-family:'Playfair Display',serif;font-size:96px;font-weight:400;color:rgba(201,168,76,0.08);line-height:1;margin-bottom:-10px;">01</div><h3 class="display" style="font-size:36px;font-weight:400;margin-bottom:16px;">Discovery Call</h3><p style="font-size:15px;line-height:1.9;color:var(--muted);">We talk for 30 minutes. I learn your business, goals, and real gaps. No pitch — just clarity and an honest audit.</p></div>
-            <div style="border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px;background:rgba(201,168,76,0.02);">
-              <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;">What You Get</div>
-              <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Honest audit of your marketing</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Top 3 growth levers identified</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Clear next steps — no fluff</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="slide" style="padding:48px 0;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="two-col">
-            <div><div style="font-family:'Playfair Display',serif;font-size:96px;font-weight:400;color:rgba(201,168,76,0.08);line-height:1;margin-bottom:-10px;">02</div><h3 class="display" style="font-size:36px;font-weight:400;margin-bottom:16px;">Strategy Blueprint</h3><p style="font-size:15px;line-height:1.9;color:var(--muted);">I build a custom growth blueprint — your audience, funnel, and content system — tailored to your specific US market and goals.</p></div>
-            <div style="border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px;background:rgba(201,168,76,0.02);">
-              <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;">What You Get</div>
-              <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Full audience and positioning map</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>90-day content and funnel blueprint</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>AI tool stack recommendation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="slide" style="padding:48px 0;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="two-col">
-            <div><div style="font-family:'Playfair Display',serif;font-size:96px;font-weight:400;color:rgba(201,168,76,0.08);line-height:1;margin-bottom:-10px;">03</div><h3 class="display" style="font-size:36px;font-weight:400;margin-bottom:16px;">Build & Execute</h3><p style="font-size:15px;line-height:1.9;color:var(--muted);">We build the systems, launch the content, and run the campaigns. AI-powered, human-directed, executed with precision.</p></div>
-            <div style="border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px;background:rgba(201,168,76,0.02);">
-              <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;">What You Get</div>
-              <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Live systems and campaigns</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Content pipeline on autopilot</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Weekly performance reports</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="slide" style="padding:48px 0;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="two-col">
-            <div><div style="font-family:'Playfair Display',serif;font-size:96px;font-weight:400;color:rgba(201,168,76,0.08);line-height:1;margin-bottom:-10px;">04</div><h3 class="display" style="font-size:36px;font-weight:400;margin-bottom:16px;">Scale & Optimize</h3><p style="font-size:15px;line-height:1.9;color:var(--muted);">We track, measure, and double down on what works. Your growth compounds every week — not just spikes and drops.</p></div>
-            <div style="border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px;background:rgba(201,168,76,0.02);">
-              <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;">What You Get</div>
-              <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Monthly strategy reviews</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Ongoing optimization loops</li>
-                <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);"><div style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;"></div>Long-term growth architecture</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:32px;">
-      <div style="display:flex;gap:8px;" id="slider-dots">
-        <div class="slider-dot active" onclick="goToSlide(0)"></div>
-        <div class="slider-dot" onclick="goToSlide(1)"></div>
-        <div class="slider-dot" onclick="goToSlide(2)"></div>
-        <div class="slider-dot" onclick="goToSlide(3)"></div>
-      </div>
-      <div style="display:flex;gap:10px;">
-        <button onclick="prevSlide()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-          <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button onclick="nextSlide()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-          <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
+<!-- Process Section (Horizontal Bento) -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mb-4">Our Methodology</p>
+<h2 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight">The 4-Phased Protocol.</h2>
+</div>
+<div class="hidden md:block">
+<p class="text-on-surface-variant text-sm font-medium">Standardized for reliability. <br/>Customized for impact.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Step 1 -->
+<div class="bento-item p-8 rounded-2xl group">
+<div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">01</div>
+<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Audit &amp; Assessment</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A deep-tissue analysis of current infrastructure, identifying hidden bottlenecks and untapped leverage points.</p>
+<ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
+<li>• Tech Stack Review</li>
+<li>• Competitor Benchmarking</li>
+</ul>
+</div>
+<!-- Step 2 -->
+<div class="bento-item p-8 rounded-2xl group bg-white">
+<div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">02</div>
+<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">System Architecture</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Developing the bespoke growth blueprint, detailing every AI integration and campaign sequence required for scale.</p>
+<ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
+<li>• Custom Roadmaps</li>
+<li>• AI Modeling</li>
+</ul>
+</div>
+<!-- Step 3 -->
+<div class="bento-item p-8 rounded-2xl group bg-primary/5 !border-primary/20">
+<div class="text-6xl font-black text-primary/10 mb-6">03</div>
+<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Rapid Deployment</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Aggressive implementation of the designed systems. We build, launch, and monitor in real-time cycles.</p>
+<ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
+<li>• Full-Stack Execution</li>
+<li>• QA &amp; Stress Testing</li>
+</ul>
+</div>
+<!-- Step 4 -->
+<div class="bento-item p-8 rounded-2xl group">
+<div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">04</div>
+<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Continuous Scaling</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Optimizing systems based on live performance data to ensure growth is compounding and sustainable.</p>
+<ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
+<li>• Performance Review</li>
+<li>• Ongoing R&amp;D</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ CASE STUDIES ═══ -->
-<section id="results" class="section-alt">
-  <div class="container">
-    <div class="reveal" style="margin-bottom:64px;">
-      <div class="eyebrow">Case Studies</div>
-      <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-      <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;max-width:500px;">Real results. <em class="gradient-text">Real numbers.</em></h2>
-    </div>
-
-    <!-- Stats -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;border:0.5px solid rgba(201,168,76,0.12);border-radius:12px;overflow:hidden;margin-bottom:56px;" class="reveal four-col">
-      <div style="padding:32px 22px;border-right:0.5px solid rgba(201,168,76,0.1);"><div class="stat-num counter" data-target="3" data-suffix="x">0x</div><div class="stat-label">Avg ROI</div></div>
-      <div style="padding:32px 22px;border-right:0.5px solid rgba(201,168,76,0.1);"><div class="stat-num counter" data-target="42" data-suffix="%">0%</div><div class="stat-label">Email Open Rate</div></div>
-      <div style="padding:32px 22px;border-right:0.5px solid rgba(201,168,76,0.1);"><div class="stat-num counter" data-target="200" data-suffix="+">0+</div><div class="stat-label">Leads / 60 Days</div></div>
-      <div style="padding:32px 22px;"><div class="stat-num counter" data-target="5" data-suffix="x">0x</div><div class="stat-label">Traffic Growth</div></div>
-    </div>
-
-    <!-- Case Studies Slider -->
-    <div class="reveal" style="position:relative;">
-      <div class="progress-bar" style="margin-bottom:0;"><div class="progress-fill" id="case-progress"></div></div>
-      <div style="overflow:hidden;" id="case-slider-container">
-        <div style="display:flex;transition:transform 0.7s cubic-bezier(0.23,1,0.32,1);" id="case-track">
-
-          <!-- Slide 1: Case Study -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div class="tag" style="margin-bottom:20px;">D2C Brand · New York</div>
-                <h3 class="display" style="font-size:36px;font-weight:400;color:var(--white);margin-bottom:16px;line-height:1.2;">From 0 to 200K Impressions in 90 Days</h3>
-                <p style="font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:28px;">Built a full AI-powered content system for a New York D2C brand. Went from zero content presence to 200K monthly impressions and 4.2x ROAS on Meta Ads in just 3 months.</p>
-                <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                  <span class="tag">AI Content</span><span class="tag">Meta Ads</span><span class="tag">D2C</span>
-                </div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">4.2x</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">ROAS</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">200K</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">Impressions</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);grid-column:span 2;">
-                  <div class="quote-mark" style="font-size:48px;margin-bottom:10px;">"</div>
-                  <p style="font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:14px;">Rewansh built a content machine that runs itself. Our ROAS jumped from 1.1x to 4.2x in 90 days — I've never seen results like this from any agency.</p>
-                  <div style="font-size:12px;color:var(--gold);letter-spacing:1px;">James M. · D2C Founder, New York</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2: Case Study -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div class="tag" style="margin-bottom:20px;">SaaS Founder · San Francisco</div>
-                <h3 class="display" style="font-size:36px;font-weight:400;color:var(--white);margin-bottom:16px;line-height:1.2;">LinkedIn: 0 to 15K Followers in 6 Months</h3>
-                <p style="font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:28px;">Built a full personal brand content system for a SaaS founder. 15K LinkedIn followers, consistent inbound leads, and a sold-out cohort launch generating $82K in 30 days.</p>
-                <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                  <span class="tag">Personal Brand</span><span class="tag">LinkedIn</span><span class="tag">SaaS</span>
-                </div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">15K</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">Followers</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">$82K</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">Launch Rev</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);grid-column:span 2;">
-                  <div class="quote-mark" style="font-size:48px;margin-bottom:10px;">"</div>
-                  <p style="font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:14px;">Raw, honest, no fluff. Rewansh told us exactly what wasn't working and fixed it. Instagram went from ghost town to consistent inbound leads in 90 days.</p>
-                  <div style="font-size:12px;color:var(--gold);letter-spacing:1px;">David K. · SaaS Founder, San Francisco</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3: Case Study -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div class="tag" style="margin-bottom:20px;">Course Creator · Austin, TX</div>
-                <h3 class="display" style="font-size:36px;font-weight:400;color:var(--white);margin-bottom:16px;line-height:1.2;">Email List: 0 to 8K Subscribers in 60 Days</h3>
-                <p style="font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:28px;">Built a full AI content and lead gen system for a course creator. 8K email subscribers in 60 days, 42% open rate, and $120K in course sales on first launch.</p>
-                <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                  <span class="tag">Email Marketing</span><span class="tag">Lead Gen</span><span class="tag">Course</span>
-                </div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">8K</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">Email Subs</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);">
-                  <div class="display" style="font-size:48px;font-weight:400;color:var(--gold);line-height:1;">$120K</div>
-                  <div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:6px;">Launch Rev</div>
-                </div>
-                <div style="border:0.5px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 22px;background:rgba(201,168,76,0.03);grid-column:span 2;">
-                  <div class="quote-mark" style="font-size:48px;margin-bottom:10px;">"</div>
-                  <p style="font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:14px;">The AI-powered content system Rewansh built saves 15 hours a week and produces better content than we were making manually. Complete game changer.</p>
-                  <div style="font-size:12px;color:var(--gold);letter-spacing:1px;">Sarah R. · Course Creator, Austin TX</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Controls -->
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:28px;">
-        <div style="display:flex;gap:8px;" id="case-dots">
-          <div class="slider-dot active" onclick="caseGoTo(0)"></div>
-          <div class="slider-dot" onclick="caseGoTo(1)"></div>
-          <div class="slider-dot" onclick="caseGoTo(2)"></div>
-        </div>
-        <div style="display:flex;gap:10px;">
-          <button onclick="casePrev()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-            <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <button onclick="caseNext()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-            <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Pricing Section -->
+<section class="py-section-gap bg-secondary text-white relative">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="text-center mb-20 space-y-4">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Corporate Investment</p>
+<h2 class="text-4xl md:text-5xl font-extrabold">Predictable Growth Models.</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Tier 1 -->
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
+<div>
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Consulting</p>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-4xl font-extrabold">$2,500</span>
+<span class="text-white/50 text-sm">/ Engagement</span>
+</div>
+<ul class="space-y-4 text-sm text-white/70">
+<li class="flex gap-3"><span class="text-primary">✔</span> Comprehensive Growth Audit</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Technology Stack Optimization</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Strategic Advisory (Monthly)</li>
+</ul>
+</div>
+<a class="mt-12 w-full py-4 text-center border border-white/20 rounded-lg font-bold hover:bg-white/10 transition-all" href="#">Get Advisory</a>
+</div>
+<!-- Tier 2 -->
+<div class="bg-white p-10 rounded-2xl flex flex-col justify-between shadow-2xl relative scale-105 border-b-8 border-primary">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-secondary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Recommended</div>
+<div>
+<p class="text-secondary font-bold text-xs uppercase tracking-widest mb-6">Scale Partner</p>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-4xl font-extrabold text-secondary">$7,500</span>
+<span class="text-secondary/50 text-sm">/ month</span>
+</div>
+<ul class="space-y-4 text-sm text-secondary/80">
+<li class="flex gap-3"><span class="text-primary">✔</span> Complete Funnel &amp; System Ops</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Full AI Content Distribution</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Dedicated Growth Manager</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Bi-Weekly Performance Sprints</li>
+</ul>
+</div>
+<a class="mt-12 w-full py-4 text-center bg-primary text-secondary rounded-lg font-bold hover:bg-accent-gold transition-all shadow-lg" href="#">Initiate Partnership</a>
+</div>
+<!-- Tier 3 -->
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
+<div>
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Enterprise</p>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="text-4xl font-extrabold">Custom</span>
+</div>
+<ul class="space-y-4 text-sm text-white/70">
+<li class="flex gap-3"><span class="text-primary">✔</span> Bespoke AI Infrastructure</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Global Campaign Management</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> On-Site Strategic Workshops</li>
+<li class="flex gap-3"><span class="text-primary">✔</span> Priority 24/7 Access</li>
+</ul>
+</div>
+<a class="mt-12 w-full py-4 text-center border border-white/20 rounded-lg font-bold hover:bg-white/10 transition-all" href="#">Request RFP</a>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ CONTENT / BRAND ═══ -->
-<section id="content">
-  <div class="container">
-    <div class="reveal" style="margin-bottom:56px;">
-      <div class="eyebrow">Follow the Journey</div>
-      <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-      <h2 class="display" style="font-size:clamp(36px,4vw,52px);font-weight:400;max-width:540px;">Building in public.<br/><em class="gradient-text">No filter.</em></h2>
-    </div>
-    <!-- Content Slider -->
-    <div class="reveal" style="position:relative;">
-      <div class="progress-bar" style="margin-bottom:0;"><div class="progress-fill" id="content-progress"></div></div>
-      <div style="overflow:hidden;" id="content-slider-container">
-        <div style="display:flex;transition:transform 0.7s cubic-bezier(0.23,1,0.32,1);" id="content-track">
-
-          <!-- Slide 1: Instagram -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div style="font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">Instagram</div>
-                <h3 class="display" style="font-size:48px;font-weight:400;color:var(--white);margin-bottom:6px;line-height:1.1;">@rewanshpro</h3>
-                <div class="gradient-text display" style="font-size:18px;font-weight:400;margin-bottom:24px;font-style:italic;">Where marketing truth lives.</div>
-                <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:32px;">Raw, unfiltered takes on digital marketing, AI tools, and the real side of agency life. No fluff. No recycled content. Every reel teaches you something you can use today.</p>
-                <div style="display:flex;gap:24px;margin-bottom:32px;">
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Reels</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Primary Format</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Daily</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Posting Cadence</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">AI</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Content Focus</div></div>
-                </div>
-                <a href="https://instagram.com/rewanshpro" class="btn-gold magnetic"><span>Follow @rewanshpro →</span></a>
-              </div>
-              <div style="border:0.5px solid rgba(201,168,76,0.15);border-radius:16px;padding:40px;background:rgba(201,168,76,0.02);display:flex;flex-direction:column;gap:16px;">
-                <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:4px;">Latest Content Themes</div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">The dark side of digital marketing agencies</div>
-                  <div style="font-size:11px;color:var(--muted);">Exposé · High Engagement</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">5 AI tools that replaced my entire team</div>
-                  <div style="font-size:11px;color:var(--muted);">AI · Tutorial</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Why your content isn't converting (brutal truth)</div>
-                  <div style="font-size:11px;color:var(--muted);">Contrarian · High Saves</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">How I built a $10K/mo system in 30 days</div>
-                  <div style="font-size:11px;color:var(--muted);">Case Study · Behind the Scenes</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2: YouTube -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div style="font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">YouTube</div>
-                <h3 class="display" style="font-size:48px;font-weight:400;color:var(--white);margin-bottom:6px;line-height:1.1;">@RewanshKayare</h3>
-                <div class="gradient-text display" style="font-size:18px;font-weight:400;margin-bottom:24px;font-style:italic;">Deep dives. No fluff.</div>
-                <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:32px;">Long-form breakdowns of AI tools, marketing systems, and the real side of building a digital business. The content that goes too deep for a reel. The stuff that actually changes how you work.</p>
-                <div style="display:flex;gap:24px;margin-bottom:32px;">
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Long</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Form Content</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Weekly</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Upload Schedule</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Deep</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Dive Focus</div></div>
-                </div>
-                <a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" class="btn-gold magnetic"><span>Subscribe on YouTube →</span></a>
-              </div>
-              <div style="border:0.5px solid rgba(201,168,76,0.15);border-radius:16px;padding:40px;background:rgba(201,168,76,0.02);display:flex;flex-direction:column;gap:16px;">
-                <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:4px;">Coming Up on YouTube</div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Full AI Marketing Stack Walkthrough (2024)</div>
-                  <div style="font-size:11px;color:var(--muted);">Tutorial · 45 min</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">How agencies really make their money</div>
-                  <div style="font-size:11px;color:var(--muted);">Exposé · 30 min</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Building a $0 to $10K content funnel</div>
-                  <div style="font-size:11px;color:var(--muted);">Case Study · 60 min</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">The truth about AI replacing marketers</div>
-                  <div style="font-size:11px;color:var(--muted);">Opinion · 20 min</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3: LinkedIn -->
-          <div style="min-width:100%;padding:40px 0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="two-col">
-              <div>
-                <div style="font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">LinkedIn</div>
-                <h3 class="display" style="font-size:48px;font-weight:400;color:var(--white);margin-bottom:6px;line-height:1.1;">Rewansh K.</h3>
-                <div class="gradient-text display" style="font-size:18px;font-weight:400;margin-bottom:24px;font-style:italic;">Industry truth. No filter.</div>
-                <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:32px;">Contrarian takes on marketing, AI, and business — for professionals who are tired of LinkedIn fluff. Real frameworks. Real industry insight. The kind of post that makes your connection message you.</p>
-                <div style="display:flex;gap:24px;margin-bottom:32px;">
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">B2B</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Audience Focus</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">Raw</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Content Style</div></div>
-                  <div><div class="display" style="font-size:32px;font-weight:400;color:var(--gold);">5x</div><div style="font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Per Week</div></div>
-                </div>
-                <a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" class="btn-gold magnetic"><span>Connect on LinkedIn →</span></a>
-              </div>
-              <div style="border:0.5px solid rgba(201,168,76,0.15);border-radius:16px;padding:40px;background:rgba(201,168,76,0.02);display:flex;flex-direction:column;gap:16px;">
-                <div style="font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:4px;">Recent Posts</div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">"Most marketing advice is just recycled garbage."</div>
-                  <div style="font-size:11px;color:var(--muted);">Contrarian · 12K impressions</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">3 things I learned running a real agency</div>
-                  <div style="font-size:11px;color:var(--muted);">Insight · 8K impressions</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">AI won't replace marketers. Bad marketers will.</div>
-                  <div style="font-size:11px;color:var(--muted);">Opinion · 22K impressions</div>
-                </div>
-                <div style="padding:16px;border:0.5px solid rgba(201,168,76,0.1);border-radius:8px;background:rgba(255,255,255,0.02);">
-                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">How I went from 0 to 5K followers in 60 days</div>
-                  <div style="font-size:11px;color:var(--muted);">Case Study · 18K impressions</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Controls -->
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:28px;">
-        <div style="display:flex;gap:8px;" id="content-dots">
-          <div class="slider-dot active" onclick="contentGoTo(0)"></div>
-          <div class="slider-dot" onclick="contentGoTo(1)"></div>
-          <div class="slider-dot" onclick="contentGoTo(2)"></div>
-        </div>
-        <div style="display:flex;gap:10px;">
-          <button onclick="contentPrev()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-            <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <button onclick="contentNext()" style="width:46px;height:46px;border:0.5px solid rgba(201,168,76,0.25);background:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.08)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.25)';this.style.background='none'">
-            <svg width="14" height="14" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Case Studies Section -->
+<section class="py-section-gap" id="results">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="flex flex-col md:flex-row items-center gap-10 mb-20 bg-secondary/5 p-12 rounded-3xl">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 flex-grow">
+<div class="text-center md:text-left">
+<p class="text-4xl font-extrabold text-secondary">310%</p>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1">ROI Acceleration</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-extrabold text-secondary">15M+</p>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1">Partner Revenue</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-extrabold text-secondary">62%</p>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1">OpEx Reduction</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-extrabold text-secondary">24/7</p>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1">Autonomous Ops</p>
+</div>
+</div>
+</div>
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/20 rounded-2xl rotate-2 group-hover:rotate-0 transition-transform"></div>
+<img alt="Tech Office Collaboration" class="relative rounded-2xl shadow-2xl object-cover h-[500px] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoPDkHMj8kSaddPH7vqhrr7h48WG7ExUhHgISeY08fvFU136sJ-0OqGDbHj5LxSAf8a5fmWM1xxFPuiSAbm-g6SXlj3YkJ0hSCL2kiwWauL11z93Z__poxQfodBtZ3dlsznVpHXp4o_3wQGAgxq8ngUSnE8VZK0veitLKSkEZJwchT97pEYk3_f-GxIj7-bF6IlmPNU7u-NZam7dqXKXYCfQrGNvrEGfAuVPmCIa82PKJxaCLNygxDV7hZFv4NGuKgYWaC-OYByf09"/>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="px-3 py-1 bg-primary/10 text-primary font-bold text-[10px] uppercase tracking-widest rounded-full">Global Case Study</span>
+<h3 class="text-3xl font-extrabold text-secondary mt-4 leading-tight">Scaling a Fintech Leader from $2M to $12M ARR.</h3>
+</div>
+<p class="text-on-surface-variant text-lg">We implemented a comprehensive AI-driven lead qualification system and automated content engine that reduced client acquisition costs by 44% while tripling conversion velocity.</p>
+<div class="p-8 border-l-4 border-primary bg-secondary/5 rounded-r-xl italic text-secondary font-medium">
+                            "The systems Rewansh built didn't just add incremental value; they fundamentally changed our growth trajectory. We are operating at a level I didn't think possible for our size."
+                            <div class="mt-6 flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary font-bold">SM</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-wider text-secondary">Sarah Miller</p>
+<p class="text-xs text-on-surface-variant">COO, Quantum Payments</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ FAQ ═══ -->
-<section id="faq" class="section-alt">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;" class="two-col">
-      <div class="reveal-left">
-        <div class="eyebrow">FAQ</div>
-        <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-        <h2 class="display" style="font-size:clamp(32px,4vw,48px);font-weight:400;line-height:1.2;margin-bottom:20px;">Questions I get <em class="gradient-text">all the time.</em></h2>
-        <p style="font-size:14px;line-height:1.85;color:var(--muted);">Still have questions? <a href="#contact" style="color:var(--gold);text-decoration:none;">Book a free strategy call</a> and I'll answer everything.</p>
-      </div>
-      <div class="reveal-right">
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span style="font-size:15px;font-weight:500;">Do you work with clients outside the US?</span>
-            <div class="faq-icon"><svg width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-          </div>
-          <div class="faq-answer"><div class="faq-answer-inner">Yes — while I specialize in the US market, I work with clients globally. My systems and strategies are built for English-speaking markets primarily, but I've worked with brands across the UK, Canada, and Australia as well.</div></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span style="font-size:15px;font-weight:500;">How long before I see results?</span>
-            <div class="faq-icon"><svg width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-          </div>
-          <div class="faq-answer"><div class="faq-answer-inner">Most clients see meaningful traction within 30–60 days. Content systems and automation start producing leads within weeks. Brand authority and organic growth compounds over 3–6 months. I'll set realistic expectations on our first call.</div></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span style="font-size:15px;font-weight:500;">What makes you different from other agencies?</span>
-            <div class="faq-icon"><svg width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-          </div>
-          <div class="faq-answer"><div class="faq-answer-inner">I work with a small number of clients at a time — which means you get direct access to me, not a junior account manager. I'm an operator, not just a consultant. I've built and run campaigns myself, and I use AI tools that most agencies haven't even heard of yet.</div></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span style="font-size:15px;font-weight:500;">Do you require long-term contracts?</span>
-            <div class="faq-icon"><svg width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-          </div>
-          <div class="faq-answer"><div class="faq-answer-inner">The Growth and Done-For-You plans have a 3-month minimum — because meaningful results take time and I won't take on clients I can't genuinely help. After that, it's month-to-month. The Strategy Session is a one-time engagement.</div></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            <span style="font-size:15px;font-weight:500;">What industries do you specialize in?</span>
-            <div class="faq-icon"><svg width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-          </div>
-          <div class="faq-answer"><div class="faq-answer-inner">I primarily work with D2C brands, SaaS founders, course creators, coaches, and personal brand builders. If you're selling a product or service online and you want more visibility and conversions — I can help.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Newsletter Section -->
+<section class="py-section-gap">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="bg-secondary rounded-3xl p-16 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+<div class="relative z-10 space-y-6">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Strategic Briefings</p>
+<h2 class="text-4xl md:text-5xl font-extrabold text-white">The Excellence Protocol.</h2>
+<p class="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">Weekly insights on enterprise AI, market dominance strategies, and the future of corporate scaling. Reserved for the ambitious.</p>
+<form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 pt-8">
+<input class="flex-grow bg-white/5 border border-white/10 focus:border-primary px-6 py-4 rounded-lg text-white outline-none" placeholder="Corporate email address" type="email"/>
+<button class="px-8 py-4 bg-primary text-secondary font-bold rounded-lg hover:scale-105 transition-transform" type="submit">Join Briefing</button>
+</form>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ NEWSLETTER ═══ -->
-<section style="padding:80px 0;border-bottom:0.5px solid rgba(249,247,242,0.05);">
-  <div class="container">
-    <div class="newsletter-wrap reveal">
-      <div class="eyebrow" style="text-align:center;">Free Weekly Insights</div>
-      <h2 class="display" style="font-size:clamp(32px,4vw,52px);font-weight:400;margin-bottom:16px;text-align:center;">The Marketing Truth <em class="gradient-text">Newsletter</em></h2>
-      <p style="font-size:15px;color:var(--muted);max-width:480px;margin:0 auto 36px;text-align:center;line-height:1.8;">Every week: one raw marketing insight, one AI tool worth using, and one thing most agencies won't tell you. No fluff. No spam.</p>
-      <form onsubmit="handleNewsletter(event)" style="display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap;">
-        <input type="email" class="form-input" placeholder="Enter your email" required style="flex:1;min-width:220px;"/>
-        <button type="submit" class="btn-gold magnetic" style="border:none;cursor:pointer;flex-shrink:0;"><span>Subscribe Free →</span></button>
-      </form>
-      <div id="newsletter-success" style="display:none;margin-top:16px;text-align:center;font-size:13px;color:var(--gold);letter-spacing:1px;">✦ You're in. Check your inbox.</div>
-      <p style="font-size:11px;color:rgba(249,247,242,0.2);text-align:center;margin-top:14px;letter-spacing:1px;">Join 2,000+ entrepreneurs. Unsubscribe anytime.</p>
-    </div>
-  </div>
+<!-- FAQ Section -->
+<section class="py-section-gap" id="faq">
+<div class="max-w-[1240px] mx-auto px-margin-mobile">
+<div class="grid lg:grid-cols-2 gap-20">
+<div class="space-y-6">
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Intelligence Hub</p>
+<h2 class="text-4xl font-extrabold text-secondary leading-tight">Frequent Consultations.</h2>
+<p class="text-on-surface-variant text-lg">Detailed answers for organizations evaluating a strategic partnership with Rewansh.</p>
+</div>
+<div class="space-y-4">
+<div class="border-b border-outline pb-6">
+<button class="w-full flex justify-between items-center text-left py-2 group">
+<span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How do you manage AI data security?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</button>
+<div class="hidden pt-4 text-on-surface-variant leading-relaxed">
+                                Security is our priority. We deploy private, siloed LLM instances for enterprise partners, ensuring your proprietary data never leaves your secure environment or contributes to public model training.
+                            </div>
+</div>
+<div class="border-b border-outline pb-6">
+<button class="w-full flex justify-between items-center text-left py-2 group">
+<span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What is the typical time-to-value for new systems?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</button>
+</div>
+<div class="border-b border-outline pb-6">
+<button class="w-full flex justify-between items-center text-left py-2 group">
+<span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Can you integrate with legacy CRM systems?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══ CONTACT ═══ -->
-<section id="contact">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;" class="two-col">
-      <div class="reveal-left">
-        <div class="eyebrow">Get In Touch</div>
-        <div class="gold-rule"><div class="gold-rule-line"></div><div class="gold-diamond"></div><div class="gold-rule-line"></div></div>
-        <h2 class="display" style="font-size:clamp(32px,4vw,48px);font-weight:400;line-height:1.2;margin-bottom:24px;">Ready to build a <em class="gradient-text">movement?</em></h2>
-        <p style="font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:40px;">Tell me what you're building. I'll tell you exactly how I can help — no pitch, no fluff, no wasted time.</p>
-        <div style="display:flex;flex-direction:column;gap:20px;">
-          <div style="display:flex;align-items:center;gap:14px;">
-            <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="16" height="16" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;margin-bottom:3px;">Email</div><a href="mailto:kayarerewansh@gmail.com" style="font-size:14px;color:var(--gold);text-decoration:none;">kayarerewansh@gmail.com</a></div>
-          </div>
-          <div style="display:flex;align-items:center;gap:14px;">
-            <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="16" height="16" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;margin-bottom:3px;">Response Time</div><div style="font-size:14px;color:var(--white);">Within 24 hours</div></div>
-          </div>
-          <div style="display:flex;align-items:center;gap:14px;">
-            <div style="width:42px;height:42px;border-radius:8px;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="16" height="16" fill="none" stroke="var(--gold)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div><div style="font-size:10px;letter-spacing:2px;color:rgba(249,247,242,0.28);text-transform:uppercase;margin-bottom:3px;">Timezone</div><div style="font-size:14px;color:var(--white);">Available EST / PST hours</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal-right">
-        <form onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:14px;">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-            <div><label class="form-label">Full Name</label><input type="text" class="form-input" placeholder="John Smith" required/></div>
-            <div><label class="form-label">Company</label><input type="text" class="form-input" placeholder="Your Company"/></div>
-          </div>
-          <div><label class="form-label">Email</label><input type="email" class="form-input" placeholder="you@company.com" required/></div>
-          <div><label class="form-label">Budget Range</label>
-            <select class="form-input" style="cursor:pointer;">
-              <option value="" style="background:#06091A;">Select budget...</option>
-              <option style="background:#06091A;">Under $1,000</option>
-              <option style="background:#06091A;">$1,000 – $3,000/mo</option>
-              <option style="background:#06091A;">$3,000 – $6,000/mo</option>
-              <option style="background:#06091A;">$6,000+/mo</option>
-            </select>
-          </div>
-          <div><label class="form-label">Service Needed</label>
-            <select class="form-input" style="cursor:pointer;">
-              <option value="" style="background:#06091A;">Select a service...</option>
-              <option style="background:#06091A;">Marketing Strategy & Consulting</option>
-              <option style="background:#06091A;">AI-Powered Content Systems</option>
-              <option style="background:#06091A;">Personal Brand Development</option>
-              <option style="background:#06091A;">Lead Generation & Automation</option>
-              <option style="background:#06091A;">Done-For-You Marketing</option>
-            </select>
-          </div>
-          <div><label class="form-label">Tell Me About Your Project</label><textarea class="form-input" rows="4" placeholder="What are you building, what's the goal, what's holding you back?"></textarea></div>
-          <button type="submit" class="btn-gold magnetic" style="width:100%;text-align:center;border:none;cursor:pointer;"><span>Send Message →</span></button>
-        </form>
-        <div id="form-success" style="display:none;margin-top:14px;padding:14px;border-radius:8px;background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.2);color:var(--gold);font-size:13px;text-align:center;letter-spacing:1px;">✦ Message received. I'll be in touch within 24 hours.</div>
-      </div>
-    </div>
-  </div>
+<!-- Final CTA/Contact -->
+<section class="py-section-gap bg-secondary text-white">
+<div class="max-w-[1240px] mx-auto px-margin-mobile grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-10">
+<div class="space-y-4">
+<h2 class="text-5xl font-extrabold leading-tight">Ready to Engineer <br/><span class="text-primary">Your Next Peak?</span></h2>
+<p class="text-white/60 text-xl leading-relaxed">Let's discuss how our systems can align with your organizational goals. No fluff—just high-level strategy.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-primary border border-white/10">
+<span class="material-symbols-outlined">corporate_fare</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-primary uppercase tracking-widest">Global HQ</p>
+<p class="text-lg">Financial District, New York, NY</p>
+</div>
+</div>
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-primary border border-white/10">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-primary uppercase tracking-widest">Inquiries</p>
+<p class="text-lg">partnership@rewansh.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-10 rounded-3xl shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-3">Full Name</label>
+<input class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none" placeholder="Executive Name" type="text"/>
+</div>
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-3">Organization</label>
+<input class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none" placeholder="Company Name" type="text"/>
+</div>
+</div>
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-3">Corporate Email</label>
+<input class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none" placeholder="name@company.com" type="email"/>
+</div>
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-3">Strategic Goal</label>
+<select class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none appearance-none">
+<option>Market Acquisition</option>
+<option>Operational Efficiency</option>
+<option>Executive Branding</option>
+</select>
+</div>
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-3">Objective Overview</label>
+<textarea class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none resize-none" placeholder="What are your primary growth levers for the next 12 months?" rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-secondary font-extrabold rounded-lg shadow-lg hover:bg-accent-gold transition-all flex items-center justify-center gap-3">
+                            Submit Consultation Request <span class="material-symbols-outlined text-lg">send</span>
+</button>
+</form>
+</div>
+</div>
 </section>
-
-<!-- ═══ FOOTER ═══ -->
-<footer style="background:#030710;padding:60px 0 0;border-top:0.5px solid rgba(201,168,76,0.1);">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px;" class="footer-grid">
-      <div>
-        <div class="display gradient-text" style="font-size:26px;font-weight:400;margin-bottom:14px;letter-spacing:1px;">Rewansh</div>
-        <p style="font-size:13px;line-height:1.8;color:rgba(249,247,242,0.28);max-width:240px;margin-bottom:22px;">Turning brands into movements. Raw marketing truth. Real business results.</p>
-        <div style="display:flex;gap:10px;">
-          <a href="https://instagram.com/rewanshpro" style="width:34px;height:34px;border:0.5px solid rgba(201,168,76,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)'" title="Instagram">
-            <svg width="13" height="13" fill="none" stroke="rgba(249,247,242,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" style="width:34px;height:34px;border:0.5px solid rgba(201,168,76,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)'" title="LinkedIn">
-            <svg width="13" height="13" fill="rgba(249,247,242,0.4)" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" style="width:34px;height:34px;border:0.5px solid rgba(201,168,76,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)'" title="YouTube">
-            <svg width="13" height="13" fill="none" stroke="rgba(249,247,242,0.4)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="rgba(249,247,242,0.4)"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:10px;letter-spacing:3px;color:rgba(249,247,242,0.22);text-transform:uppercase;margin-bottom:18px;">Services</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
-          <li><a href="#services" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Marketing Strategy</a></li>
-          <li><a href="#services" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">AI Content Systems</a></li>
-          <li><a href="#services" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Personal Branding</a></li>
-          <li><a href="#services" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Lead Generation</a></li>
-          <li><a href="#pricing" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Pricing</a></li>
-        </ul>
-      </div>
-      <div>
-        <div style="font-size:10px;letter-spacing:3px;color:rgba(249,247,242,0.22);text-transform:uppercase;margin-bottom:18px;">Company</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
-          <li><a href="#about" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">About</a></li>
-          <li><a href="#results" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Case Studies</a></li>
-          <li><a href="#faq" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">FAQ</a></li>
-          <li><a href="#contact" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <div style="font-size:10px;letter-spacing:3px;color:rgba(249,247,242,0.22);text-transform:uppercase;margin-bottom:18px;">Follow</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
-          <li><a href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">@rewanshpro</a></li>
-          <li><a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">YouTube</a></li>
-          <li><a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">LinkedIn</a></li>
-          <li><a href="#" style="font-size:13px;color:rgba(249,247,242,0.38);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.38)'">Newsletter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div style="padding:22px 0;border-top:0.5px solid rgba(249,247,242,0.05);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
-      <div style="font-size:11px;color:rgba(249,247,242,0.18);letter-spacing:1px;">© 2024 Rewansh. All rights reserved.</div>
-      <div style="display:flex;gap:20px;">
-        <a href="#" style="font-size:11px;color:rgba(249,247,242,0.18);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.18)'">Privacy Policy</a>
-        <a href="#" style="font-size:11px;color:rgba(249,247,242,0.18);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.18)'">Terms of Service</a>
-        <a href="#" style="font-size:11px;color:rgba(249,247,242,0.18);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(249,247,242,0.18)'">Cookie Policy</a>
-      </div>
-    </div>
-  </div>
+</main>
+<!-- Footer -->
+<footer class="bg-background py-24 border-t border-outline">
+<div class="max-w-[1240px] mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<a class="text-2xl font-black text-secondary tracking-tighter" href="/">REWANSH<span class="text-primary">.</span></a>
+<p class="text-on-surface-variant text-sm mt-6 leading-relaxed">
+                    Engineering results-driven scale for modern enterprises through the intelligent integration of strategy and technology.
+                </p>
+<div class="flex gap-4 mt-8">
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-sm">hub</span></a>
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-sm">data_thresholding</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Solutions</h5>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">AI Infrastructure</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Market Strategy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Executive Content</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Automation Systems</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Intelligence</h5>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">The Protocol</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Insights Briefing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Partner Portal</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h5>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Standards</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Data Processing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Engagement</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto px-margin-mobile mt-20 pt-10 border-t border-outline flex flex-col md:row justify-between items-center gap-6">
+<p class="text-xs font-bold text-secondary/40 uppercase tracking-widest">© 2024 REWANSH STRATEGIC PARTNERS. ALL RIGHTS RESERVED.</p>
+<p class="text-[10px] text-secondary/20">Designed for Corporate Excellence.</p>
+</div>
 </footer>
-
+<!-- Fixed Mobile CTA -->
+<div class="fixed bottom-0 left-0 w-full glass-header z-40 border-t border-outline md:hidden">
+<div class="p-4">
+<a class="w-full block py-4 bg-primary text-secondary font-bold text-center rounded-lg shadow-lg" href="#">Book Consultation</a>
+</div>
+</div>
+<!-- Script for Toggles -->
 <script>
-// ── PRELOADER ──
-window.addEventListener('load',()=>{
-  setTimeout(()=>{document.getElementById('preloader').classList.add('hidden');},2000);
-});
-
-// ── CURSOR (desktop only) ──
-if(window.matchMedia('(hover:hover)').matches){
-  const cur=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
-  (function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);})();
-  document.querySelectorAll('a,button,.card,.magnetic,.pricing-card,.case-card').forEach(el=>{
-    el.addEventListener('mouseenter',()=>ring.classList.add('hovered'));
-    el.addEventListener('mouseleave',()=>ring.classList.remove('hovered'));
-  });
-}
-
-// ── RIPPLE ──
-document.addEventListener('click',e=>{
-  const r=document.createElement('div');
-  r.className='ripple';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';
-  r.style.width='60px';r.style.height='60px';
-  document.body.appendChild(r);setTimeout(()=>r.remove(),700);
-});
-
-// ── NAV + SCROLL PROGRESS + STICKY BAR + BACK TO TOP ──
-window.addEventListener('scroll',()=>{
-  const s=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;
-  document.getElementById('navbar').classList.toggle('scrolled',s>40);
-  document.getElementById('scroll-progress').style.width=(s/h*100)+'%';
-  document.getElementById('sticky-bar').classList.toggle('visible',s>600);
-  document.getElementById('back-top').classList.toggle('visible',s>400);
-});
-
-// ── MOBILE MENU ──
-document.getElementById('hamburger').addEventListener('click',()=>{
-  document.getElementById('mobile-menu').classList.toggle('open');
-});
-function closeMenu(){document.getElementById('mobile-menu').classList.remove('open');}
-
-// ── REVEAL ──
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
-},{threshold:0.08});
-document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.stagger-parent').forEach(el=>obs.observe(el));
-
-// ── COUNTER ──
-const cObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const el=e.target,target=+el.dataset.target,suffix=el.dataset.suffix||'';
-      let start=null;
-      function step(ts){
-        if(!start)start=ts;
-        const p=Math.min((ts-start)/1200,1),eased=1-Math.pow(1-p,3);
-        el.textContent=Math.round(eased*target)+suffix;
-        if(p<1)requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-      cObs.unobserve(e.target);
-    }
-  });
-},{threshold:0.5});
-document.querySelectorAll('.counter').forEach(el=>cObs.observe(el));
-
-// ── SLIDER ──
-let cur2=0,total=4,autoInt;
-const track=document.getElementById('slides-track'),prog=document.getElementById('slider-progress');
-function updateSlider(){
-  track.style.transform=`translateX(-${cur2*100}%)`;
-  document.querySelectorAll('.slider-dot').forEach((d,i)=>d.classList.toggle('active',i===cur2));
-  prog.style.transform=`scaleX(${(cur2+1)/total})`;
-}
-function nextSlide(){cur2=(cur2+1)%total;updateSlider();resetAuto();}
-function prevSlide(){cur2=(cur2-1+total)%total;updateSlider();resetAuto();}
-function goToSlide(i){cur2=i;updateSlider();resetAuto();}
-function resetAuto(){clearInterval(autoInt);autoInt=setInterval(nextSlide,5000);}
-autoInt=setInterval(nextSlide,5000);
-const sc=document.getElementById('slider-container');
-let tx=0;
-sc.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
-sc.addEventListener('touchend',e=>{const d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?nextSlide():prevSlide();}});
-
-// ── FAQ ──
-function toggleFaq(q){
-  const item=q.parentElement,ans=item.querySelector('.faq-answer');
-  const isOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i=>{
-    i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';
-  });
-  if(!isOpen){item.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px';}
-}
-
-// ── PARTICLE CANVAS ──
-const canvas=document.getElementById('particle-canvas');
-if(canvas){
-  const ctx=canvas.getContext('2d');
-  function resizeCanvas(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight;}
-  resizeCanvas();window.addEventListener('resize',resizeCanvas);
-  const pts=Array.from({length:50},()=>({
-    x:Math.random()*canvas.width,y:Math.random()*canvas.height,
-    r:Math.random()*1.2+0.3,dx:(Math.random()-.5)*.25,dy:(Math.random()-.5)*.25,
-    a:Math.random()*.35+.05
-  }));
-  function draw(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    pts.forEach(p=>{
-      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(201,168,76,${p.a})`;ctx.fill();
-      p.x+=p.dx;p.y+=p.dy;
-      if(p.x<0||p.x>canvas.width)p.dx*=-1;
-      if(p.y<0||p.y>canvas.height)p.dy*=-1;
-    });
-    requestAnimationFrame(draw);
-  }
-  draw();
-}
-
-// ── CASE STUDY SLIDER ──
-let caseIdx=0,caseTot=3,caseAuto;
-const caseTrack=document.getElementById('case-track'),caseProg=document.getElementById('case-progress');
-function updateCase(){
-  caseTrack.style.transform=`translateX(-${caseIdx*100}%)`;
-  document.querySelectorAll('#case-dots .slider-dot').forEach((d,i)=>d.classList.toggle('active',i===caseIdx));
-  if(caseProg)caseProg.style.transform=`scaleX(${(caseIdx+1)/caseTot})`;
-}
-function caseNext(){caseIdx=(caseIdx+1)%caseTot;updateCase();resetCaseAuto();}
-function casePrev(){caseIdx=(caseIdx-1+caseTot)%caseTot;updateCase();resetCaseAuto();}
-function caseGoTo(i){caseIdx=i;updateCase();resetCaseAuto();}
-function resetCaseAuto(){clearInterval(caseAuto);caseAuto=setInterval(caseNext,6000);}
-caseAuto=setInterval(caseNext,6000);
-const caseContainer=document.getElementById('case-slider-container');
-if(caseContainer){
-  let cTx=0;
-  caseContainer.addEventListener('touchstart',e=>cTx=e.touches[0].clientX,{passive:true});
-  caseContainer.addEventListener('touchend',e=>{const d=cTx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?caseNext():casePrev();}});
-}
-
-// ── CONTENT SLIDER ──
-let contentIdx=0,contentTot=3,contentAuto;
-const contentTrack=document.getElementById('content-track'),contentProg=document.getElementById('content-progress');
-function updateContent(){
-  contentTrack.style.transform=`translateX(-${contentIdx*100}%)`;
-  document.querySelectorAll('#content-dots .slider-dot').forEach((d,i)=>d.classList.toggle('active',i===contentIdx));
-  if(contentProg)contentProg.style.transform=`scaleX(${(contentIdx+1)/contentTot})`;
-}
-function contentNext(){contentIdx=(contentIdx+1)%contentTot;updateContent();resetContentAuto();}
-function contentPrev(){contentIdx=(contentIdx-1+contentTot)%contentTot;updateContent();resetContentAuto();}
-function contentGoTo(i){contentIdx=i;updateContent();resetContentAuto();}
-function resetContentAuto(){clearInterval(contentAuto);contentAuto=setInterval(contentNext,6000);}
-contentAuto=setInterval(contentNext,6000);
-const contentContainer=document.getElementById('content-slider-container');
-if(contentContainer){
-  let cnTx=0;
-  contentContainer.addEventListener('touchstart',e=>cnTx=e.touches[0].clientX,{passive:true});
-  contentContainer.addEventListener('touchend',e=>{const d=cnTx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?contentNext():contentPrev();}});
-}
-
-// ── MAGNETIC ──
-document.querySelectorAll('.magnetic').forEach(btn=>{
-  btn.addEventListener('mousemove',e=>{
-    const r=btn.getBoundingClientRect();
-    const x=(e.clientX-r.left-r.width/2)*.18,y=(e.clientY-r.top-r.height/2)*.18;
-    btn.style.transform=`translate(${x}px,${y}px)`;
-  });
-  btn.addEventListener('mouseleave',()=>btn.style.transform='');
-});
-
-// ── COOKIE ──
-if(!localStorage.getItem('cookie_consent')){
-  setTimeout(()=>document.getElementById('cookie-banner').classList.add('visible'),2500);
-}
-function acceptCookie(){localStorage.setItem('cookie_consent','accepted');document.getElementById('cookie-banner').classList.remove('visible');}
-function declineCookie(){document.getElementById('cookie-banner').classList.remove('visible');}
-
-// ── FORMS ──
-function handleSubmit(e){e.preventDefault();document.getElementById('form-success').style.display='block';e.target.reset();}
-function handleNewsletter(e){e.preventDefault();document.getElementById('newsletter-success').style.display='block';e.target.reset();}
-</script>
-</body>
-</html>
+        document.querySelectorAll('button[class*="group"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.material-symbols-outlined');
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(45deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body></html>
