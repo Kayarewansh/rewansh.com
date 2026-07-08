@@ -13,7 +13,8 @@ module.exports = {
         "on-surface": "#1A1F45",
         "on-surface-variant": "#4B5563",
         outline: "#E5E7EB",
-        "accent-gold": "#C5A04D"
+        "accent-gold": "#C5A04D",
+        "primary-ink": "#7d5f26"
       },
       borderRadius: {
         DEFAULT: "0.5rem",
