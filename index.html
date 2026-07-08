@@ -215,9 +215,17 @@
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="blog/">Blog</a>
 <a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
 </div>
-<button class="md:hidden text-secondary">
-<span class="material-symbols-outlined">menu</span>
+<button id="mobile-menu-btn" class="md:hidden text-secondary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined" style="transition: transform 0.2s;">menu</span>
 </button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-6 border-t border-outline">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="#about">Philosophy</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="#services">Solutions</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="#results">Impact</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="#faq">Insights</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="blog/">Blog</a>
+<a class="px-7 py-3 mt-2 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm text-center" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
 </div>
 </nav>
 <main>
@@ -404,7 +412,7 @@
 <!-- Step 1 -->
 <div class="bento-item p-8 rounded-2xl group">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">01</div>
-<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Marketing Audit</h4>
+<h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Marketing Audit</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A full audit of your current SEO, paid media, content, and funnel — identifying hidden bottlenecks and untapped leverage points.</p>
 <ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
 <li>• SEO & Channel Review</li>
@@ -414,7 +422,7 @@
 <!-- Step 2 -->
 <div class="bento-item p-8 rounded-2xl group bg-white">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">02</div>
-<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Strategy Blueprint</h4>
+<h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Strategy Blueprint</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A custom marketing strategy detailing every channel, campaign, and AI-driven system required to hit your growth targets.</p>
 <ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
 <li>• Custom Roadmaps</li>
@@ -424,7 +432,7 @@
 <!-- Step 3 -->
 <div class="bento-item p-8 rounded-2xl group bg-primary/5 !border-primary/20">
 <div class="text-6xl font-black text-primary/10 mb-6">03</div>
-<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Campaign Launch</h4>
+<h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Campaign Launch</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Hands-on execution of the strategy — content published, campaigns launched, and systems monitored in real time.</p>
 <ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
 <li>• Full Campaign Execution</li>
@@ -434,7 +442,7 @@
 <!-- Step 4 -->
 <div class="bento-item p-8 rounded-2xl group">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">04</div>
-<h4 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Ongoing Optimization</h4>
+<h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Ongoing Optimization</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Continuous testing and refinement based on live performance data, so growth compounds instead of plateauing.</p>
 <ul class="text-[10px] font-bold text-secondary/60 space-y-2 uppercase tracking-widest border-t border-outline pt-4">
 <li>• Monthly Performance Review</li>
@@ -773,7 +781,7 @@
 </div>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
 <li><a class="hover:text-primary transition-colors" href="#services">SEO & Search Growth</a></li>
 <li><a class="hover:text-primary transition-colors" href="#services">Paid Media & PPC</a></li>
@@ -784,7 +792,7 @@
 </ul>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
 <li><a class="hover:text-primary transition-colors" href="#about">About</a></li>
 <li><a class="hover:text-primary transition-colors" href="#results">Results</a></li>
@@ -794,14 +802,14 @@
 </ul>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
-<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="legal/privacy-policy.html">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="legal/terms-of-service.html">Terms of Service</a></li>
 </ul>
 </div>
 </div>
-<div class="max-w-[1240px] mx-auto px-margin-mobile mt-20 pt-10 border-t border-outline flex flex-col md:row justify-between items-center gap-6">
+<div class="max-w-[1240px] mx-auto px-margin-mobile mt-20 pt-10 border-t border-outline flex flex-col md:flex-row justify-between items-center gap-6">
 <p class="text-xs font-bold text-secondary/40 uppercase tracking-widest">© 2026 REWANSH. ALL RIGHTS RESERVED.</p>
 <p class="text-[10px] text-secondary/20">Digital Marketing Consultant.</p>
 </div>
@@ -814,6 +822,28 @@
 </div>
 <!-- Script for Toggles -->
 <script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+
         document.querySelectorAll('button[class*="group"]').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
