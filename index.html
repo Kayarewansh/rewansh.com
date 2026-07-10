@@ -16,6 +16,9 @@
 <meta name="description" content="Rewansh is a digital marketing consultant helping startups & enterprises in India and worldwide grow through SEO, paid media, content, and AI marketing."/>
 <link rel="canonical" href="https://rewansh.com/"/>
 <meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <meta name="author" content="Rewansh Kayare"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Rewansh"/>
@@ -207,7 +210,6 @@
                 opacity: 0;
                 transform: translateY(28px);
                 transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-                will-change: opacity, transform;
             }
             .reveal.is-visible {
                 opacity: 1;
@@ -237,7 +239,11 @@
             justify-content: space-around;
             min-width: 100%;
             gap: 60px;
-            animation: scroll 40s linear infinite;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .ticker-content {
+                animation: scroll 40s linear infinite;
+            }
         }
         @keyframes scroll {
             from { transform: translateX(0); }
@@ -638,7 +644,7 @@
 </div>
 <div class="reveal reveal-delay-2 space-y-4">
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What does a digital marketing consultant do?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -647,7 +653,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How much does a digital marketing consultant cost?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -656,7 +662,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How long does it take to see results from digital marketing?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -665,7 +671,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you work with small businesses or only enterprises?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -674,7 +680,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What industries does Rewansh specialize in?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -683,7 +689,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What's the difference between a digital marketing consultant and an agency?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -692,7 +698,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Is hiring a digital marketing consultant worth it?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -701,7 +707,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you offer fractional CMO or outsourced CMO services?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -710,7 +716,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What's included in a marketing consultant retainer?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -719,7 +725,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you work with venture-backed or Series A/B startups?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -728,7 +734,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How do I choose the right digital marketing consultant?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -737,7 +743,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Can a consultant replace an in-house marketing hire?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -746,7 +752,7 @@
                             </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you work with clients in India as well as internationally?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
@@ -916,7 +922,7 @@
             });
         }
 
-        document.querySelectorAll('button[class*="group"]').forEach(button => {
+        document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('.material-symbols-outlined');

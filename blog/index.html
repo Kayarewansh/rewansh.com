@@ -15,6 +15,9 @@
 <meta name="description" content="Practical, no-fluff guides on SEO, paid media, customer acquisition cost, D2C growth, and AI marketing from Rewansh, a digital marketing consultant."/>
 <link rel="canonical" href="https://rewansh.com/blog/"/>
 <meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <meta name="author" content="Rewansh Kayare"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Rewansh"/>
@@ -43,7 +46,6 @@
   ]
 }
 </script>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"/>
@@ -106,6 +108,17 @@
 <a class="text-sm font-semibold text-primary" href="./">Blog</a>
 <a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
 </div>
+<button id="mobile-menu-btn" class="md:hidden text-secondary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined" style="transition: transform 0.2s;">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-6 border-t border-outline">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../#about">Philosophy</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../#services">Solutions</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../#results">Impact</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../#faq">Insights</a>
+<a class="text-sm font-semibold text-primary py-3" href="./">Blog</a>
+<a class="px-7 py-3 mt-2 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm text-center" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
 </div>
 </nav>
 <main class="pt-32 pb-20">
@@ -190,7 +203,7 @@
 </div>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
 <li><a class="hover:text-primary transition-colors" href="../#services">SEO & Search Growth</a></li>
 <li><a class="hover:text-primary transition-colors" href="../#services">Paid Media & PPC</a></li>
@@ -201,7 +214,7 @@
 </ul>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
 <li><a class="hover:text-primary transition-colors" href="../#about">About</a></li>
 <li><a class="hover:text-primary transition-colors" href="../#results">Results</a></li>
@@ -210,7 +223,7 @@
 </ul>
 </div>
 <div>
-<h5 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h5>
+<h4 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h4>
 <ul class="space-y-4 text-sm text-on-surface-variant font-medium">
 <li><a class="hover:text-primary transition-colors" href="../legal/privacy-policy.html">Privacy Policy</a></li>
 <li><a class="hover:text-primary transition-colors" href="../legal/terms-of-service.html">Terms of Service</a></li>
@@ -222,4 +235,33 @@
 <p class="text-[10px] text-secondary/20">Digital Marketing Consultant.</p>
 </div>
 </footer>
+<!-- Fixed Mobile CTA -->
+<div class="fixed bottom-0 left-0 w-full glass-header z-40 border-t border-outline md:hidden">
+<div class="p-4">
+<a class="w-full block py-4 bg-primary text-secondary font-bold text-center rounded-lg shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Book Free Consultation</a>
+</div>
+</div>
+<script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+    </script>
 </body></html>
