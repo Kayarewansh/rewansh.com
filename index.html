@@ -196,6 +196,35 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
             border-color: #e6c364;
         }
+        .cta-arrow {
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cta-primary:hover .cta-arrow {
+            transform: translate(4px, -3px);
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(28px);
+                transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+                will-change: opacity, transform;
+            }
+            .reveal.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .reveal-delay-1 { transition-delay: 0.08s; }
+            .reveal-delay-2 { transition-delay: 0.16s; }
+            .reveal-delay-3 { transition-delay: 0.24s; }
+            .reveal-delay-4 { transition-delay: 0.32s; }
+            .reveal-delay-5 { transition-delay: 0.4s; }
+            .reveal-delay-6 { transition-delay: 0.48s; }
+            .reveal.scale-105 { transform: translateY(28px) scale(1.05); }
+            .reveal.scale-105.is-visible { transform: translateY(0) scale(1.05); }
+            .bento-item:hover {
+                transform: translateY(-4px);
+            }
+        }
         .ticker-container {
             display: flex;
             overflow: hidden;
@@ -250,7 +279,7 @@
 <!-- Hero Section -->
 <section class="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden">
 <div class="max-w-[1240px] mx-auto px-margin-mobile relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-<div class="space-y-8">
+<div class="reveal space-y-8">
 <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary/5 rounded-full">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
 <span class="text-secondary font-bold text-[11px] uppercase tracking-widest">Digital Marketing Consultant</span>
@@ -262,8 +291,8 @@
                         Rewansh helps startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems that drive measurable, compounding results.
                     </p>
 <div class="flex flex-col sm:flex-row gap-5">
-<a class="px-10 py-5 bg-primary text-secondary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-accent-gold transition-all shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">
-                            Book a Free Consultation <span class="material-symbols-outlined text-xl">trending_up</span>
+<a class="cta-primary px-10 py-5 bg-primary text-secondary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-accent-gold transition-all shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">
+                            Book a Free Consultation <span class="cta-arrow material-symbols-outlined text-xl">trending_up</span>
 </a>
 <a class="px-10 py-5 border-2 border-secondary text-secondary font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-secondary hover:text-white transition-all" href="#services">
                             Our Services
@@ -281,7 +310,7 @@
 </div>
 </div>
 </div>
-<div class="relative hidden lg:block">
+<div class="reveal reveal-delay-2 relative hidden lg:block">
 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
 <img alt="AI-powered digital marketing consultant analyzing campaign performance across social, ads, and content channels" class="w-full aspect-[4/5] object-cover" src="images/hero.jpg" width="522" height="700"/>
 <div class="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent"></div>
@@ -313,11 +342,11 @@
 <section class="py-section-gap" id="about">
 <div class="max-w-[1240px] mx-auto px-margin-mobile">
 <div class="grid lg:grid-cols-2 gap-20 items-center">
-<div class="relative group">
+<div class="reveal relative group">
 <div class="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl group-hover:bg-primary/20 transition-all"></div>
 <img alt="Digital marketing consultant reviewing campaign strategy" class="relative rounded-2xl shadow-xl object-cover h-[500px] w-full" src="images/about.jpg" width="512" height="512" loading="lazy"/>
 </div>
-<div class="space-y-8">
+<div class="reveal reveal-delay-2 space-y-8">
 <div>
 <p class="text-primary-ink font-bold text-xs uppercase tracking-[0.3em] mb-4">Meet Your Digital Marketing Consultant</p>
 <h2 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight">
@@ -353,7 +382,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
 <!-- Hero Bento Item -->
-<div class="md:col-span-6 lg:col-span-7 bento-item p-10 rounded-2xl flex flex-col justify-between min-h-[400px]">
+<div class="reveal reveal-delay-1 md:col-span-6 lg:col-span-7 bento-item p-10 rounded-2xl flex flex-col justify-between min-h-[400px]">
 <div>
 <div class="w-12 h-12 bg-secondary text-primary rounded-lg flex items-center justify-center mb-8">
 <span class="material-symbols-outlined text-3xl">travel_explore</span>
@@ -367,7 +396,7 @@
 </div>
 </div>
 <!-- Small Bento Item 1 -->
-<div class="md:col-span-3 lg:col-span-5 bento-item p-10 rounded-2xl">
+<div class="reveal reveal-delay-2 md:col-span-3 lg:col-span-5 bento-item p-10 rounded-2xl">
 <div class="w-10 h-10 bg-primary/10 text-primary-ink rounded-lg flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-2xl">insights</span>
 </div>
@@ -375,7 +404,7 @@
 <p class="text-on-surface-variant">Google Ads, Meta Ads, and full-funnel paid media strategy built on data, not guesswork. Campaign structure, audience targeting, conversion tracking, and creative testing — every dollar measured against pipeline, not just click-through rate.</p>
 </div>
 <!-- Small Bento Item 2 -->
-<div class="md:col-span-3 lg:col-span-4 bento-item p-10 rounded-2xl">
+<div class="reveal reveal-delay-3 md:col-span-3 lg:col-span-4 bento-item p-10 rounded-2xl">
 <div class="w-10 h-10 bg-primary/10 text-primary-ink rounded-lg flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-2xl">workspace_premium</span>
 </div>
@@ -383,7 +412,7 @@
 <p class="text-on-surface-variant text-sm">Positioning founders and brands as category leaders on LinkedIn, Instagram, and YouTube through consistent, high-converting content systems — audience growth and community-building that turns followers into qualified leads.</p>
 </div>
 <!-- Medium Bento Item -->
-<div class="md:col-span-6 lg:col-span-8 bento-item p-10 rounded-2xl bg-secondary !border-secondary flex items-center">
+<div class="reveal reveal-delay-4 md:col-span-6 lg:col-span-8 bento-item p-10 rounded-2xl bg-secondary !border-secondary flex items-center">
 <div class="grid md:grid-cols-2 gap-10 items-center">
 <div class="space-y-6">
 <h3 class="text-2xl font-extrabold text-white leading-tight">Marketing Automation & AI Systems</h3>
@@ -396,7 +425,7 @@
 </div>
 </div>
 <!-- Small Bento Item 3 -->
-<div class="md:col-span-3 lg:col-span-6 bento-item p-10 rounded-2xl">
+<div class="reveal reveal-delay-5 md:col-span-3 lg:col-span-6 bento-item p-10 rounded-2xl">
 <div class="w-10 h-10 bg-primary/10 text-primary-ink rounded-lg flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-2xl">insights</span>
 </div>
@@ -404,7 +433,7 @@
 <p class="text-on-surface-variant text-sm">Editorial strategy, SEO-driven blog content, and thought-leadership assets that build organic authority over time. Every piece is mapped to a specific keyword, funnel stage, and distribution channel — not published and forgotten.</p>
 </div>
 <!-- Small Bento Item 4 -->
-<div class="md:col-span-3 lg:col-span-6 bento-item p-10 rounded-2xl">
+<div class="reveal reveal-delay-6 md:col-span-3 lg:col-span-6 bento-item p-10 rounded-2xl">
 <div class="w-10 h-10 bg-primary/10 text-primary-ink rounded-lg flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-2xl">trending_up</span>
 </div>
@@ -428,7 +457,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 <!-- Step 1 -->
-<div class="bento-item p-8 rounded-2xl group">
+<div class="reveal reveal-delay-1 bento-item p-8 rounded-2xl group">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">01</div>
 <h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Marketing Audit</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A full audit of your current SEO, paid media, content, and funnel — identifying hidden bottlenecks and untapped leverage points.</p>
@@ -438,7 +467,7 @@
 </ul>
 </div>
 <!-- Step 2 -->
-<div class="bento-item p-8 rounded-2xl group bg-white">
+<div class="reveal reveal-delay-2 bento-item p-8 rounded-2xl group bg-white">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">02</div>
 <h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Strategy Blueprint</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A custom marketing strategy detailing every channel, campaign, and AI-driven system required to hit your growth targets.</p>
@@ -448,7 +477,7 @@
 </ul>
 </div>
 <!-- Step 3 -->
-<div class="bento-item p-8 rounded-2xl group bg-primary/5 !border-primary/20">
+<div class="reveal reveal-delay-3 bento-item p-8 rounded-2xl group bg-primary/5 !border-primary/20">
 <div class="text-6xl font-black text-primary/10 mb-6">03</div>
 <h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Campaign Launch</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Hands-on execution of the strategy — content published, campaigns launched, and systems monitored in real time.</p>
@@ -458,7 +487,7 @@
 </ul>
 </div>
 <!-- Step 4 -->
-<div class="bento-item p-8 rounded-2xl group">
+<div class="reveal reveal-delay-4 bento-item p-8 rounded-2xl group">
 <div class="text-6xl font-black text-secondary/5 mb-6 group-hover:text-primary/20 transition-colors">04</div>
 <h3 class="text-xl font-extrabold text-secondary mb-4 tracking-tight">Ongoing Optimization</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Continuous testing and refinement based on live performance data, so growth compounds instead of plateauing.</p>
@@ -479,7 +508,7 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 <!-- Tier 1 -->
-<div class="bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
+<div class="reveal reveal-delay-1 bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
 <div>
 <p class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Strategy Session</p>
 <div class="flex items-baseline gap-2 mb-8">
@@ -495,7 +524,7 @@
 <a class="mt-12 w-full py-4 text-center border border-white/20 rounded-lg font-bold hover:bg-white/10 transition-all" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Get Advisory</a>
 </div>
 <!-- Tier 2 -->
-<div class="bg-white p-10 rounded-2xl flex flex-col justify-between shadow-2xl relative scale-105 border-b-8 border-primary">
+<div class="reveal reveal-delay-2 bg-white p-10 rounded-2xl flex flex-col justify-between shadow-2xl relative scale-105 border-b-8 border-primary">
 <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-secondary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Recommended</div>
 <div>
 <p class="text-secondary font-bold text-xs uppercase tracking-widest mb-6">Growth Partner</p>
@@ -513,7 +542,7 @@
 <a class="mt-12 w-full py-4 text-center bg-primary text-secondary rounded-lg font-bold hover:bg-accent-gold transition-all shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Start Growing</a>
 </div>
 <!-- Tier 3 -->
-<div class="bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
+<div class="reveal reveal-delay-3 bg-white/5 border border-white/10 p-10 rounded-2xl flex flex-col justify-between">
 <div>
 <p class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Enterprise</p>
 <div class="flex items-baseline gap-2 mb-8">
@@ -534,7 +563,7 @@
 <!-- Case Studies Section -->
 <section class="py-section-gap" id="results">
 <div class="max-w-[1240px] mx-auto px-margin-mobile">
-<div class="flex flex-col md:flex-row items-center gap-10 mb-20 bg-secondary/5 p-12 rounded-3xl">
+<div class="reveal flex flex-col md:flex-row items-center gap-10 mb-20 bg-secondary/5 p-12 rounded-3xl">
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 flex-grow">
 <div class="text-center md:text-left">
 <p class="text-4xl font-extrabold text-secondary">3-6mo</p>
@@ -555,13 +584,13 @@
 </div>
 </div>
 <div class="grid lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7">
+<div class="reveal lg:col-span-7">
 <div class="relative group">
 <div class="absolute inset-0 bg-primary/20 rounded-2xl rotate-2 group-hover:rotate-0 transition-transform"></div>
 <img alt="Marketing team reviewing campaign results" class="relative rounded-2xl shadow-2xl object-cover h-[500px] w-full" src="images/case-study.jpg" width="512" height="512" loading="lazy"/>
 </div>
 </div>
-<div class="lg:col-span-5 space-y-8">
+<div class="reveal reveal-delay-2 lg:col-span-5 space-y-8">
 <div>
 <span class="px-3 py-1 bg-primary/10 text-primary-ink font-bold text-[10px] uppercase tracking-widest rounded-full">Illustrative Example</span>
 <h3 class="text-3xl font-extrabold text-secondary mt-4 leading-tight">What a Digital Marketing Consultant Engagement Looks Like.</h3>
@@ -586,7 +615,7 @@
 <div class="max-w-[1240px] mx-auto px-margin-mobile">
 <div class="bg-secondary rounded-3xl p-16 text-center relative overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
-<div class="relative z-10 space-y-6">
+<div class="reveal relative z-10 space-y-6">
 <p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Marketing Briefings</p>
 <h2 class="text-4xl md:text-5xl font-extrabold text-white">Free Digital Marketing Insights.</h2>
 <p class="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">Weekly insights on SEO, paid media, AI marketing tools, and growth strategy — no fluff, just what's actually working.</p>
@@ -602,12 +631,12 @@
 <section class="py-section-gap" id="faq">
 <div class="max-w-[1240px] mx-auto px-margin-mobile">
 <div class="grid lg:grid-cols-2 gap-20">
-<div class="space-y-6">
+<div class="reveal space-y-6">
 <p class="text-primary-ink font-bold text-xs uppercase tracking-[0.3em]">Common Questions</p>
 <h2 class="text-4xl font-extrabold text-secondary leading-tight">Digital Marketing Consultant FAQ.</h2>
 <p class="text-on-surface-variant text-lg">Answers for founders and teams evaluating a digital marketing consultant.</p>
 </div>
-<div class="space-y-4">
+<div class="reveal reveal-delay-2 space-y-4">
 <div class="border-b border-outline pb-6">
 <button class="w-full flex justify-between items-center text-left py-2 group">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What does a digital marketing consultant do?</span>
@@ -732,7 +761,7 @@
 <!-- Final CTA/Contact -->
 <section class="py-section-gap bg-secondary text-white" id="contact">
 <div class="max-w-[1240px] mx-auto px-margin-mobile grid lg:grid-cols-2 gap-20 items-center">
-<div class="space-y-10">
+<div class="reveal space-y-10">
 <div class="space-y-4">
 <h2 class="text-5xl font-extrabold leading-tight">Ready to Grow With a <br/><span class="text-primary">Digital Marketing Consultant?</span></h2>
 <p class="text-white/60 text-xl leading-relaxed">Tell us about your project. No fluff—just a clear plan for SEO, paid media, and content that actually moves the needle.</p>
@@ -758,7 +787,7 @@
 </div>
 </div>
 </div>
-<div class="bg-white p-10 rounded-3xl shadow-2xl">
+<div class="reveal reveal-delay-2 bg-white p-10 rounded-3xl shadow-2xl">
 <form id="contact-form" class="space-y-6" action="https://formsubmit.co/ajax/kayarerewansh@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New Project Inquiry — rewansh.com"/>
 <input type="hidden" name="_template" value="table"/>
@@ -849,6 +878,22 @@
 </div>
 <!-- Script for Toggles -->
 <script>
+        // Scroll-reveal animations
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach(el => revealObserver.observe(el));
+        } else {
+            revealEls.forEach(el => el.classList.add('is-visible'));
+        }
+
         // Mobile nav toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
