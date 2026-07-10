@@ -64,7 +64,12 @@
       "url": "https://rewansh.com/",
       "image": "https://rewansh.com/og-image.jpg",
       "priceRange": "$2500-$7500",
-      "areaServed": ["IN", "Worldwide"],
+      "areaServed": [
+        { "@type": "City", "name": "Indore" },
+        { "@type": "City", "name": "Hyderabad" },
+        "IN",
+        "Worldwide"
+      ],
       "provider": { "@id": "https://rewansh.com/#person" },
       "email": "kayarerewansh@gmail.com",
       "makesOffer": [
@@ -151,6 +156,11 @@
           "@type": "Question",
           "name": "Do you work with clients in India as well as internationally?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Rewansh works with founders and marketing teams across India as well as internationally — every engagement is fully remote, with flexible scheduling to cover overlapping working hours across time zones." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with businesses in Indore and Hyderabad?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Rewansh works with founders and marketing teams in Indore and Hyderabad as a fully remote consultant — no local office is required, since strategy calls, reporting, and campaign execution all happen over video and async communication." }
         }
       ]
     }
@@ -760,6 +770,15 @@
 </button>
 <div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
                                 Yes. Rewansh works with founders and marketing teams across India as well as internationally — every engagement is fully remote, with flexible scheduling to cover overlapping working hours across time zones.
+                            </div>
+</div>
+<div class="border-b border-outline pb-6">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you work with businesses in Indore and Hyderabad?</span>
+<span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
+</button>
+<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+                                Yes. Rewansh works with founders and marketing teams in Indore and Hyderabad as a fully remote consultant — no local office is required, since strategy calls, reporting, and campaign execution all happen over video and async communication.
                             </div>
 </div>
 </div>
