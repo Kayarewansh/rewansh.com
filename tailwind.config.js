@@ -27,7 +27,6 @@ module.exports = {
         "margin-mobile": "20px",
         "stack-lg": "40px",
         "stack-sm": "12px",
-        "section-gap": "140px",
         "container-max": "1240px",
         "stack-md": "24px",
         gutter: "32px"
