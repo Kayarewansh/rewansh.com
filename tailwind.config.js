@@ -1,6 +1,16 @@
 module.exports = {
   darkMode: "class",
-  content: ["./index.html", "./blog/*.html", "./legal/*.html"],
+  content: [
+    "./index.html",
+    "./blog/*.html",
+    "./legal/*.html",
+    "./seo-search-growth/*.html",
+    "./paid-media-ppc/*.html",
+    "./content-marketing/*.html",
+    "./social-media-marketing/*.html",
+    "./marketing-automation/*.html",
+    "./conversion-rate-optimization/*.html"
+  ],
   theme: {
     extend: {
       colors: {

@@ -6,12 +6,12 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Services
 
-- [SEO & Search Growth](https://rewansh.com/#services): Technical SEO audits, intent-mapped keyword strategy, and content-driven link building for search engines and AI answer engines.
-- [Paid Media & PPC](https://rewansh.com/#services): Google Ads and Meta Ads strategy, audience targeting, conversion tracking, and creative testing.
-- [Social Media Marketing](https://rewansh.com/#services): LinkedIn, Instagram, and YouTube content systems for founders and brands.
-- [Marketing Automation & AI Systems](https://rewansh.com/#services): AI-powered content, email, and lead-generation systems; CRM workflows and drip sequences.
-- [Content Marketing & Strategy](https://rewansh.com/#services): Content strategy tied directly to SEO and lead generation, not just publishing volume.
-- [Conversion Rate Optimization](https://rewansh.com/#services): Landing page and funnel optimization measured against acquisition cost.
+- [SEO & Search Growth](https://rewansh.com/seo-search-growth/): Technical SEO audits, intent-mapped keyword strategy, and content-driven link building for search engines and AI answer engines.
+- [Paid Media & PPC](https://rewansh.com/paid-media-ppc/): Google Ads and Meta Ads strategy, audience targeting, conversion tracking, and creative testing.
+- [Social Media Marketing](https://rewansh.com/social-media-marketing/): LinkedIn, Instagram, and YouTube content systems for founders and brands.
+- [Marketing Automation](https://rewansh.com/marketing-automation/): AI-powered content, email, and lead-generation systems; CRM workflows and drip sequences.
+- [Content Marketing](https://rewansh.com/content-marketing/): Content strategy tied directly to SEO and lead generation, not just publishing volume.
+- [Conversion Rate Optimization](https://rewansh.com/conversion-rate-optimization/): Landing page and funnel optimization measured against acquisition cost.
 
 ## Articles
 
