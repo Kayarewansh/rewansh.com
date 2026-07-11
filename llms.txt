@@ -13,6 +13,13 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 - [Content Marketing](https://rewansh.com/content-marketing/): Content strategy tied directly to SEO and lead generation, not just publishing volume.
 - [Conversion Rate Optimization](https://rewansh.com/conversion-rate-optimization/): Landing page and funnel optimization measured against acquisition cost.
 
+## Markets
+
+- [United States](https://rewansh.com/us/): Remote digital marketing consulting with full US business-hours overlap and USD invoicing.
+- [United Kingdom](https://rewansh.com/uk/): Remote digital marketing consulting with full UK business-hours overlap.
+- [UAE](https://rewansh.com/uae/): Remote digital marketing consulting covering Dubai, Abu Dhabi, and the wider UAE.
+- [Germany](https://rewansh.com/germany/): Remote digital marketing consulting with GDPR-conscious marketing automation and CET/CEST overlap.
+
 ## Articles
 
 - [How to Increase Organic Traffic: A Practical Framework](https://rewansh.com/blog/how-to-increase-organic-traffic.html): Technical SEO, intent-mapped content, topical authority, link building, and AI answer engine optimization.

@@ -9,7 +9,11 @@ module.exports = {
     "./content-marketing/*.html",
     "./social-media-marketing/*.html",
     "./marketing-automation/*.html",
-    "./conversion-rate-optimization/*.html"
+    "./conversion-rate-optimization/*.html",
+    "./us/*.html",
+    "./uk/*.html",
+    "./uae/*.html",
+    "./germany/*.html"
   ],
   theme: {
     extend: {
