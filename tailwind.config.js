@@ -13,7 +13,11 @@ module.exports = {
     "./us/*.html",
     "./uk/*.html",
     "./uae/*.html",
-    "./germany/*.html"
+    "./germany/*.html",
+    "./mumbai/*.html",
+    "./bangalore/*.html",
+    "./delhi/*.html",
+    "./pune/*.html"
   ],
   theme: {
     extend: {
