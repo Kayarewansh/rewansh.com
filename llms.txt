@@ -45,6 +45,11 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 - [Paid Media Benchmarks for B2B SaaS Lead Gen in Singapore](https://rewansh.com/blog/paid-media-benchmarks-singapore-b2b-saas.html): Typical CPL/CAC ranges for Google and LinkedIn Ads.
 - [Conversion Rate Benchmarks by Industry: What's Actually "Good" for D2C, SaaS, and Fintech](https://rewansh.com/blog/conversion-rate-benchmarks-by-industry.html): Typical conversion rate ranges and how to know if yours is underperforming.
 - [Digital Marketing Trends for Indian Startups in 2026](https://rewansh.com/blog/digital-marketing-trends-indian-startups-2026.html): AEO, rising paid social CAC, regional-language content, and automation shifts to plan around.
+- [Technical SEO Priorities for B2B SaaS Founders](https://rewansh.com/blog/technical-seo-priorities-b2b-saas-founders.html): An impact-vs-effort priority matrix for what to fix first.
+- [Lower B2B SaaS CAC Without Cutting Lead Volume](https://rewansh.com/blog/lower-b2b-saas-cac-without-cutting-lead-volume.html): The CAC formula and a channel-by-channel decision framework.
+- [SEO vs. Paid Ads for B2B SaaS: Which First?](https://rewansh.com/blog/seo-vs-paid-ads-b2b-saas-which-first.html): A comparison on speed, cost, compounding value, and control.
+- [When Should a B2B SaaS Startup Hire a Growth Marketing Consultant?](https://rewansh.com/blog/when-to-hire-growth-marketing-consultant-saas.html): An ARR-stage readiness framework.
+- [B2B SaaS Content Marketing That Generates Pipeline, Not Just Traffic](https://rewansh.com/blog/b2b-saas-content-marketing-pipeline-not-traffic.html): A content-type to funnel-stage mapping framework.
 
 ## FAQ
 
