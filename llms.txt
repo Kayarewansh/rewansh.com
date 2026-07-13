@@ -35,6 +35,16 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 - [How Much Should You Spend on Google & Meta Ads?](https://rewansh.com/blog/paid-media-budget-framework.html): A paid media budget framework based on funnel stage and unit economics.
 - [Social Media Marketing Strategy for D2C & SaaS Brands](https://rewansh.com/blog/social-media-marketing-strategy-d2c-saas.html): Why D2C and SaaS need different platform and content strategies.
 - [Which Countries Can You Work With as a Remote Marketing Consultant?](https://rewansh.com/blog/which-countries-remote-marketing-consultant.html): Direct answer covering the US, UK, Germany, UAE, Canada, Australia, Singapore, India, and beyond, plus how time zones and invoicing work.
+- [Answer Engine Optimization: How to Get Cited by ChatGPT, Perplexity, and AI Overviews](https://rewansh.com/blog/answer-engine-optimization-guide.html): Structured data, FAQ schema, and content structure that AI answer engines actually pull from.
+- [How Much Does a Digital Marketing Consultant Cost in the US in 2026?](https://rewansh.com/blog/digital-marketing-consultant-cost-us.html): US pricing compared across freelancers, consultants, and agencies.
+- [GDPR-Compliant Marketing Automation: A Practical Guide for German Companies](https://rewansh.com/blog/gdpr-compliant-marketing-automation-germany.html): Consent, data minimization, vendor DPAs, and the right to erasure in marketing automation workflows.
+- [Google Ads Benchmarks in the UAE: CPC, Budgets, and ROI by Industry](https://rewansh.com/blog/google-ads-benchmarks-uae.html): Typical CPC ranges and budget minimums for UAE Google Ads campaigns.
+- [SEO Agency vs. Consultant in the UK: Real Cost and Access Trade-offs](https://rewansh.com/blog/seo-agency-vs-consultant-uk.html): UK SEO pricing compared and when each format makes sense.
+- [Best Marketing Automation Tools for Canadian Startups: HubSpot vs. ActiveCampaign vs. Klaviyo](https://rewansh.com/blog/marketing-automation-tools-canada.html): How to choose based on business model and stage.
+- [SEO for Australian D2C Brands: Local Search vs. Global Reach](https://rewansh.com/blog/seo-for-australian-d2c-brands.html): How to sequence local vs. international SEO investment.
+- [Paid Media Benchmarks for B2B SaaS Lead Gen in Singapore](https://rewansh.com/blog/paid-media-benchmarks-singapore-b2b-saas.html): Typical CPL/CAC ranges for Google and LinkedIn Ads.
+- [Conversion Rate Benchmarks by Industry: What's Actually "Good" for D2C, SaaS, and Fintech](https://rewansh.com/blog/conversion-rate-benchmarks-by-industry.html): Typical conversion rate ranges and how to know if yours is underperforming.
+- [Digital Marketing Trends for Indian Startups in 2026](https://rewansh.com/blog/digital-marketing-trends-indian-startups-2026.html): AEO, rising paid social CAC, regional-language content, and automation shifts to plan around.
 
 ## FAQ
 
