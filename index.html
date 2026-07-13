@@ -1047,6 +1047,12 @@
                     if (!response.ok) { throw new Error('Request failed'); }
                     contactForm.classList.add('hidden');
                     document.getElementById('contact-form-thanks').classList.remove('hidden');
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'contact_form_submit', {
+                            event_category: 'engagement',
+                            event_label: window.location.pathname
+                        });
+                    }
                 })
                 .catch(function () {
                     errorBox.textContent = "Something went wrong sending your message. Please email kayarerewansh@gmail.com directly.";
