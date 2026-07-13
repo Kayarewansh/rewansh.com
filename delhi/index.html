@@ -9,6 +9,17 @@
   gtag('js', new Date());
   gtag('config', 'G-7PKRYMX051');
 </script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    }
+  }, true);
+</script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#1A1F45"/>
