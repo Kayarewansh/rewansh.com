@@ -2,6 +2,7 @@ module.exports = {
   darkMode: "class",
   content: [
     "./index.html",
+    "./404.html",
     "./blog/*.html",
     "./legal/*.html",
     "./seo-search-growth/*.html",
