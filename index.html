@@ -698,10 +698,15 @@
 <p class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Marketing Briefings</p>
 <h2 class="text-4xl md:text-5xl font-extrabold text-white">Free Digital Marketing Insights.</h2>
 <p class="text-white/60 max-w-2xl mx-auto text-lg leading-relaxed">Weekly insights on SEO, paid media, AI marketing tools, and growth strategy — no fluff, just what's actually working.</p>
-<form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 pt-8">
-<input class="flex-grow bg-white/5 border border-white/10 focus:border-primary px-6 py-4 rounded-lg text-white outline-none" placeholder="Your email address" type="email"/>
-<button class="px-8 py-4 bg-primary text-secondary font-bold rounded-lg hover:scale-105 transition-transform" type="submit">Join Briefing</button>
+<form id="newsletter-form" class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 pt-8" action="https://formsubmit.co/ajax/kayarerewansh@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Newsletter Signup — rewansh.com"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_captcha" value="false"/>
+<input class="flex-grow bg-white/5 border border-white/10 focus:border-primary px-6 py-4 rounded-lg text-white outline-none" placeholder="Your email address" type="email" name="email" required=""/>
+<button id="newsletter-submit" class="px-8 py-4 bg-primary text-secondary font-bold rounded-lg hover:scale-105 transition-transform" type="submit">Join Briefing</button>
 </form>
+<div id="newsletter-error" class="hidden text-sm font-semibold text-red-300 max-w-md mx-auto pt-2"></div>
+<div id="newsletter-thanks" class="hidden text-white/80 text-lg font-semibold pt-4">You're in — check your inbox soon.</div>
 </div>
 </div>
 </div>
@@ -1059,6 +1064,42 @@
                     errorBox.classList.remove('hidden');
                     submitBtn.disabled = false;
                     submitBtn.style.opacity = '1';
+                });
+            });
+        }
+
+        // Newsletter form submission (FormSubmit AJAX -> kayarerewansh@gmail.com)
+        const newsletterForm = document.getElementById('newsletter-form');
+        if (newsletterForm) {
+            const nlSubmitBtn = document.getElementById('newsletter-submit');
+            const nlErrorBox = document.getElementById('newsletter-error');
+            newsletterForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                nlErrorBox.classList.add('hidden');
+                nlSubmitBtn.disabled = true;
+                nlSubmitBtn.style.opacity = '0.6';
+
+                fetch(newsletterForm.action, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: new FormData(newsletterForm)
+                })
+                .then(function (response) {
+                    if (!response.ok) { throw new Error('Request failed'); }
+                    newsletterForm.classList.add('hidden');
+                    document.getElementById('newsletter-thanks').classList.remove('hidden');
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'newsletter_signup', {
+                            event_category: 'engagement',
+                            event_label: window.location.pathname
+                        });
+                    }
+                })
+                .catch(function () {
+                    nlErrorBox.textContent = "Something went wrong. Please email kayarerewansh@gmail.com directly.";
+                    nlErrorBox.classList.remove('hidden');
+                    nlSubmitBtn.disabled = false;
+                    nlSubmitBtn.style.opacity = '1';
                 });
             });
         }
