@@ -7,6 +7,7 @@ module.exports = {
     "./legal/*.html",
     "./seo-search-growth/*.html",
     "./paid-media-ppc/*.html",
+    "./wikipedia-entity-hub/*.html",
     "./content-marketing/*.html",
     "./social-media-marketing/*.html",
     "./marketing-automation/*.html",
