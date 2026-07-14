@@ -111,7 +111,12 @@
         .article-body ul { margin: 0 0 1.25rem 1.25rem; list-style: disc; color: #4B5563; }
         .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
         .article-body a { color: #C5A04D; font-weight: 600; }
-</style>
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="font-body text-base">
 <nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
@@ -119,9 +124,9 @@
 <a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
-<div class="relative group">
-<button class="flex items-center gap-1 text-sm font-semibold text-secondary hover:text-primary transition-colors" type="button">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-secondary hover:text-primary transition-colors" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
 <div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
@@ -272,6 +277,46 @@
                     mobileMenuBtn.setAttribute('aria-expanded', 'false');
                     menuIcon.style.transform = 'rotate(0deg)';
                 });
+            });
+        }
+
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
             });
         }
     </script>

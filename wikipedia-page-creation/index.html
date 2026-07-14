@@ -150,7 +150,12 @@
                 transform: translateY(-4px);
             }
         }
-</style>
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="font-body text-base">
 <nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
@@ -158,9 +163,9 @@
 <a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
-<div class="relative group">
-<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
 <div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
@@ -293,24 +298,24 @@
 </div>
 <div class="space-y-4">
 <div class="reveal bg-white border border-outline rounded-xl overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary">Can you guarantee my Wikipedia page gets published?<span class="material-symbols-outlined transition-transform">add</span></button>
-<div class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">No. Only Wikipedia's volunteer editors decide whether a subject is notable enough for an article, and no agency can override that. Work only proceeds once an honest eligibility review shows a realistic case for notability — if it doesn't, you get that answer and a roadmap for building toward it instead of a guaranteed listing.</p></div>
+<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary" aria-expanded="false" aria-controls="faq-answer-1">Can you guarantee my Wikipedia page gets published?<span class="material-symbols-outlined transition-transform">add</span></button>
+<div id="faq-answer-1" class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">No. Only Wikipedia's volunteer editors decide whether a subject is notable enough for an article, and no agency can override that. Work only proceeds once an honest eligibility review shows a realistic case for notability — if it doesn't, you get that answer and a roadmap for building toward it instead of a guaranteed listing.</p></div>
 </div>
 <div class="reveal bg-white border border-outline rounded-xl overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary">What is Wikipedia notability, and how is it assessed?<span class="material-symbols-outlined transition-transform">add</span></button>
-<div class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Notability means significant coverage in reliable, independent secondary sources — real journalism and industry publications that covered the subject without being paid to, not press releases or sponsored placements. The assessment maps existing coverage against this bar before any drafting starts.</p></div>
+<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary" aria-expanded="false" aria-controls="faq-answer-2">What is Wikipedia notability, and how is it assessed?<span class="material-symbols-outlined transition-transform">add</span></button>
+<div id="faq-answer-2" class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Notability means significant coverage in reliable, independent secondary sources — real journalism and industry publications that covered the subject without being paid to, not press releases or sponsored placements. The assessment maps existing coverage against this bar before any drafting starts.</p></div>
 </div>
 <div class="reveal bg-white border border-outline rounded-xl overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary">Is paid Wikipedia editing disclosed?<span class="material-symbols-outlined transition-transform">add</span></button>
-<div class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Yes. Wikipedia's Terms of Use require paid contributors to disclose who is paying them, directly on the editor's user page and in edit summaries. Any work done here follows that disclosure requirement — undisclosed paid editing is a policy violation, not a shortcut worth taking.</p></div>
+<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary" aria-expanded="false" aria-controls="faq-answer-3">Is paid Wikipedia editing disclosed?<span class="material-symbols-outlined transition-transform">add</span></button>
+<div id="faq-answer-3" class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Yes. Wikipedia's Terms of Use require paid contributors to disclose who is paying them, directly on the editor's user page and in edit summaries. Any work done here follows that disclosure requirement — undisclosed paid editing is a policy violation, not a shortcut worth taking.</p></div>
 </div>
 <div class="reveal bg-white border border-outline rounded-xl overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary">What's the actual process for getting a Wikipedia page published?<span class="material-symbols-outlined transition-transform">add</span></button>
-<div class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Eligibility review against notability guidelines, collection and validation of independent sources, drafting with neutral point of view, submission through Wikipedia's own Articles for Creation review queue, and monitoring after publication — typically 15-30 days for a reviewer decision once submitted.</p></div>
+<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary" aria-expanded="false" aria-controls="faq-answer-4">What's the actual process for getting a Wikipedia page published?<span class="material-symbols-outlined transition-transform">add</span></button>
+<div id="faq-answer-4" class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">Eligibility review against notability guidelines, collection and validation of independent sources, drafting with neutral point of view, submission through Wikipedia's own Articles for Creation review queue, and monitoring after publication — typically 15-30 days for a reviewer decision once submitted.</p></div>
 </div>
 <div class="reveal bg-white border border-outline rounded-xl overflow-hidden">
-<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary">What happens if my subject doesn't qualify yet?<span class="material-symbols-outlined transition-transform">add</span></button>
-<div class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">You get a clear roadmap for building the independent press coverage Wikipedia actually requires — real interviews, features, and industry recognition — rather than being pushed into a submission likely to be declined or deleted.</p></div>
+<button class="faq-toggle w-full flex justify-between items-center text-left p-6 font-bold text-secondary" aria-expanded="false" aria-controls="faq-answer-5">What happens if my subject doesn't qualify yet?<span class="material-symbols-outlined transition-transform">add</span></button>
+<div id="faq-answer-5" class="hidden px-6 pb-6"><p class="faq-answer text-on-surface-variant leading-relaxed">You get a clear roadmap for building the independent press coverage Wikipedia actually requires — real interviews, features, and industry recognition — rather than being pushed into a submission likely to be declined or deleted.</p></div>
 </div>
 </div>
 </div>
@@ -406,6 +411,46 @@
             });
         }
 
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+
         document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -413,9 +458,11 @@
                 if (content.classList.contains('hidden')) {
                     content.classList.remove('hidden');
                     icon.style.transform = 'rotate(45deg)';
+                    button.setAttribute('aria-expanded', 'true');
                 } else {
                     content.classList.add('hidden');
                     icon.style.transform = 'rotate(0deg)';
+                    button.setAttribute('aria-expanded', 'false');
                 }
             });
         });

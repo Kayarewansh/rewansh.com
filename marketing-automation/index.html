@@ -152,7 +152,12 @@
                 transform: translateY(-4px);
             }
         }
-</style>
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="font-body text-base">
 <nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
@@ -160,9 +165,9 @@
 <a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
-<div class="relative group">
-<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
 <div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
@@ -386,32 +391,32 @@
 </div>
 <div class="reveal reveal-delay-2 space-y-4">
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-1">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What tools do you build automation in?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">I work within whatever CRM and email platform you already use where possible — HubSpot, ActiveCampaign, GoHighLevel, and similar — rather than forcing a rebuild on a new platform unless your current stack genuinely can't do the job.</div>
+<div id="faq-answer-1" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">I work within whatever CRM and email platform you already use where possible — HubSpot, ActiveCampaign, GoHighLevel, and similar — rather than forcing a rebuild on a new platform unless your current stack genuinely can't do the job.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-2">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Will this replace my need for a sales team?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">No — it makes your sales team more effective by handing them warmer, better-qualified leads at the right moment, instead of a flat, unsorted list.</div>
+<div id="faq-answer-2" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">No — it makes your sales team more effective by handing them warmer, better-qualified leads at the right moment, instead of a flat, unsorted list.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-3">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How long does it take to set up marketing automation?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">A core automation build typically takes 3-4 weeks, depending on how much of your existing stack we can reuse versus rebuild.</div>
+<div id="faq-answer-3" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">A core automation build typically takes 3-4 weeks, depending on how much of your existing stack we can reuse versus rebuild.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-4">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you handle lead scoring and segmentation?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Yes — I build lead scoring models based on real engagement signals, not arbitrary point systems, so your sales team knows exactly which leads to prioritize first.</div>
+<div id="faq-answer-4" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Yes — I build lead scoring models based on real engagement signals, not arbitrary point systems, so your sales team knows exactly which leads to prioritize first.</div>
 </div>
 </div>
 </div>
@@ -523,6 +528,46 @@
             });
         }
 
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+
         document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -530,9 +575,11 @@
                 if (content.classList.contains('hidden')) {
                     content.classList.remove('hidden');
                     icon.style.transform = 'rotate(45deg)';
+                    button.setAttribute('aria-expanded', 'true');
                 } else {
                     content.classList.add('hidden');
                     icon.style.transform = 'rotate(0deg)';
+                    button.setAttribute('aria-expanded', 'false');
                 }
             });
         });

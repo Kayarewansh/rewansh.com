@@ -159,7 +159,12 @@
                 transform: translateY(-4px);
             }
         }
-</style>
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="font-body text-base">
 <nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
@@ -167,9 +172,9 @@
 <a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
-<div class="relative group">
-<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
 <div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-primary bg-secondary/5" href="../seo-search-growth/">SEO &amp; Search Growth</a>
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
@@ -428,46 +433,46 @@
 </div>
 <div class="reveal reveal-delay-2 space-y-4">
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-1">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How is your SEO approach different from a typical agency?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">I work on high-intent keywords tied directly to revenue, not high-volume vanity terms padded into a monthly reporting deck. I also build for AI answer engines from day one, not as an afterthought.</div>
+<div id="faq-answer-1" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">I work on high-intent keywords tied directly to revenue, not high-volume vanity terms padded into a monthly reporting deck. I also build for AI answer engines from day one, not as an afterthought.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-2">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What is programmatic SEO, and is it right for my business?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">It's a way of deploying dozens or hundreds of structured, templated pages — comparison pages, location pages, or use-case pages — targeting long-tail intent at scale. It works best for businesses with a repeatable page structure: multiple locations, products, integrations, or use cases.</div>
+<div id="faq-answer-2" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">It's a way of deploying dozens or hundreds of structured, templated pages — comparison pages, location pages, or use-case pages — targeting long-tail intent at scale. It works best for businesses with a repeatable page structure: multiple locations, products, integrations, or use cases.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-3">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How long until I see SEO results?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Technical fixes can show up in weeks, since they often unlock traffic to pages that were already partially ranking. Meaningful, compounding organic growth from new content typically takes 3-6 months — I'll tell you honestly if your situation looks faster or slower than that during the audit.</div>
+<div id="faq-answer-3" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Technical fixes can show up in weeks, since they often unlock traffic to pages that were already partially ranking. Meaningful, compounding organic growth from new content typically takes 3-6 months — I'll tell you honestly if your situation looks faster or slower than that during the audit.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-4">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you work with businesses outside India?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Yes — I work with founders and marketing teams across India, the <a href="../us/" class="text-primary-ink font-semibold">United States</a>, <a href="../uk/" class="text-primary-ink font-semibold">United Kingdom</a>, <a href="../uae/" class="text-primary-ink font-semibold">UAE</a>, and <a href="../germany/" class="text-primary-ink font-semibold">Germany</a>, plus remotely worldwide. Strategy calls and reporting happen async-friendly over WhatsApp, email, and video calls.</div>
+<div id="faq-answer-4" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Yes — I work with founders and marketing teams across India, the <a href="../us/" class="text-primary-ink font-semibold">United States</a>, <a href="../uk/" class="text-primary-ink font-semibold">United Kingdom</a>, <a href="../uae/" class="text-primary-ink font-semibold">UAE</a>, and <a href="../germany/" class="text-primary-ink font-semibold">Germany</a>, plus remotely worldwide. Strategy calls and reporting happen async-friendly over WhatsApp, email, and video calls.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-5">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What's the fastest way to increase B2B SaaS organic pipeline without waiting 12 months?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">The fastest lever is usually fixing technical blockers — crawl errors, thin or duplicate pages, missing internal links — since these can suppress rankings you'd otherwise already have. <em>New content still takes months to rank from zero, but fixing technical debt on existing pages can show traffic gains within weeks, not a full year.</em></div>
+<div id="faq-answer-5" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">The fastest lever is usually fixing technical blockers — crawl errors, thin or duplicate pages, missing internal links — since these can suppress rankings you'd otherwise already have. <em>New content still takes months to rank from zero, but fixing technical debt on existing pages can show traffic gains within weeks, not a full year.</em></div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-6">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How long does it take a new domain to rank for competitive B2B search terms?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-6" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">A new domain typically needs 6-12 months of consistent technical and content work before it can compete for high-competition B2B search terms, since domain trust and topical authority both need time to accumulate — though long-tail, lower-competition terms within the same topic can often rank within 2-4 months.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Domain age and trust signals accumulate gradually; there's no way to compress this with more spend</li>
@@ -478,11 +483,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-7">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What is the difference between keyword optimization and topical authority engine building?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-7" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Keyword optimization targets individual search terms one page at a time; topical authority engine building maps an entire subject area as an interconnected system of pillar and cluster content, so a domain earns recognition as a comprehensive expert on a topic rather than a collection of pages that each happen to rank for one term.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Keyword optimization treats each page as an isolated unit competing independently</li>
@@ -493,11 +498,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-8">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How does technical site architecture impact generative AI discovery and AI search engine visibility?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-8" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Technical site architecture determines whether AI crawlers can even access and parse a page's content in the first place — clean crawlability, structured data, and a shallow, logical hierarchy are prerequisites for generative AI discovery, not optional extras, since a page an AI crawler can't properly parse can't be cited regardless of how good the writing is.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>AI crawlers such as GPTBot, ClaudeBot, and PerplexityBot need explicit robots.txt access, same as traditional search bots</li>
@@ -508,11 +513,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-9">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Is SEO worth it for a B2B SaaS company, or should I just run paid ads?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-9" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">SEO is worth it for B2B SaaS specifically because organic pipeline compounds and gets cheaper per lead over time, while paid ads cost the same on lead 500 as lead one; the right sequence is usually running paid media for immediate pipeline while SEO investment builds toward lower long-term CAC.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Paid ads deliver leads immediately, but cost per lead stays flat or rises as auctions get more competitive</li>
@@ -522,11 +527,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-10">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How much should a growing B2B company budget for SEO each month?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-10" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Budget scales with how much technical debt and content gap exist at the start — a fixed monthly retainer only works once an audit has scoped the actual work; that's why every engagement here begins with a one-time $349 audit before any ongoing spend commitment.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>There's no universal "right" SEO budget — it depends on how much technical remediation and content volume the current site actually needs</li>
@@ -536,11 +541,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-11">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What is AEO and how is it different from traditional SEO?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-11" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">AEO (Answer Engine Optimization) is the practice of structuring content so AI systems like ChatGPT, Perplexity, and Google AI Overviews can extract and cite it directly, while traditional SEO optimizes primarily for ranking in a list of blue links a human then has to click through.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>AEO relies heavily on structured data such as FAQPage schema and speakable markup so AI models can parse an answer without guessing at page structure</li>
@@ -659,6 +664,46 @@
             });
         }
 
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+
         document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -666,9 +711,11 @@
                 if (content.classList.contains('hidden')) {
                     content.classList.remove('hidden');
                     icon.style.transform = 'rotate(45deg)';
+                    button.setAttribute('aria-expanded', 'true');
                 } else {
                     content.classList.add('hidden');
                     icon.style.transform = 'rotate(0deg)';
+                    button.setAttribute('aria-expanded', 'false');
                 }
             });
         });

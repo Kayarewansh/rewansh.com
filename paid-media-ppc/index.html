@@ -156,7 +156,12 @@
                 transform: translateY(-4px);
             }
         }
-</style>
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="font-body text-base">
 <nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
@@ -164,9 +169,9 @@
 <a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
-<div class="relative group">
-<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
-<div class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-primary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
 <div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
 <a class="block px-4 py-3 rounded-lg text-sm font-semibold text-primary bg-secondary/5" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
@@ -425,46 +430,46 @@
 </div>
 <div class="reveal reveal-delay-2 space-y-4">
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-1">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What platforms do you run campaigns on?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Primarily Google Search, Meta (Facebook & Instagram), and LinkedIn — matched to wherever your actual buyers make decisions, not every platform by default.</div>
+<div id="faq-answer-1" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Primarily Google Search, Meta (Facebook & Instagram), and LinkedIn — matched to wherever your actual buyers make decisions, not every platform by default.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-2">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Do you take a percentage of ad spend?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">No. My pricing is a flat consulting fee, so I'm never incentivized to inflate your ad budget to increase my own fee.</div>
+<div id="faq-answer-2" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">No. My pricing is a flat consulting fee, so I'm never incentivized to inflate your ad budget to increase my own fee.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-3">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How fast can paid media show results?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Search campaigns typically show directional performance signal within the first 2-3 weeks of launch, since search captures existing intent. Meta and LinkedIn full-funnel campaigns need 4-6 weeks of real conversion data before aggressive optimization is safe to apply. <em>Most ad platforms need roughly 50 conversions per ad set within a week to exit the learning phase and optimize reliably.</em></div>
+<div id="faq-answer-3" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">Search campaigns typically show directional performance signal within the first 2-3 weeks of launch, since search captures existing intent. Meta and LinkedIn full-funnel campaigns need 4-6 weeks of real conversion data before aggressive optimization is safe to apply. <em>Most ad platforms need roughly 50 conversions per ad set within a week to exit the learning phase and optimize reliably.</em></div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-4">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Is there a minimum ad spend required to work with you?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">A realistic minimum is $2,000-$3,000/month in ad spend — enough to generate the conversion volume most platforms need to optimize meaningfully within a normal reporting cycle. The exact number depends on your industry and funnel length, confirmed during the audit rather than quoted generically upfront.</div>
+<div id="faq-answer-4" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">A realistic minimum is $2,000-$3,000/month in ad spend — enough to generate the conversion volume most platforms need to optimize meaningfully within a normal reporting cycle. The exact number depends on your industry and funnel length, confirmed during the audit rather than quoted generically upfront.</div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-5">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">What is the fastest way to lower B2B SaaS CAC without dropping lead volume?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">The fastest lever is usually fixing conversion tracking and landing page conversion rate before touching targeting or spend — most CAC problems are attribution or funnel leaks, not audience problems. Cutting top-of-funnel volume to lower CAC almost always costs more pipeline than it saves. <em>CAC equals total sales and marketing spend divided by new customers acquired — cutting the volume side without fixing the conversion side just delays the same problem.</em></div>
+<div id="faq-answer-5" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">The fastest lever is usually fixing conversion tracking and landing page conversion rate before touching targeting or spend — most CAC problems are attribution or funnel leaks, not audience problems. Cutting top-of-funnel volume to lower CAC almost always costs more pipeline than it saves. <em>CAC equals total sales and marketing spend divided by new customers acquired — cutting the volume side without fixing the conversion side just delays the same problem.</em></div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-6">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Should a B2B SaaS company use automated bidding or manual bid strategies?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-6" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Automated bidding works well once a campaign has enough conversion volume and accurate tracking for the algorithm to learn from — typically 30 or more conversions per month per campaign. Below that volume, or with unreliable tracking, manual or semi-automated bidding gives more control and avoids the algorithm optimizing toward the wrong signal.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Automated bidding needs clean, accurate conversion data to work — garbage tracking in means garbage optimization out</li>
@@ -475,11 +480,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-7">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">How long should you test a new ad creative before killing it?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-7" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Most ad creatives need at least 3-5 days and roughly 1,000 or more impressions per variant before performance data is statistically meaningful enough to judge — killing a creative after a few hours or a handful of clicks usually means reacting to noise, not a real signal.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Statistical significance depends on volume, not calendar time — a low-traffic account needs longer to gather enough data</li>
@@ -490,11 +495,11 @@
 </div>
 </div>
 <div class="border-b border-outline pb-6">
-<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-2 group" aria-expanded="false" aria-controls="faq-answer-8">
 <span class="font-bold text-secondary text-lg group-hover:text-primary transition-colors">Does paid media data help improve SEO and organic strategy?</span>
 <span class="material-symbols-outlined text-primary-ink group-hover:rotate-45 transition-transform">add</span>
 </button>
-<div class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
+<div id="faq-answer-8" class="faq-answer hidden pt-4 text-on-surface-variant leading-relaxed">
 <p class="font-bold text-secondary mb-3">Yes — paid media search term reports and landing page conversion data reveal exactly which keywords and messaging convert before investing months into ranking for them organically, turning paid campaigns into a fast, low-risk validation layer for SEO strategy.</p>
 <ul class="space-y-2 list-disc pl-5">
 <li>Paid search term reports show real searcher language, often surfacing long-tail keyword variants missed in keyword research tools</li>
@@ -614,6 +619,46 @@
             });
         }
 
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+
         document.querySelectorAll('.faq-toggle').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -621,9 +666,11 @@
                 if (content.classList.contains('hidden')) {
                     content.classList.remove('hidden');
                     icon.style.transform = 'rotate(45deg)';
+                    button.setAttribute('aria-expanded', 'true');
                 } else {
                     content.classList.add('hidden');
                     icon.style.transform = 'rotate(0deg)';
+                    button.setAttribute('aria-expanded', 'false');
                 }
             });
         });
