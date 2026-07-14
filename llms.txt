@@ -8,10 +8,17 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 - [SEO & Search Growth](https://rewansh.com/seo-search-growth/): Technical SEO audits, intent-mapped keyword strategy, and content-driven link building for search engines and AI answer engines.
 - [Paid Media & PPC](https://rewansh.com/paid-media-ppc/): Google Ads and Meta Ads strategy, audience targeting, conversion tracking, and creative testing.
+- [IT Infrastructure & Growth](https://rewansh.com/it-infrastructure-growth/): Martech stack audits, tool consolidation, hosting, and integration work behind marketing systems.
 - [Social Media Marketing](https://rewansh.com/social-media-marketing/): LinkedIn, Instagram, and YouTube content systems for founders and brands.
 - [Marketing Automation](https://rewansh.com/marketing-automation/): AI-powered content, email, and lead-generation systems; CRM workflows and drip sequences.
 - [Content Marketing](https://rewansh.com/content-marketing/): Content strategy tied directly to SEO and lead generation, not just publishing volume.
 - [Conversion Rate Optimization](https://rewansh.com/conversion-rate-optimization/): Landing page and funnel optimization measured against acquisition cost.
+- [Wikipedia Page Creation](https://rewansh.com/wikipedia-page-creation/): Notability-first Wikipedia page creation with disclosed paid contributions — no guaranteed placement.
+
+## Company
+
+- [About](https://rewansh.com/about/): Rewansh Kayare's background, credentials, and working approach.
+- [Contact](https://rewansh.com/contact/): Book a strategy session or reach Rewansh directly.
 
 ## Markets
 
@@ -54,10 +61,6 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 ## FAQ
 
 - [Full FAQ](https://rewansh.com/#faq): Pricing, timelines, consultant vs. agency, industries served, and India & international availability, in Q&A format.
-
-## Reference
-
-- [Official Company Reference](https://rewansh.com/wikipedia-entity-hub/): Self-published, verifiable fact sheet — founding year, founder, service catalog, and credentials, cross-checked against linked social profiles. Not affiliated with Wikipedia or the Wikimedia Foundation.
 
 ## Contact
 
