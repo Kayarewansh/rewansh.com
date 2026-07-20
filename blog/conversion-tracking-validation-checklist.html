@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PKRYMX051"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PKRYMX051');
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    }
+  }, true);
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#1A1F45"/>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined-subset.woff2" crossorigin=""/>
+<title>The Conversion Tracking Validation Checklist (Before You Trust Your Numbers) | Rewansh</title>
+<meta name="description" content="A step-by-step conversion tracking validation checklist for Google Ads, Meta Ads, and GA4 — catch broken pixels, duplicate conversions, and misattributed leads before they cost you budget."/>
+<link rel="canonical" href="https://rewansh.com/blog/conversion-tracking-validation-checklist.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="author" content="Rewansh Kayare"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Rewansh"/>
+<meta property="og:title" content="The Conversion Tracking Validation Checklist (Before You Trust Your Numbers) | Rewansh"/>
+<meta property="og:description" content="A step-by-step conversion tracking validation checklist for Google Ads, Meta Ads, and GA4 — catch broken pixels, duplicate conversions, and misattributed leads before they cost you budget."/>
+<meta property="og:url" content="https://rewansh.com/blog/conversion-tracking-validation-checklist.html"/>
+<meta property="og:image" content="https://rewansh.com/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The Conversion Tracking Validation Checklist (Before You Trust Your Numbers) | Rewansh"/>
+<meta name="twitter:description" content="A step-by-step conversion tracking validation checklist for Google Ads, Meta Ads, and GA4 — catch broken pixels, duplicate conversions, and misattributed leads before they cost you budget."/>
+<meta name="twitter:image" content="https://rewansh.com/og-image.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Conversion Tracking Validation Checklist (Before You Trust Your Numbers)",
+  "image": "https://rewansh.com/og-image.jpg",
+  "description": "A step-by-step conversion tracking validation checklist for Google Ads, Meta Ads, and GA4 — catch broken pixels, duplicate conversions, and misattributed leads before they cost you budget.",
+  "author": { "@type": "Person", "name": "Rewansh Kayare", "url": "https://rewansh.com/" },
+  "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
+  "mainEntityOfPage": "https://rewansh.com/blog/conversion-tracking-validation-checklist.html",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-20"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewansh.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rewansh.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "The Conversion Tracking Validation Checklist (Before You Trust Your Numbers)", "item": "https://rewansh.com/blog/conversion-tracking-validation-checklist.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How do I know if my conversion tracking is broken?", "acceptedAnswer": { "@type": "Answer", "text": "The clearest signs are reported conversions exceeding total sessions, zero tracked conversions despite confirmed real leads, or a sudden unexplained spike or drop with no matching change in traffic or spend — all of which should be validated with each platform's live test tools (GA4 DebugView, Meta Events Manager Test Events, Google Tag Assistant) rather than assumed from historical reporting." } },
+    { "@type": "Question", "name": "Why would Google Ads and Meta show different conversion numbers for the same leads?", "acceptedAnswer": { "@type": "Answer", "text": "Each platform uses its own attribution window and modeling for conversions it didn't directly observe, so some divergence between Google Ads, Meta, and GA4 numbers is normal — the actual validation question is whether each platform's own tracking is firing correctly and matches your CRM's real lead count, not whether the platforms agree with each other." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link href="../style.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url('../fonts/material-symbols-outlined-subset.woff2') format('woff2');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+        }
+        body {
+            background-color: #F9FAFB;
+            color: #1A1F45;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .article-body h2 { font-size: 1.75rem; font-weight: 800; color: #1A1F45; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #4B5563; }
+        .article-body ul, .article-body ol { margin: 0 0 1.25rem 1.25rem; color: #4B5563; }
+        .article-body ul { list-style: disc; }
+        .article-body ol { list-style: decimal; }
+        .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .article-body a { color: #C5A04D; font-weight: 600; }
+        .article-body code { background: #EEF0F5; color: #1A1F45; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
+        .article-body .table-wrap { overflow-x: auto; margin: 1.5rem 0; -webkit-overflow-scrolling: touch; }
+        .article-body table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+        .article-body th { background: #1A1F45; color: #ffffff; text-align: left; padding: 0.75rem 1rem; font-weight: 700; }
+        .article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid #E5E7EB; color: #4B5563; }
+        .article-body tr:nth-child(even) td { background: #F9FAFB; }
+        .article-body .aeo-block { background: #F9FAFB; border-left: 4px solid #e6c364; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
+        .article-body .aeo-block p { margin-bottom: 0.75rem; }
+        .article-body .aeo-block ul { margin-bottom: 0; }
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-body text-base">
+<nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
+<div class="flex justify-between items-center max-w-[1240px] mx-auto px-margin-mobile py-5">
+<a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-secondary hover:text-primary transition-colors" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../content-marketing/">Content Marketing</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../social-media-marketing/">Social Media Marketing</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../marketing-automation/">Marketing Automation</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a>
+</div>
+</div>
+</div>
+<a class="text-sm font-semibold text-primary" href="./">Blog</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../contact/">Contact</a>
+<a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden text-secondary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined" style="transition: transform 0.2s;">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-6 border-t border-outline">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../about/">About</a>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest pt-4 pb-1">Services</p>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../content-marketing/">Content Marketing</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../social-media-marketing/">Social Media Marketing</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../marketing-automation/">Marketing Automation</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a>
+<a class="text-sm font-semibold text-primary py-3 mt-2 border-t border-outline pt-4" href="./">Blog</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../contact/">Contact</a>
+<a class="px-7 py-3 mt-2 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm text-center" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
+</div>
+</nav>
+
+<main class="pt-32 pb-20">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<a href="./" class="text-xs font-bold text-primary uppercase tracking-widest">&larr; Back to Blog</a>
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mt-6 mb-4">Paid Media</p>
+<h1 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight mb-6">The Conversion Tracking Validation Checklist (Before You Trust Your Numbers)</h1>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant mb-12 pb-8 border-b border-outline">
+<span>By Rewansh Kayare</span><span>&middot;</span><span>July 20, 2026</span><span>&middot;</span><span>7 min read</span>
+</div>
+<div class="article-body">
+
+<p>Before ever suggesting a client change their creative, targeting, or budget, I validate their tracking. It&#39;s the single most common reason &quot;ads stopped working&quot; turns out to be &quot;tracking broke three weeks ago and nobody noticed.&quot; Run this checklist before making any optimization decision based on conversion data.</p>
+
+<h2>GA4 checklist</h2>
+<ul>
+<li>The correct Measurement ID is present on every page, including new pages added after the initial setup &mdash; not just the homepage.</li>
+<li>Key events are marked correctly in GA4&#39;s admin settings, matching what actually counts as a conversion for the business.</li>
+<li>Cross-domain tracking is configured if the funnel spans domains or subdomains (a form host, a separate booking tool, a payment processor).</li>
+<li>DebugView is used to fire a real test conversion and confirm it appears with the right parameters &mdash; not just &quot;the tag fired,&quot; but &quot;the right data came through.&quot;</li>
+</ul>
+
+<h2>Google Ads checklist</h2>
+<ul>
+<li>Each conversion action&#39;s &quot;primary vs. secondary&quot; setting matches what should actually influence Smart Bidding &mdash; secondary actions still get reported but won&#39;t drive bid optimization.</li>
+<li>The count setting (one per click vs. every) is deliberately chosen based on whether repeat conversions from one user should count multiple times.</li>
+<li>Enhanced conversions are enabled where applicable, since they materially improve match rates on iOS and privacy-restricted browsers.</li>
+<li>Google Tag Assistant (or the GA4 DebugView equivalent) shows no duplicate or missing tags on the actual conversion page.</li>
+</ul>
+
+<h2>Meta Ads checklist</h2>
+<ul>
+<li>Both the Meta Pixel and Conversions API (CAPI) are firing for the same events, with a shared event ID for deduplication &mdash; without this, the same conversion can get counted twice.</li>
+<li>Events Manager&#39;s &quot;Test Events&quot; tool confirms the event fires with the correct parameters in real time, not just historically in reporting.</li>
+<li>Priority events are configured correctly under Aggregated Event Measurement for iOS 14.5+ traffic, since only 8 events per domain get full signal.</li>
+<li>Domain verification is completed in Business Manager &mdash; unverified domains lose access to several attribution and optimization features.</li>
+</ul>
+
+<h2>Cross-platform checklist</h2>
+<ul>
+<li>The same lead isn&#39;t being double-counted across GA4, Google Ads, and Meta as three separate conversions in reporting rollups.</li>
+<li>UTM parameters are applied consistently across every campaign, so channel attribution in GA4 actually matches what each platform reports internally.</li>
+<li>A real test submission is traced end-to-end: form fill &rarr; confirmation event &rarr; CRM record &mdash; not assumed to work because the form &quot;looks&quot; like it submitted.</li>
+</ul>
+
+<h2>Red flags checklist</h2>
+<ul>
+<li>Reported conversions exceed total sessions for the same period &mdash; a near-certain sign of duplicate firing.</li>
+<li>Zero tracked conversions despite the sales team confirming real leads are coming in &mdash; usually a broken event, not a demand problem.</li>
+<li>A sudden, unexplained spike or drop in conversion volume with no corresponding change in traffic or spend.</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<tr><th>Symptom</th><th>Likely Cause</th><th>Fix</th></tr>
+<tr><td>Conversions &gt; sessions</td><td>Duplicate tag firing or missing deduplication (GA4 + Pixel + CAPI)</td><td>Add shared event IDs, audit tag firing order</td></tr>
+<tr><td>Zero conversions, but real leads exist</td><td>Event not firing, or firing on the wrong page/trigger</td><td>Re-test with DebugView / Test Events on the actual live conversion page</td></tr>
+<tr><td>Sudden unexplained drop</td><td>A recent site or form change broke the tag/trigger</td><td>Check recent deploys against the date of the drop</td></tr>
+<tr><td>CAC looks impossibly low</td><td>Micro-conversions being counted as full conversions</td><td>Separate primary and secondary conversion actions</td></tr>
+</table>
+</div>
+
+<p>Tracking validation isn&#39;t a one-time setup task &mdash; it&#39;s a recurring check, especially after any site change. This is exactly the kind of gap a proper <a href="../it-infrastructure-growth/">IT infrastructure</a> review catches before it quietly inflates or deflates a <a href="../paid-media-ppc/">paid media</a> account&#39;s real performance.</p>
+
+<h2>FAQ</h2>
+<div class="aeo-block">
+<p><strong>How do I know if my conversion tracking is broken?</strong></p>
+<p><strong>The clearest signs are reported conversions exceeding total sessions, zero tracked conversions despite confirmed real leads, or a sudden unexplained spike or drop with no matching change in traffic or spend &mdash; all of which should be validated with each platform&#39;s live test tools (GA4 DebugView, Meta Events Manager Test Events, Google Tag Assistant) rather than assumed from historical reporting.</strong></p>
+<ul>
+<li>Conversions exceeding sessions almost always means duplicate firing across platforms.</li>
+<li>Zero conversions with real leads coming in usually means the event isn&#39;t firing on the actual live page.</li>
+</ul>
+</div>
+<div class="aeo-block">
+<p><strong>Why would Google Ads and Meta show different conversion numbers for the same leads?</strong></p>
+<p><strong>Each platform uses its own attribution window and modeling for conversions it didn&#39;t directly observe, so some divergence between Google Ads, Meta, and GA4 numbers is normal &mdash; the actual validation question is whether each platform&#39;s own tracking is firing correctly and matches your CRM&#39;s real lead count, not whether the platforms agree with each other.</strong></p>
+<ul>
+<li>Different attribution windows and modeled conversions mean cross-platform numbers rarely match exactly.</li>
+<li>The real source of truth should be the CRM&#39;s actual lead count, cross-checked against each platform independently.</li>
+</ul>
+</div>
+
+</div>
+<div class="mt-16 p-10 bg-secondary rounded-2xl text-center">
+<h3 class="text-2xl font-extrabold text-white mb-3">Ready to put this into practice?</h3>
+<p class="text-white/60 mb-6">Book a free consultation and get a growth plan built around your business, not a generic playbook.</p>
+<a href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener" class="inline-flex px-8 py-4 bg-primary text-secondary font-bold rounded-lg hover:bg-accent-gold transition-all">Book a Free Consultation</a>
+</div>
+</div>
+</main>
+<footer class="bg-background py-16 border-t border-outline">
+<div class="max-w-[1240px] mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<a class="text-2xl font-black text-secondary tracking-tighter" href="../">REWANSH<span class="text-primary">.</span></a>
+<p class="text-on-surface-variant text-sm mt-6 leading-relaxed">
+                    Rewansh is a digital marketing consultant helping startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems.
+                </p>
+<div class="flex gap-4 mt-8">
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" title="Instagram"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" title="LinkedIn"><span class="material-symbols-outlined text-sm">business_center</span></a>
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" title="YouTube"><span class="material-symbols-outlined text-sm">smart_display</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../seo-search-growth/">SEO & Search Growth</a></li>
+<li><a class="hover:text-primary transition-colors" href="../paid-media-ppc/">Paid Media & PPC</a></li>
+<li><a class="hover:text-primary transition-colors" href="../it-infrastructure-growth/">IT Infrastructure & Growth</a></li>
+<li><a class="hover:text-primary transition-colors" href="../content-marketing/">Content Marketing</a></li>
+<li><a class="hover:text-primary transition-colors" href="../social-media-marketing/">Social Media Marketing</a></li>
+<li><a class="hover:text-primary transition-colors" href="../marketing-automation/">Marketing Automation</a></li>
+<li><a class="hover:text-primary transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a></li>
+<li><a class="hover:text-primary transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../about/">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="../#results">Results</a></li>
+<li><a class="hover:text-primary transition-colors" href="../#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="./">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="../contact/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../legal/privacy-policy.html">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="../legal/terms-of-service.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto px-margin-mobile mt-20 pt-10 border-t border-outline flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">© 2026 REWANSH. ALL RIGHTS RESERVED.</p>
+<p class="text-[10px] text-on-surface-variant">Digital Marketing Consultant.</p>
+</div>
+</footer>
+<!-- Fixed Mobile CTA -->
+<div class="fixed bottom-0 left-0 w-full glass-header z-40 border-t border-outline md:hidden">
+<div class="p-4">
+<a class="w-full block py-4 bg-primary text-secondary font-bold text-center rounded-lg shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Book Free Consultation</a>
+</div>
+</div>
+<script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+    </script>
+
+</body></html>

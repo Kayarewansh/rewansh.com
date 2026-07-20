@@ -33,6 +33,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [The Generative Engine Optimization (GEO) Checklist for 2026](https://rewansh.com/blog/generative-engine-optimization-checklist.html): A GEO checklist covering crawler access, content structure, entity signals, and citation measurement for 2026.
+- [The B2B Content Distribution Checklist (Beyond "Just Publish It")](https://rewansh.com/blog/b2b-content-distribution-checklist.html): A distribution-first checklist across owned, earned, and paid channels for B2B content that gets seen.
+- [The Conversion Tracking Validation Checklist (Before You Trust Your Numbers)](https://rewansh.com/blog/conversion-tracking-validation-checklist.html): A step-by-step checklist to validate GA4, Google Ads, and Meta conversion tracking before trusting the numbers.
+- [How to Fix Meta Ads Audience Fragmentation](https://rewansh.com/blog/meta-ads-audience-fragmentation-fix.html): A consolidation framework for fixing fragmented, underfunded Meta ad sets stuck in Learning Limited.
+- [The Creative Testing Matrix for Meta Ads (Free Interactive Tool)](https://rewansh.com/blog/creative-testing-matrix-meta-ads.html): A free interactive tool that generates a hook × format × CTA test matrix sized to your budget, plus how to read results.
+- [The Technical SEO Checklist for a Site Migration (Without Losing Rankings)](https://rewansh.com/blog/technical-seo-checklist-site-migration.html): A launch-sequenced technical SEO checklist for domain changes, replatforms, and URL migrations.
+- [How to Do a Keyword Gap Analysis, Step by Step](https://rewansh.com/blog/keyword-gap-analysis-guide.html): A step-by-step process for finding, filtering, and prioritizing competitor keyword gaps into a content calendar.
+- [How to Scale Lead Generation Using AI Agents (Without Losing Personalization)](https://rewansh.com/blog/scale-lead-generation-ai-agents.html): A layered AI-agent lead gen stack — research, drafting, qualification — with the deliverability guardrails that keep it working.
 - [How to Increase Organic Traffic: A Practical Framework](https://rewansh.com/blog/how-to-increase-organic-traffic.html): Technical SEO, intent-mapped content, topical authority, link building, and AI answer engine optimization.
 - [How to Lower Customer Acquisition Cost Without Cutting Growth](https://rewansh.com/blog/how-to-lower-customer-acquisition-cost.html): Channel audits, conversion fixes, owned-channel investment, and automation.
 - [The Marketing Audit Checklist Every Founder Should Run](https://rewansh.com/blog/marketing-audit-checklist.html): The SEO, paid, content, and conversion checklist used before every new engagement.
