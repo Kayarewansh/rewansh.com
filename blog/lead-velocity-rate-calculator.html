@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PKRYMX051"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PKRYMX051');
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    }
+  }, true);
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#1A1F45"/>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined-subset.woff2" crossorigin=""/>
+<title>Lead Velocity Rate (LVR) Calculator | Rewansh</title>
+<meta name="description" content="A free Lead Velocity Rate (LVR) calculator — enter this month's and last month's qualified leads to get your LVR%, plus healthy benchmarks and what to do when it stalls."/>
+<link rel="canonical" href="https://rewansh.com/blog/lead-velocity-rate-calculator.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="author" content="Rewansh Kayare"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Rewansh"/>
+<meta property="og:title" content="Lead Velocity Rate (LVR) Calculator | Rewansh"/>
+<meta property="og:description" content="A free Lead Velocity Rate (LVR) calculator — enter this month's and last month's qualified leads to get your LVR%, plus healthy benchmarks and what to do when it stalls."/>
+<meta property="og:url" content="https://rewansh.com/blog/lead-velocity-rate-calculator.html"/>
+<meta property="og:image" content="https://rewansh.com/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Lead Velocity Rate (LVR) Calculator | Rewansh"/>
+<meta name="twitter:description" content="A free Lead Velocity Rate (LVR) calculator — enter this month's and last month's qualified leads to get your LVR%, plus healthy benchmarks and what to do when it stalls."/>
+<meta name="twitter:image" content="https://rewansh.com/og-image.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Lead Velocity Rate (LVR) Calculator",
+  "image": "https://rewansh.com/og-image.jpg",
+  "description": "A free Lead Velocity Rate (LVR) calculator — enter this month's and last month's qualified leads to get your LVR%, plus healthy benchmarks and what to do when it stalls.",
+  "author": { "@type": "Person", "name": "Rewansh Kayare", "url": "https://rewansh.com/" },
+  "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
+  "mainEntityOfPage": "https://rewansh.com/blog/lead-velocity-rate-calculator.html",
+  "datePublished": "2026-07-21",
+  "dateModified": "2026-07-21"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewansh.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rewansh.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Lead Velocity Rate (LVR) Calculator", "item": "https://rewansh.com/blog/lead-velocity-rate-calculator.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How do you calculate Lead Velocity Rate (LVR)?", "acceptedAnswer": { "@type": "Answer", "text": "Lead Velocity Rate is calculated as (This Month's Qualified Leads − Last Month's Qualified Leads) ÷ Last Month's Qualified Leads × 100, and it's only accurate when the definition of a \"qualified lead\" stays consistent between the two months being compared." } },
+    { "@type": "Question", "name": "What is a good Lead Velocity Rate?", "acceptedAnswer": { "@type": "Answer", "text": "A month-over-month LVR of 10% or higher, sustained over several months, is commonly cited as a strong pipeline growth signal for early-stage SaaS companies, though the right benchmark ultimately depends on your specific business model and should be confirmed as a trend rather than judged from any single month." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link href="../style.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url('../fonts/material-symbols-outlined-subset.woff2') format('woff2');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+        }
+        body {
+            background-color: #F9FAFB;
+            color: #1A1F45;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .article-body h2 { font-size: 1.75rem; font-weight: 800; color: #1A1F45; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #4B5563; }
+        .article-body ul, .article-body ol { margin: 0 0 1.25rem 1.25rem; color: #4B5563; }
+        .article-body ul { list-style: disc; }
+        .article-body ol { list-style: decimal; }
+        .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .article-body a { color: #C5A04D; font-weight: 600; }
+        .article-body code { background: #EEF0F5; color: #1A1F45; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
+        .article-body .table-wrap { overflow-x: auto; margin: 1.5rem 0; -webkit-overflow-scrolling: touch; }
+        .article-body table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+        .article-body th { background: #1A1F45; color: #ffffff; text-align: left; padding: 0.75rem 1rem; font-weight: 700; }
+        .article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid #E5E7EB; color: #4B5563; }
+        .article-body tr:nth-child(even) td { background: #F9FAFB; }
+        .article-body .aeo-block { background: #F9FAFB; border-left: 4px solid #e6c364; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
+        .article-body .aeo-block p { margin-bottom: 0.75rem; }
+        .article-body .aeo-block ul { margin-bottom: 0; }
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .mini-tool select, .mini-tool .row-input { width: 100%; background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 0.375rem; padding: 0.4rem 0.6rem; font-size: 0.85rem; color: #1A1F45; }
+        .mini-tool table td, .mini-tool table th { white-space: nowrap; }
+    </style>
+</head>
+<body class="font-body text-base">
+<nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
+<div class="flex justify-between items-center max-w-[1240px] mx-auto px-margin-mobile py-5">
+<a class="text-2xl font-extrabold tracking-tighter text-secondary" href="../">REWANSH<span class="text-primary">.</span></a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../about/">About</a>
+<div class="relative group" id="services-dropdown">
+<button class="flex items-center gap-1 text-sm font-semibold text-secondary hover:text-primary transition-colors" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services<span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span></button>
+<div id="services-menu" class="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
+<div class="bg-white rounded-2xl shadow-xl border border-outline p-3 w-72 grid gap-1">
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../content-marketing/">Content Marketing</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../social-media-marketing/">Social Media Marketing</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../marketing-automation/">Marketing Automation</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a>
+<a class="block px-4 py-3 rounded-lg text-sm font-semibold text-secondary hover:bg-secondary/5 hover:text-primary-ink transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a>
+</div>
+</div>
+</div>
+<a class="text-sm font-semibold text-primary" href="./">Blog</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../contact/">Contact</a>
+<a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden text-secondary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined" style="transition: transform 0.2s;">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-6 border-t border-outline">
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../about/">About</a>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest pt-4 pb-1">Services</p>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../seo-search-growth/">SEO &amp; Search Growth</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../paid-media-ppc/">Paid Media &amp; PPC</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../content-marketing/">Content Marketing</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../social-media-marketing/">Social Media Marketing</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../marketing-automation/">Marketing Automation</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a>
+<a class="block pl-2 py-2 text-sm font-semibold text-secondary hover:text-primary transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a>
+<a class="text-sm font-semibold text-primary py-3 mt-2 border-t border-outline pt-4" href="./">Blog</a>
+<a class="text-sm font-semibold text-secondary hover:text-primary transition-colors py-3" href="../contact/">Contact</a>
+<a class="px-7 py-3 mt-2 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm text-center" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
+</div>
+</nav>
+
+<main class="pt-32 pb-20">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<a href="./" class="text-xs font-bold text-primary uppercase tracking-widest">&larr; Back to Blog</a>
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mt-6 mb-4">Growth Strategy</p>
+<h1 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight mb-6">Lead Velocity Rate (LVR) Calculator</h1>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant mb-12 pb-8 border-b border-outline">
+<span>By Rewansh Kayare</span><span>&middot;</span><span>July 21, 2026</span><span>&middot;</span><span>6 min read</span>
+</div>
+<div class="article-body">
+
+<p>Lead Velocity Rate (LVR) measures the month-over-month growth rate of qualified leads &mdash; unlike revenue metrics, which lag behind sales cycles by weeks or months, LVR is a leading indicator of where the pipeline is actually heading. Enter your numbers below to calculate it instantly.</p>
+
+<div class="mini-tool bg-white border border-outline rounded-2xl p-6 md:p-8 my-8">
+<p class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-4">Free Tool</p>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-2">This Month's Qualified Leads</label>
+<input id="lvr-this" type="number" min="0" step="1" class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none text-sm" value="120"/>
+</div>
+<div>
+<label class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-2">Last Month's Qualified Leads</label>
+<input id="lvr-last" type="number" min="0" step="1" class="w-full bg-secondary/5 border border-outline focus:border-primary px-4 py-3 rounded-lg text-secondary outline-none text-sm" value="100"/>
+</div>
+</div>
+<div id="lvr-output" class="mt-6 p-6 bg-secondary/5 rounded-xl">
+<p class="text-sm text-on-surface-variant mb-1">Lead Velocity Rate</p>
+<p id="lvr-result" class="text-3xl font-extrabold text-secondary"></p>
+<p id="lvr-note" class="text-sm text-on-surface-variant mt-2"></p>
+</div>
+</div>
+
+<h2>What counts as a &quot;qualified lead&quot; for this calculation</h2>
+<p>LVR is only meaningful when the qualification bar stays identical between the two months being compared &mdash; if the sales team loosened or tightened lead qualification criteria mid-comparison, the resulting percentage reflects a definition change, not real pipeline movement.</p>
+
+<h2>What&#39;s a healthy LVR</h2>
+<p>A month-over-month LVR in the 10-20%+ range is commonly cited as a strong growth signal for early-stage SaaS companies, though this is a general benchmark, not a guarantee for every business model. The number matters more as a multi-month trend than as any single month&#39;s result &mdash; one strong or weak month can easily be noise.</p>
+
+<h2>What to do when LVR stalls or goes negative</h2>
+<ul>
+<li>Audit lead sources individually rather than only looking at the blended total &mdash; a stall in one channel can be masked by growth in another.</li>
+<li>Check for a broken step somewhere in the funnel using a <a href="conversion-funnel-leakage-analysis.html">funnel leakage analysis</a> before assuming demand itself has dropped.</li>
+<li>Check paid channel efficiency &mdash; a <a href="meta-ads-audience-fragmentation-fix.html">fragmented ad account</a> or a channel quietly increasing cost per lead can slow qualified lead flow well before it shows up in revenue.</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<tr><th>LVR Range</th><th>What It Signals</th><th>Typical Next Step</th></tr>
+<tr><td>10%+ sustained</td><td>Strong, compounding pipeline growth</td><td>Protect what's working; avoid disrupting the channels driving it</td></tr>
+<tr><td>0-10%</td><td>Modest or inconsistent growth</td><td>Audit channel mix and funnel steps for a specific bottleneck</td></tr>
+<tr><td>Flat or negative</td><td>Pipeline growth has stalled</td><td>Check for a funnel leak, tracking issue, or channel-level decline</td></tr>
+</table>
+</div>
+
+<p>LVR is a pipeline health signal, not a vanity metric &mdash; it&#39;s one of the numbers I track alongside channel-level data in every <a href="../marketing-automation/">Marketing Automation</a> and organic <a href="organic-pipeline-generation-strategy.html">pipeline generation</a> engagement.</p>
+
+<h2>FAQ</h2>
+<div class="aeo-block">
+<p><strong>How do you calculate Lead Velocity Rate (LVR)?</strong></p>
+<p><strong>Lead Velocity Rate is calculated as (This Month's Qualified Leads &minus; Last Month's Qualified Leads) &divide; Last Month's Qualified Leads &times; 100, and it's only accurate when the definition of a "qualified lead" stays consistent between the two months being compared.</strong></p>
+<ul>
+<li>A changing qualification bar between the two months invalidates the comparison, regardless of the formula being applied correctly.</li>
+<li>LVR should be tracked as a multi-month trend, not judged from a single month's result.</li>
+</ul>
+</div>
+<div class="aeo-block">
+<p><strong>What is a good Lead Velocity Rate?</strong></p>
+<p><strong>A month-over-month LVR of 10% or higher, sustained over several months, is commonly cited as a strong pipeline growth signal for early-stage SaaS companies, though the right benchmark ultimately depends on your specific business model and should be confirmed as a trend rather than judged from any single month.</strong></p>
+<ul>
+<li>A single strong or weak month is often noise — look for a consistent multi-month pattern.</li>
+<li>A stalled or negative LVR is a prompt to check funnel and channel health before assuming a broader demand problem.</li>
+</ul>
+</div>
+
+</div>
+<div class="mt-16 p-10 bg-secondary rounded-2xl text-center">
+<h3 class="text-2xl font-extrabold text-white mb-3">Ready to put this into practice?</h3>
+<p class="text-white/60 mb-6">Book a free consultation and get a growth plan built around your business, not a generic playbook.</p>
+<a href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener" class="inline-flex px-8 py-4 bg-primary text-secondary font-bold rounded-lg hover:bg-accent-gold transition-all">Book a Free Consultation</a>
+</div>
+</div>
+</main>
+<footer class="bg-background py-16 border-t border-outline">
+<div class="max-w-[1240px] mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<a class="text-2xl font-black text-secondary tracking-tighter" href="../">REWANSH<span class="text-primary">.</span></a>
+<p class="text-on-surface-variant text-sm mt-6 leading-relaxed">
+                    Rewansh is a digital marketing consultant helping startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems.
+                </p>
+<div class="flex gap-4 mt-8">
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" title="Instagram"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" title="LinkedIn"><span class="material-symbols-outlined text-sm">business_center</span></a>
+<a class="w-10 h-10 bg-secondary text-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform" href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" title="YouTube"><span class="material-symbols-outlined text-sm">smart_display</span></a>
+</div>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Services</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../seo-search-growth/">SEO & Search Growth</a></li>
+<li><a class="hover:text-primary transition-colors" href="../paid-media-ppc/">Paid Media & PPC</a></li>
+<li><a class="hover:text-primary transition-colors" href="../it-infrastructure-growth/">IT Infrastructure & Growth</a></li>
+<li><a class="hover:text-primary transition-colors" href="../content-marketing/">Content Marketing</a></li>
+<li><a class="hover:text-primary transition-colors" href="../social-media-marketing/">Social Media Marketing</a></li>
+<li><a class="hover:text-primary transition-colors" href="../marketing-automation/">Marketing Automation</a></li>
+<li><a class="hover:text-primary transition-colors" href="../conversion-rate-optimization/">Conversion Rate Optimization</a></li>
+<li><a class="hover:text-primary transition-colors" href="../wikipedia-page-creation/">Wikipedia Page Creation</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Company</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../about/">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="../#results">Results</a></li>
+<li><a class="hover:text-primary transition-colors" href="../#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="./">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="../contact/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h3>
+<ul class="space-y-4 text-sm text-on-surface-variant font-medium">
+<li><a class="hover:text-primary transition-colors" href="../legal/privacy-policy.html">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="../legal/terms-of-service.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1240px] mx-auto px-margin-mobile mt-20 pt-10 border-t border-outline flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">© 2026 REWANSH. ALL RIGHTS RESERVED.</p>
+<p class="text-[10px] text-on-surface-variant">Digital Marketing Consultant.</p>
+</div>
+</footer>
+<!-- Fixed Mobile CTA -->
+<div class="fixed bottom-0 left-0 w-full glass-header z-40 border-t border-outline md:hidden">
+<div class="p-4">
+<a class="w-full block py-4 bg-primary text-secondary font-bold text-center rounded-lg shadow-lg" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Book Free Consultation</a>
+</div>
+</div>
+<script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+    </script>
+<script>
+        (function () {
+            var thisM = document.getElementById('lvr-this');
+            var lastM = document.getElementById('lvr-last');
+            if (!thisM) return;
+            function recalc() {
+                var t = parseFloat(thisM.value) || 0;
+                var l = parseFloat(lastM.value) || 0;
+                var rate = l > 0 ? ((t - l) / l) * 100 : 0;
+                var sign = rate > 0 ? '+' : '';
+                document.getElementById('lvr-result').textContent = sign + rate.toFixed(1) + '%';
+                var note = document.getElementById('lvr-note');
+                if (l <= 0) {
+                    note.textContent = 'Enter a non-zero figure for last month to calculate a rate.';
+                } else if (rate >= 10) {
+                    note.textContent = 'Within the range often cited as strong month-over-month growth for early-stage SaaS — confirm the trend holds for 2-3 months before treating it as a signal.';
+                } else if (rate > 0) {
+                    note.textContent = 'Positive, but below the 10%+ range often cited as strong growth — worth investigating alongside your funnel and channel mix.';
+                } else {
+                    note.textContent = 'Flat or declining — check for a funnel leak or a paid channel efficiency issue before assuming demand itself has dropped.';
+                }
+            }
+            [thisM, lastM].forEach(function (el) { el.addEventListener('input', recalc); });
+            recalc();
+        })();
+    </script>
+</body></html>

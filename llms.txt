@@ -33,6 +33,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [Cost Per Conversion Calculator (Free Tool)](https://rewansh.com/blog/cost-per-conversion-calculator.html): A live cost-per-conversion calculator, plus how to read the number against a real target.
+- [Lead Velocity Rate (LVR) Calculator](https://rewansh.com/blog/lead-velocity-rate-calculator.html): A live LVR calculator, healthy benchmark ranges, and what to check when growth stalls.
+- [The User Intent Mapping Tool (Free Interactive Worksheet)](https://rewansh.com/blog/user-intent-mapping-tool.html): Paste a keyword list, get suggested intent/stage/page-type per keyword, and export the mapping as CSV.
+- [A Free Keyword Clustering Tool (Word-Overlap Method)](https://rewansh.com/blog/keyword-clustering-tool-free.html): Paste a keyword list and get an instant word-overlap clustering — a free, honest first pass before a SERP-based check.
+- [A Content Marketing Calendar Generator (Free, Exports to Notion/CSV)](https://rewansh.com/blog/content-marketing-calendar-template-notion.html): Set a cadence and pillars, generate a dated calendar, and export it straight into Notion via CSV.
+- [The Conversion Rate Optimization Checklist (Printable)](https://rewansh.com/blog/conversion-rate-optimization-checklist-pdf.html): A complete, printable CRO checklist covering landing pages, forms, trust signals, performance, and testing.
+- [A Digital Marketing Audit Scorecard Framework](https://rewansh.com/blog/digital-marketing-audit-framework-excel.html): A weighted 1-5 scorecard across 6 categories for tracking marketing health quarter over quarter.
+- [A/B Testing Tool Alternatives to Optimizely](https://rewansh.com/blog/ab-testing-tool-alternatives-optimizely.html): A tiered evaluation framework for choosing an A/B testing tool that actually fits your team's size and testing volume.
 - [Tracking Pixel Implementation Errors: How to Find and Fix Them](https://rewansh.com/blog/tracking-pixel-implementation-error-fix.html): Common Meta Pixel, Google tag, and GA4 implementation errors, with a test protocol and fixes.
 - [Meta Ads Attribution Window, Explained](https://rewansh.com/blog/meta-attribution-window-explained.html): What the Meta Ads attribution window actually measures, and how to pick the right setting for your funnel.
 - [How to Run a Conversion Funnel Leakage Analysis](https://rewansh.com/blog/conversion-funnel-leakage-analysis.html): A step-by-step method for finding and prioritizing the funnel step that's actually costing you the most conversions.
