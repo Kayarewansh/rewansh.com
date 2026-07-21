@@ -33,6 +33,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [An Ecommerce SEO Audit Checklist](https://rewansh.com/blog/ecommerce-seo-audit-checklist.html): The ecommerce-specific SEO issues (faceted nav, variants, discontinued products) a generic audit checklist misses.
+- [Programmatic SEO vs. Traditional SEO: Which Fits Your Site?](https://rewansh.com/blog/programmatic-seo-vs-traditional-seo.html): When templated, data-driven programmatic SEO makes sense versus when it backfires into thin duplicate content.
+- [How to Pitch a Content Strategy to Stakeholders](https://rewansh.com/blog/how-to-pitch-content-strategy-to-stakeholders.html): How to frame a content strategy pitch around revenue and risk instead of publishing cadence.
+- [How to Build a Full-Funnel Marketing Campaign Map](https://rewansh.com/blog/full-funnel-marketing-campaign-map.html): A 4-stage channel/message/CTA map that stops every channel from pitching the same bottom-of-funnel offer.
+- [A Content Strategy Framework for Ecommerce](https://rewansh.com/blog/content-strategy-framework-ecommerce.html): Four ecommerce content types mapped to funnel stage, and the coverage gap most catalogs leave open.
+- [A LinkedIn Thought Leadership Content Strategy for Founders](https://rewansh.com/blog/linkedin-thought-leadership-content-strategy.html): How to choose a point of view, cadence, and engagement approach that builds real LinkedIn authority.
+- [Why Website Clicks From Search Are Dropping (Even With Stable Impressions)](https://rewansh.com/blog/why-website-clicks-from-search-are-dropping.html): A CTR-specific diagnostic for when Search Console shows dropping clicks but stable impressions and position.
+- [Copywriter vs. Content Marketing Strategist: What's the Difference?](https://rewansh.com/blog/copywriter-vs-content-marketing-strategist.html): What each role actually owns, and which one to hire first depending on whether the gap is strategy or execution.
 - [How to Build a High-Intent Keyword List](https://rewansh.com/blog/building-a-high-intent-keyword-list.html): Four sources for sourcing genuinely high-intent keywords that standard volume-sorted tools tend to miss.
 - [The GA4 Data Retention Limit: What It Actually Means and How to Fix It](https://rewansh.com/blog/google-analytics-4-data-retention-limit-fix.html): What GA4's data retention setting actually controls, why the default is shorter than most expect, and the fix.
 - [A Content Refreshing Strategy for Organic Growth](https://rewansh.com/blog/content-refreshing-strategy-organic-growth.html): A 5-step process for finding the right pages to refresh and measuring whether the refresh actually worked.
