@@ -34,6 +34,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [Free Lead Enrichment Tools for Startups (What They Actually Do)](https://rewansh.com/blog/free-lead-enrichment-tools-for-startups.html): What lead enrichment categories actually solve, realistic free-tier limits, and the real signal it's time to pay.
+- [Google Ads Cost Per Acquisition: Why Benchmarks Are the Wrong Target](https://rewansh.com/blog/google-ads-cost-per-acquisition-benchmarks.html): Why published CPA benchmarks are a poor target, and the LTV-based formula for calculating your own valid ceiling.
+- [Marketing Automation Consultant Pricing: What Actually Drives the Cost](https://rewansh.com/blog/marketing-automation-consultant-pricing.html): What actually drives automation consulting pricing — platform, migration vs. net-new, and the questions to ask before comparing quotes.
+- [How to Set Up Lead Scoring in HubSpot, Step by Step](https://rewansh.com/blog/how-to-set-up-lead-scoring-in-hubspot.html): A step-by-step HubSpot lead scoring setup — explicit vs. implicit criteria, MQL thresholds, and the mistakes that break scores.
+- [5 Marketing Automation Workflows Every SaaS Company Needs](https://rewansh.com/blog/marketing-automation-workflows-for-saas.html): Five automation workflows every SaaS company should have built — onboarding, trial nurture, dunning, expansion, and churn-risk re-engagement.
+- [Search Engine Positioning Strategy: Competing Against Bigger Sites](https://rewansh.com/blog/search-engine-positioning-strategy.html): How to compete in search against bigger, established competitors by finding underserved angles instead of head-on keyword battles.
+- [AI Agent Tools for Content Creation: The Category Landscape](https://rewansh.com/blog/ai-agent-tools-for-content-creation.html): A categorized landscape of AI content agents — research, drafting, editing, and distribution — and where human review can't be skipped.
+- [Marketing Funnel Optimization Metrics: What to Track at Each Stage](https://rewansh.com/blog/marketing-funnel-optimization-metrics.html): Which metrics actually matter at each funnel stage — awareness, consideration, decision, retention — and the vanity-metric traps to avoid.
 - [Dynamic Search Ads Best Practices](https://rewansh.com/blog/dynamic-search-ads-best-practices.html): When Dynamic Search Ads make sense, how to structure targets, and the negative keyword discipline they need.
 - [A Lead Generation Quiz Funnel Framework](https://rewansh.com/blog/lead-generation-quiz-funnel-framework.html): A question-design, segmentation, and follow-up framework for a quiz funnel that produces qualified leads.
 - [Outbound vs. Inbound Lead Generation: Which Should You Prioritize?](https://rewansh.com/blog/outbound-vs-inbound-lead-generation.html): Speed, cost, and quality trade-offs between outbound and inbound, and how to sequence both deliberately.
