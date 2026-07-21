@@ -33,6 +33,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [Building a Custom GPT for SEO Strategy Work](https://rewansh.com/blog/custom-gpt-for-seo-strategy.html): What to put in a custom GPT's instructions for SEO work, what it's good for, and where it still needs a human.
+- [Evergreen Content Assets That Actually Drive Conversions](https://rewansh.com/blog/evergreen-content-assets-that-drive-conversions.html): How to tell genuinely evergreen content from content that's just old, and how to pick what to build.
+- [B2B Marketing Automation Tools by Startup Stage](https://rewansh.com/blog/b2b-marketing-automation-tools-by-startup-stage.html): Why the right B2B marketing automation tool depends on funding stage more than budget alone.
+- [How to Optimize a LinkedIn Profile for Founders](https://rewansh.com/blog/optimize-linkedin-profile-for-founders.html): How to fix the headline, banner, about section, and featured section so a founder's profile matches their content.
+- [Meta Ads Advantage+ Audience vs. Manual Targeting](https://rewansh.com/blog/meta-ads-advantage-plus-audience-vs-manual.html): When Advantage+ audience beats manual targeting, when manual still wins, and how to migrate safely.
+- [A Content Strategy for a Zero-Click Search World](https://rewansh.com/blog/zero-click-search-content-strategy.html): Shifting content strategy from winning the click to winning the citation as zero-click search grows.
+- [What to Look for in Growth Consulting After a Series A](https://rewansh.com/blog/growth-consulting-for-series-a-startups.html): What changes about growth consulting needs after a Series A, and the questions and red flags to watch for.
+- [Digital Marketing Consultant Hourly Rate: What Determines It](https://rewansh.com/blog/digital-marketing-consultant-hourly-rate.html): What actually drives consultant hourly rates, and why cost-per-outcome matters more than the headline number.
 - [An Ecommerce SEO Audit Checklist](https://rewansh.com/blog/ecommerce-seo-audit-checklist.html): The ecommerce-specific SEO issues (faceted nav, variants, discontinued products) a generic audit checklist misses.
 - [Programmatic SEO vs. Traditional SEO: Which Fits Your Site?](https://rewansh.com/blog/programmatic-seo-vs-traditional-seo.html): When templated, data-driven programmatic SEO makes sense versus when it backfires into thin duplicate content.
 - [How to Pitch a Content Strategy to Stakeholders](https://rewansh.com/blog/how-to-pitch-content-strategy-to-stakeholders.html): How to frame a content strategy pitch around revenue and risk instead of publishing cadence.
