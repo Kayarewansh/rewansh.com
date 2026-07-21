@@ -33,6 +33,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [Inbound Lead Generation Channel Strategies for Tech Startups](https://rewansh.com/blog/inbound-lead-generation-strategies-tech-startups.html): Four inbound channels for tech startups and the order to sequence investment across them.
+- [A Programmatic SEO Guide for Beginners](https://rewansh.com/blog/programmatic-seo-guide-for-beginners.html): A step-by-step beginner's process for building programmatic SEO pages that avoid thin duplicate content.
+- [How to Clean an Email List Before a Campaign](https://rewansh.com/blog/how-to-clean-email-list-before-campaign.html): A 5-step process for cleaning an email list safely, and how to re-warm sending after a big cleanup.
+- [Growth Marketing Strategies for D2C Fashion Brands](https://rewansh.com/blog/growth-marketing-strategies-d2c-fashion.html): Five growth levers specific to D2C fashion — UGC, creators, drops, fit content, and returns as retention.
+- [The Best AI Workflows for Marketing Teams (Beyond Lead Gen)](https://rewansh.com/blog/best-ai-workflows-for-marketing-teams.html): AI workflows across content, paid media, and reporting — and exactly where human review still belongs.
+- [Local Service Ads Optimization Tips](https://rewansh.com/blog/local-service-ads-optimization-tips.html): Why Local Services Ads reward reviews and response time over bidding, and how to keep cost per lead honest.
+- [A High-Converting Landing Page Copy Framework](https://rewansh.com/blog/high-converting-landing-page-copy-framework.html): A headline/subhead/proof/CTA copywriting framework with illustrative before-and-after patterns.
+- [What Changes When Scaling a D2C Brand From 7 to 8 Figures](https://rewansh.com/blog/scale-d2c-brand-to-8-figures.html): The operational, team, and channel-risk shifts that define scaling a D2C brand from 7 to 8 figures.
 - [Building a Custom GPT for SEO Strategy Work](https://rewansh.com/blog/custom-gpt-for-seo-strategy.html): What to put in a custom GPT's instructions for SEO work, what it's good for, and where it still needs a human.
 - [Evergreen Content Assets That Actually Drive Conversions](https://rewansh.com/blog/evergreen-content-assets-that-drive-conversions.html): How to tell genuinely evergreen content from content that's just old, and how to pick what to build.
 - [B2B Marketing Automation Tools by Startup Stage](https://rewansh.com/blog/b2b-marketing-automation-tools-by-startup-stage.html): Why the right B2B marketing automation tool depends on funding stage more than budget alone.
