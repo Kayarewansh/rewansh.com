@@ -18,6 +18,7 @@ module.exports = {
     "./us/*.html",
     "./uk/*.html",
     "./uae/*.html",
+    "./dubai/*.html",
     "./germany/*.html",
     "./mumbai/*.html",
     "./bangalore/*.html",

@@ -25,6 +25,7 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 - [United States](https://rewansh.com/us/): Remote digital marketing consulting with full US business-hours overlap and USD invoicing.
 - [United Kingdom](https://rewansh.com/uk/): Remote digital marketing consulting with full UK business-hours overlap.
 - [UAE](https://rewansh.com/uae/): Remote digital marketing consulting covering Dubai, Abu Dhabi, and the wider UAE.
+- [Dubai](https://rewansh.com/dubai/): Remote digital marketing consulting for Dubai startups and brands, including DIFC, DMCC, and JAFZA free zone companies.
 - [Germany](https://rewansh.com/germany/): Remote digital marketing consulting with GDPR-conscious marketing automation and CET/CEST overlap.
 - [Mumbai](https://rewansh.com/mumbai/): Remote digital marketing consulting for Mumbai D2C, fintech, and services businesses.
 - [Bangalore](https://rewansh.com/bangalore/): Remote digital marketing consulting for Bangalore SaaS and B2B tech startups.
@@ -33,6 +34,14 @@ Rewansh works directly with founders and marketing teams as a hands-on consultan
 
 ## Articles
 
+- [Dynamic Search Ads Best Practices](https://rewansh.com/blog/dynamic-search-ads-best-practices.html): When Dynamic Search Ads make sense, how to structure targets, and the negative keyword discipline they need.
+- [A Lead Generation Quiz Funnel Framework](https://rewansh.com/blog/lead-generation-quiz-funnel-framework.html): A question-design, segmentation, and follow-up framework for a quiz funnel that produces qualified leads.
+- [Outbound vs. Inbound Lead Generation: Which Should You Prioritize?](https://rewansh.com/blog/outbound-vs-inbound-lead-generation.html): Speed, cost, and quality trade-offs between outbound and inbound, and how to sequence both deliberately.
+- [A Local SEO Audit, Step by Step](https://rewansh.com/blog/local-seo-audit-step-by-step.html): A 5-step local SEO audit covering Google Business Profile, citations, reviews, and local link building.
+- [How to Increase Conversion Rate Without Spending More on Ads](https://rewansh.com/blog/increase-conversion-rate-without-ads.html): Four non-paid conversion rate levers — traffic quality, on-site experience, trust, and email capture.
+- [D2C Retention Marketing Strategies](https://rewansh.com/blog/d2c-retention-marketing-strategies.html): Four D2C retention tactics — lifecycle flows, loyalty, subscriptions, win-back — and how to prioritize them.
+- [B2B Lead Generation Landing Page Structure](https://rewansh.com/blog/b2b-lead-generation-landing-page-structure.html): Form placement, B2B-specific proof, and CTA choice patterns matched to funnel stage and multi-stakeholder buying.
+- [Search Query Optimization for Google Ads: An Ongoing Maintenance Guide](https://rewansh.com/blog/search-query-optimization-google-ads.html): A recurring maintenance cadence for Google Ads search query optimization — negatives, match types, and overlap.
 - [Inbound Lead Generation Channel Strategies for Tech Startups](https://rewansh.com/blog/inbound-lead-generation-strategies-tech-startups.html): Four inbound channels for tech startups and the order to sequence investment across them.
 - [A Programmatic SEO Guide for Beginners](https://rewansh.com/blog/programmatic-seo-guide-for-beginners.html): A step-by-step beginner's process for building programmatic SEO pages that avoid thin duplicate content.
 - [How to Clean an Email List Before a Campaign](https://rewansh.com/blog/how-to-clean-email-list-before-campaign.html): A 5-step process for cleaning an email list safely, and how to re-warm sending after a big cleanup.
