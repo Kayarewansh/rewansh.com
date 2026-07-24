@@ -4,6 +4,8 @@
 
 Rewansh works directly with founders and marketing teams as a hands-on consultant, not through an account-managed agency team. Every engagement starts with an audit before any spend commitment. Channel service pricing starts at $349 + tax for a one-time strategy session, with ongoing "Growth Partner" retainers from $549 + tax/month; fractional CMO engagements run $900–$3,500 + tax/month depending on scope; custom enterprise and interim engagements are quoted separately. All work is fully remote, covering overlapping hours across time zones for international clients — including founders and marketing teams in Indore and Hyderabad, with no local office required.
 
+Full text of every page on this site, concatenated for systems that prefer a single fetch over crawling: https://rewansh.com/llms-full.txt
+
 ## Services
 
 - [SEO & Search Growth](https://rewansh.com/seo-search-growth/): Technical SEO audits, intent-mapped keyword strategy, and content-driven link building for search engines and AI answer engines.
