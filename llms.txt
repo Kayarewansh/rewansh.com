@@ -1,18 +1,21 @@
 # Rewansh — Digital Marketing Consultant
 
-> Rewansh (Rewansh Kayare) is a digital marketing consultant based in India, working with startups, D2C brands, SaaS companies, and enterprises across India, the US, UK, Germany, UAE, Canada, Australia, Singapore, and other markets remotely. Core services: SEO & search growth, paid media (Google Ads & Meta Ads), content marketing, marketing automation & AI systems, social media marketing, and conversion rate optimization.
+> Rewansh (Rewansh Kayare) is a digital marketing consultant based in India, working with startups, D2C brands, SaaS companies, and enterprises across India, the US, UK, Germany, UAE, Canada, Australia, Singapore, and other markets remotely. Core services: SEO & search growth, paid media (Google Ads & Meta Ads), growth marketing, content marketing, email marketing, marketing automation & AI systems, social media marketing, conversion rate optimization, and fractional CMO engagements.
 
-Rewansh works directly with founders and marketing teams as a hands-on consultant, not through an account-managed agency team. Every engagement starts with an audit before any spend commitment. Pricing starts at $349 + tax for a one-time strategy session, with ongoing "Growth Partner" retainers from $549 + tax/month and custom enterprise engagements. All work is fully remote, covering overlapping hours across time zones for international clients — including founders and marketing teams in Indore and Hyderabad, with no local office required.
+Rewansh works directly with founders and marketing teams as a hands-on consultant, not through an account-managed agency team. Every engagement starts with an audit before any spend commitment. Channel service pricing starts at $349 + tax for a one-time strategy session, with ongoing "Growth Partner" retainers from $549 + tax/month; fractional CMO engagements run $900–$3,500 + tax/month depending on scope; custom enterprise and interim engagements are quoted separately. All work is fully remote, covering overlapping hours across time zones for international clients — including founders and marketing teams in Indore and Hyderabad, with no local office required.
 
 ## Services
 
 - [SEO & Search Growth](https://rewansh.com/seo-search-growth/): Technical SEO audits, intent-mapped keyword strategy, and content-driven link building for search engines and AI answer engines.
 - [Paid Media & PPC](https://rewansh.com/paid-media-ppc/): Google Ads and Meta Ads strategy, audience targeting, conversion tracking, and creative testing.
+- [Growth Marketing](https://rewansh.com/growth-marketing/): Cross-channel acquisition, conversion, and retention strategy with a prioritized experimentation roadmap.
 - [IT Infrastructure & Growth](https://rewansh.com/it-infrastructure-growth/): Martech stack audits, tool consolidation, hosting, and integration work behind marketing systems.
 - [Social Media Marketing](https://rewansh.com/social-media-marketing/): LinkedIn, Instagram, and YouTube content systems for founders and brands.
+- [Email Marketing](https://rewansh.com/email-marketing/): Buying-stage segmentation, lifecycle sequences, and deliverability setup (SPF, DKIM, DMARC).
 - [Marketing Automation](https://rewansh.com/marketing-automation/): AI-powered content, email, and lead-generation systems; CRM workflows and drip sequences.
 - [Content Marketing](https://rewansh.com/content-marketing/): Content strategy tied directly to SEO and lead generation, not just publishing volume.
 - [Conversion Rate Optimization](https://rewansh.com/conversion-rate-optimization/): Landing page and funnel optimization measured against acquisition cost.
+- [Fractional CMO](https://rewansh.com/fractional-cmo/): Senior marketing leadership, team and agency oversight, and board-ready reporting without a full-time executive hire.
 - [Wikipedia Page Creation](https://rewansh.com/wikipedia-page-creation/): Notability-first Wikipedia page creation with disclosed paid contributions — no guaranteed placement.
 
 ## Company
