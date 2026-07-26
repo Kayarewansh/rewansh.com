@@ -23,22 +23,30 @@ module.exports = {
     "./mumbai/*.html",
     "./bangalore/*.html",
     "./delhi/*.html",
-    "./pune/*.html"
+    "./pune/*.html",
+    "./pricing/*.html",
+    "./faqs/*.html",
+    "./growth-marketing/*.html",
+    "./email-marketing/*.html",
+    "./fractional-cmo/*.html"
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#e6c364",
-        "on-primary": "#131411",
-        secondary: "#1A1F45",
-        "on-secondary": "#ffffff",
-        background: "#F9FAFB",
-        surface: "#ffffff",
-        "on-surface": "#1A1F45",
-        "on-surface-variant": "#4B5563",
-        outline: "#E5E7EB",
-        "accent-gold": "#C5A04D",
-        "primary-ink": "#7d5f26"
+        primary: "#E8B84B",
+        "on-primary": "#0A0A0C",
+        secondary: "#EDEBE6",
+        "on-secondary": "#0A0A0C",
+        background: "#0A0A0C",
+        surface: "#131318",
+        "on-surface": "#EDEBE6",
+        "on-surface-variant": "#8E8B84",
+        outline: "#26262F",
+        "accent-gold": "#F6DA92",
+        "primary-ink": "#A67C1F",
+        panel: "#131318",
+        panel2: "#181820",
+        ink: "#0A0A0C"
       },
       borderRadius: {
         DEFAULT: "0.5rem",
@@ -56,8 +64,8 @@ module.exports = {
         gutter: "32px"
       },
       fontFamily: {
-        body: ["Inter", "sans-serif"],
-        display: ["Inter", "sans-serif"]
+        body: ["Space Grotesk", "sans-serif"],
+        display: ["Fraunces", "Georgia", "serif"]
       }
     }
   },

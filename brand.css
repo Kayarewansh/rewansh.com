@@ -1,6 +1,6 @@
-/* Rewansh brand chrome — shared header + footer styles used site-wide.
+/* Rewansh brand theme — shared header, footer, and typography used site-wide.
    Homepage uses the full design system in home.css instead; this file
-   is scoped so it never touches Tailwind's own body/page styling. */
+   layers on top of the site's own (now dark-palette) Tailwind build. */
 :root{
   --ink:#0A0A0C;--ink-2:#0F0F14;--panel:#131318;--panel-2:#181820;
   --line:#26262F;--line-soft:#1D1D25;--text:#EDEBE6;--muted:#8E8B84;
@@ -10,6 +10,9 @@
   --ease:cubic-bezier(.2,.7,.2,1);
 }
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif)}
 
 .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px;border:1px solid var(--line);border-radius:var(--radius);cursor:pointer;background:transparent;color:var(--text);position:relative;overflow:hidden;transition:border-color .3s,color .3s,transform .3s;text-decoration:none}
 .btn span{position:relative;z-index:1}
