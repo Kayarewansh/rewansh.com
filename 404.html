@@ -79,13 +79,25 @@
             border-color: #e6c364;
         }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="/brand.css" rel="stylesheet"/>
 </head>
 <body class="font-body text-base">
-<nav class="fixed top-0 w-full z-50 glass-header border-b border-outline">
-<div class="flex justify-between items-center max-w-[1240px] mx-auto px-margin-mobile py-5">
-<a class="text-2xl font-extrabold tracking-tighter text-secondary" href="/">REWANSH<span class="text-primary">.</span></a>
-<a class="px-7 py-3 bg-primary text-secondary font-bold text-sm rounded hover:bg-accent-gold transition-all shadow-sm" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener">Free Consultation</a>
-</div>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="Rewansh home"><img class="logo-img" src="/images/logo.png" alt="Rewansh"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a class="btn btn-gold" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener"><span>Free Consultation</span></a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">MENU</button>
+  </div>
 </nav>
 <main>
 <section class="relative pt-40 pb-24 overflow-hidden">
@@ -147,10 +159,54 @@
 </div>
 </section>
 </main>
-<footer class="bg-background py-16 border-t border-outline">
-<div class="max-w-[1240px] mx-auto px-margin-mobile text-center">
-<a class="text-2xl font-black text-secondary tracking-tighter" href="/">REWANSH<span class="text-primary">.</span></a>
-<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mt-6">© 2026 REWANSH. ALL RIGHTS RESERVED.</p>
-</div>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><img class="foot-logo" src="/images/logo.png" alt="Rewansh"></a>
+        <p>Digital marketing consultant helping startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems.</p>
+        <div class="socials">
+          <a href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" title="Instagram">IG</a>
+          <a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" title="LinkedIn">IN</a>
+          <a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" title="YouTube">YT</a>
+        </div>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="/seo-search-growth/">SEO &amp; Search Growth</a></li>
+        <li><a href="/paid-media-ppc/">Paid Media &amp; PPC</a></li>
+        <li><a href="/growth-marketing/">Growth Marketing</a></li>
+        <li><a href="/content-marketing/">Content Marketing</a></li>
+        <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+        <li><a href="/email-marketing/">Email Marketing</a></li>
+      </ul></div>
+      <div><h4>More</h4><ul>
+        <li><a href="/marketing-automation/">Marketing Automation</a></li>
+        <li><a href="/conversion-rate-optimization/">CRO</a></li>
+        <li><a href="/fractional-cmo/">Fractional CMO</a></li>
+        <li><a href="/wikipedia-page-creation/">Wikipedia Page Creation</a></li>
+        <li><a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/faqs/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Rewansh. All rights reserved.</span><span>Digital Marketing Consultant — India &amp; Worldwide</span></div>
+  </div>
 </footer>
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+  if(menuBtn && navLinks){
+    menuBtn.addEventListener('click',function(){var o=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
+    navLinks.addEventListener('click',function(e){if(e.target.closest('a')){navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}});
+  }
+})();
+</script>
 </body></html>

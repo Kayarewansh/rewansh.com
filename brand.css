@@ -1,0 +1,59 @@
+/* Rewansh brand chrome — shared header + footer styles used site-wide.
+   Homepage uses the full design system in home.css instead; this file
+   is scoped so it never touches Tailwind's own body/page styling. */
+:root{
+  --ink:#0A0A0C;--ink-2:#0F0F14;--panel:#131318;--panel-2:#181820;
+  --line:#26262F;--line-soft:#1D1D25;--text:#EDEBE6;--muted:#8E8B84;
+  --gold:#E8B84B;--gold-soft:#F6DA92;--gold-deep:#A67C1F;--up:#57D98A;
+  --radius:3px;--maxw:1240px;
+  --serif:'Fraunces',Georgia,serif;--sans:'Space Grotesk',system-ui,sans-serif;--mono:'Space Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px;border:1px solid var(--line);border-radius:var(--radius);cursor:pointer;background:transparent;color:var(--text);position:relative;overflow:hidden;transition:border-color .3s,color .3s,transform .3s;text-decoration:none}
+.btn span{position:relative;z-index:1}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold);transform:translateY(101%);transition:transform .45s var(--ease);z-index:0}
+.btn:hover{color:var(--ink);border-color:var(--gold);transform:translateY(-2px)}
+.btn:hover::before{transform:translateY(0)}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:700}
+.btn-gold::before{background:var(--gold-soft)}
+.btn .arw{transition:transform .3s;position:relative;z-index:1}
+.btn:hover .arw{transform:translateX(4px)}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,10,12,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line-soft);font-family:var(--sans)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:inline-flex;align-items:center;line-height:0}
+.logo-img{height:32px;width:auto;filter:drop-shadow(0 2px 10px rgba(232,184,75,.25));transition:transform .4s var(--ease)}
+.logo:hover .logo-img{transform:scale(1.04)}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);position:relative;transition:color .25s;text-decoration:none}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nav-links a:not(.btn):hover{color:var(--text)}
+.nav-links a:not(.btn):hover::after{width:100%}
+.nav .btn{padding:10px 18px}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:9px 13px;border-radius:var(--radius);font-family:var(--mono);font-size:12px;cursor:pointer}
+
+footer{border-top:1px solid var(--line);background:var(--ink-2);padding:70px 0 34px;font-family:var(--sans)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:52px}
+.foot-grid p{color:var(--muted);font-size:14px;margin-top:16px;max-width:330px}
+.foot-grid h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:10px}
+.foot-grid li a{color:var(--muted);font-size:13.5px;transition:color .25s,padding-left .25s;text-decoration:none}
+.foot-grid li a:hover{color:var(--text);padding-left:5px}
+.socials{display:flex;gap:12px;margin-top:22px}
+.socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--muted);font-family:var(--mono);font-size:11px;transition:all .3s var(--ease);text-decoration:none}
+.socials a:hover{color:var(--ink);background:var(--gold);border-color:var(--gold);transform:translateY(-3px)}
+.foot-bottom{border-top:1px solid var(--line-soft);padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.foot-logo{height:30px;filter:drop-shadow(0 2px 10px rgba(232,184,75,.2))}
+
+@media (max-width:980px){
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:70px;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--line);padding:22px 26px;gap:20px;z-index:100}
+  .menu-btn{display:block}
+  .foot-grid{grid-template-columns:1fr}
+}
