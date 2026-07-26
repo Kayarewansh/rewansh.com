@@ -398,13 +398,17 @@
 <section class="news">
   <div class="wrap news-inner">
     <div data-reveal>
-      <div class="mono eyebrow">Marketing Briefings</div>
-      <h2 style="font-size:clamp(28px,4vw,44px)">Free digital marketing <em class="ac">insights.</em></h2>
-      <p class="lede" style="margin-top:14px">Weekly insights on SEO, paid media, AI marketing tools, and growth strategy — no fluff, just what's actually working.</p>
+      <div class="mono eyebrow">Free Resource</div>
+      <h2 style="font-size:clamp(28px,4vw,44px)">The Marketing Audit <em class="ac">Checklist.</em></h2>
+      <p class="lede" style="margin-top:14px">50 checks across SEO, paid media, content, email, and analytics — the same framework used to open every client engagement. Free PDF, instant download.</p>
     </div>
-    <form data-reveal style="--d:.1s" id="newsForm">
+    <form data-reveal style="--d:.1s" id="newsForm" action="https://formsubmit.co/ajax/kayarerewansh@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Marketing Audit Checklist Lead — rewansh.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for requesting the Marketing Audit Checklist! Here's your direct download link: https://rewansh.com/downloads/marketing-audit-checklist.pdf — If you'd like this audit run on your own business instead, just reply to this email or book a free consultation at https://wa.me/919165882832. — Rewansh">
       <div class="field"><input type="email" name="email" placeholder="you@company.com" required aria-label="Email address"></div>
-      <button class="btn btn-gold" type="submit"><span>Join Briefing</span></button>
+      <button class="btn btn-gold" type="submit"><span>Get the Checklist</span></button>
     </form>
   </div>
 </section>
@@ -483,6 +487,7 @@
         <li><a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a></li>
       </ul></div>
       <div><h4>Company</h4><ul>
+        <li><a href="/marketing-audit-checklist/">Free Audit Checklist</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/pricing/">Pricing</a></li>
         <li><a href="/faqs/">FAQ</a></li>
@@ -560,7 +565,22 @@ if(media && !reduced && matchMedia('(pointer:fine)').matches){
   p.addEventListener('pointerleave',()=>media.style.transform='');
 }
 
-document.getElementById('newsForm').addEventListener('submit',e=>{e.preventDefault();e.target.innerHTML='<span class="mono" style="color:var(--up)">✓ You\'re in — check your inbox soon.</span>';});
+const newsForm=document.getElementById('newsForm');
+newsForm.addEventListener('submit',e=>{
+  e.preventDefault();
+  const btn=newsForm.querySelector('button[type="submit"]');
+  btn.disabled=true;
+  fetch(newsForm.action,{method:'POST',body:new FormData(newsForm),headers:{'Accept':'application/json'}})
+    .then(res=>{
+      if(!res.ok) throw new Error('Request failed');
+      newsForm.innerHTML='<span class="mono" style="color:var(--up)">✓ Check your inbox — your download link is on its way.</span> <a class="mono" style="color:var(--gold);margin-left:10px" href="/downloads/marketing-audit-checklist.pdf" download>Download now →</a>';
+      if(typeof gtag === 'function'){gtag('event','lead_magnet_signup',{event_category:'engagement',event_label:window.location.pathname});}
+    })
+    .catch(()=>{
+      btn.disabled=false;
+      newsForm.innerHTML+='<p class="mono" style="color:#F87171;margin-top:10px;flex-basis:100%">Something went wrong — email kayarerewansh@gmail.com and we\'ll send it directly.</p>';
+    });
+});
 
 const cf=document.getElementById('contactForm');
 cf.addEventListener('submit',async e=>{e.preventDefault();const btn=cf.querySelector('button span');const old=btn.textContent;btn.textContent='Sending…';try{const r=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{'Accept':'application/json'}});if(r.ok){cf.reset();document.getElementById('formNote').style.display='block';btn.textContent=old;if(typeof gtag==='function'){gtag('event','contact_form_submit',{event_category:'engagement',event_label:window.location.pathname});}}else throw 0;}catch{btn.textContent='Failed — try WhatsApp';}});
