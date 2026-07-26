@@ -170,7 +170,30 @@
     <a href="/" class="logo" aria-label="Rewansh home"><img class="logo-img" src="/images/logo.png" alt="Rewansh"></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="/about/">About</a></li>
-      <li><a href="/#services">Services</a></li>
+      <li class="has-dropdown">
+      <a href="/#services">Services</a>
+      <button class="drop-toggle" aria-expanded="false" aria-controls="servicesNavDropdown" aria-label="Toggle services menu"><svg class="drop-arw" width="9" height="6" viewBox="0 0 9 6" fill="none" aria-hidden="true"><path d="M1 1L4.5 5L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="dropdown" id="servicesNavDropdown">
+      <div class="dropdown-cols">
+        <div class="dropdown-col">
+          <a href="/seo-search-growth/">SEO &amp; Search Growth</a>
+          <a href="/paid-media-ppc/">Paid Media &amp; PPC</a>
+          <a href="/social-media-marketing/">Social Media Marketing</a>
+          <a href="/marketing-automation/">Marketing Automation</a>
+          <a href="/content-marketing/">Content Marketing</a>
+          <a href="/conversion-rate-optimization/">Conversion Rate Optimization</a>
+        </div>
+        <div class="dropdown-col">
+          <a href="/email-marketing/">Email Marketing</a>
+          <a href="/growth-marketing/">Growth Marketing</a>
+          <a href="/fractional-cmo/">Fractional CMO</a>
+          <a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+          <a href="/wikipedia-page-creation/">Wikipedia Page Creation</a>
+        </div>
+      </div>
+      <a class="dropdown-all" href="/pricing/"><span>All 11 Services &amp; Pricing</span><span class="arw">→</span></a>
+    </div>
+    </li>
       <li><a href="/pricing/">Pricing</a></li>
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/contact/">Contact</a></li>
@@ -509,6 +532,14 @@
     menuBtn.addEventListener('click',function(){var o=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
     navLinks.addEventListener('click',function(e){if(e.target.closest('a')){navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}});
   }
+  document.querySelectorAll('.drop-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      var li=btn.closest('.has-dropdown');
+      var o=li.classList.toggle('open');
+      btn.setAttribute('aria-expanded',o);
+    });
+  });
 })();
 </script>
 </body></html>
