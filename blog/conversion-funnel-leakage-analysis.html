@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/conversion-funnel-leakage-analysis.html",
   "datePublished": "2026-07-20",
-  "dateModified": "2026-07-20"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -232,6 +232,18 @@
 </div>
 
 <p>A leakage analysis turns &quot;our conversion rate is low&quot; into a specific, fixable diagnosis &mdash; which is the same discipline behind every <a href="../conversion-rate-optimization/">Conversion Rate Optimization</a> engagement I run.</p>
+
+<h2>Step 6 &mdash; Segment before you fix, because a blended funnel can hide the real problem</h2>
+<p>An aggregate funnel number is an average of segments that can behave completely differently &mdash; a strong organic-desktop segment can sit right next to a badly broken paid-mobile segment, and the blended view will just look mediocre instead of showing either extreme. Fixing &quot;the funnel&quot; as one undifferentiated thing risks spending effort improving a step that&#39;s already healthy in most segments, while the actual problem segment stays untouched.</p>
+<p>At minimum, re-run the step-to-step drop-off analysis split by traffic source and by device before deciding what to prioritize. It&#39;s common for the worst-performing step in the blended view to not even be the worst-performing step in any single segment &mdash; a real result of averaging, not a real bottleneck any one visitor actually experiences. Segmenting first, then prioritizing, avoids fixing a problem that only exists in the aggregate math.</p>
+
+<h2>When a leakage analysis is (and isn&#39;t) worth running yet</h2>
+<p>Step-to-step drop-off analysis needs enough weekly volume at each step for the numbers to be stable, or the &quot;leaks&quot; found are just normal week-to-week noise dressed up as findings. A site sending a few dozen visitors through a given step each week can see that step&#39;s conversion rate swing by a large margin purely from natural variance, with no underlying change in visitor behavior at all &mdash; chasing that swing wastes effort on a fix for a problem that may not exist.</p>
+<p>Below that volume threshold, qualitative signals are usually the better first move: session recordings, a handful of direct user interviews, or simply watching five real people attempt the funnel. Once a step reliably sees enough weekly volume that a genuine change would stand out clearly against normal fluctuation, the quantitative step-to-step analysis in this framework becomes worth the setup effort. Running it too early doesn&#39;t just waste time &mdash; it can point a small team at the wrong fix with real confidence behind a number that was never statistically meaningful.</p>
+
+<h2>A measurement mistake worth ruling out first: validate the tracking before trusting the funnel</h2>
+<p>Not every leak is real. A tag that fires twice due to a tag manager misconfiguration, a form-submit event that double-counts on page reload, or bot traffic hitting the top of the funnel without ever being capable of converting can all manufacture a drop-off that has nothing to do with visitor behavior. Before treating any specific step&#39;s number as a genuine finding, confirm the underlying event fires exactly once per real user action &mdash; the <a href="conversion-tracking-validation-checklist.html">conversion tracking validation checklist</a> is the right pass to run before, not after, building a leakage analysis on top of the data.</p>
+<p>This matters most at the top of the funnel, where bot and low-quality traffic inflates the visitor count without ever being able to convert, making every downstream step look like it&#39;s leaking more than it actually is relative to real human visitors. A leakage analysis is only as trustworthy as the tracking underneath it.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">

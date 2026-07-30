@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/ecommerce-seo-audit-checklist.html",
   "datePublished": "2026-07-21",
-  "dateModified": "2026-07-21"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -237,6 +237,23 @@
 </div>
 
 <p>Ecommerce SEO issues compound quickly because of sheer page volume &mdash; a pattern affecting thousands of product pages is a much bigger deal than the same pattern on a handful of pages, which is why this checklist exists as its own pass inside <a href="../seo-search-growth/">SEO &amp; Search Growth</a> work for ecommerce clients.</p>
+
+<h2>Sequencing the checklist by catalog size</h2>
+<p>A checklist covering the same ground for a 200-SKU store and a 50,000-SKU marketplace hides a real difference in urgency. On a small catalog, faceted navigation and pagination issues rarely reach a scale where crawl budget becomes a genuine constraint &mdash; the fixes above are worth doing for cleanliness, but the risk of a search engine simply never getting to everything worth indexing is low. On a large catalog, crawl budget becomes an active constraint, and the checklist needs different sequencing: block or noindex low-value faceted combinations first, since that's usually the single biggest source of wasted crawl budget, before spending audit time on secondary items like unique category copy. Search Console's crawl stats report is worth checking specifically for this &mdash; a large gap between total crawl requests and the number of pages actually worth ranking is the clearest sign the faceted navigation problem above is live on a given site, not theoretical.</p>
+
+<h2>Image SEO: the checklist item most audits skip</h2>
+<p>Product photography carries a disproportionate share of ecommerce SEO opportunity that a generic checklist rarely covers with any specificity. Descriptive, unique alt text on product images &mdash; not the product SKU or a generic "product photo" &mdash; supports both standard image search traffic and, increasingly, how AI-driven answer engines describe and reference products they're citing. A common mistake is lazy-loading every product image with no image sitemap or markup signaling which images actually matter, which can quietly keep otherwise valuable product photography out of the index entirely. Compressed, non-degraded file sizes matter for page speed, but the alt text and indexability side of image SEO is the piece most often missing, since it requires deliberate content work per product rather than a one-time technical fix applied sitewide.</p>
+
+<h2>International and multi-currency checklist items</h2>
+<p>For any ecommerce site selling into more than one country or currency, a whole category of ecommerce-specific SEO issues sits outside the checklist items above. Currency or region selectors implemented purely in JavaScript, with no server-rendered or URL-based distinction between markets, typically mean search engines only ever see one version of a page regardless of how many currencies or regions are technically supported. Hreflang tags, where multiple country or language versions of the same product exist, need to point at genuinely equivalent pages, not just the closest matching category, since a mismatched hreflang implementation can actively confuse which version ranks where for whom. This category of issue is easy to miss because it doesn't surface as a page-level problem the way duplicate content or a 404 does &mdash; it shows up instead as underperformance in specific markets, which is hard to diagnose without checking the hreflang and market-selector implementation directly.</p>
+
+<h2>The mistake that undoes a clean audit: broken canonical chains after a redesign</h2>
+<p>A common mistake specific to ecommerce sites is running this checklist once after a platform migration or redesign, fixing everything found, and then not checking it again after the next round of category restructuring or a new filter feature ships. Canonical tags and redirect rules that were correct at audit time frequently break quietly when a development team adds a new filter option, restructures category URLs for a rebrand, or migrates to a new platform, since none of those changes are typically run past whoever owns SEO before shipping. The practical fix is treating a subset of this checklist &mdash; canonical tags on filtered views, and redirect coverage on discontinued products &mdash; as a recurring check tied to the site's release cadence rather than a once-a-year audit item, since the redesign that breaks it is far more likely to happen between audits than during one.</p>
+
+<h2>What a clean audit doesn't guarantee</h2>
+<p>Passing every item on this checklist fixes the technical and structural problems specific to ecommerce, but it doesn't guarantee rankings on its own, since none of it addresses whether the product and category pages have genuine content depth, backlinks, or demonstrated relevance for the terms they're meant to rank for. Treat this checklist as removing the ecommerce-specific obstacles standing between the site and its actual ranking potential, not as a ranking strategy by itself &mdash; the broader keyword targeting, content, and link-building work still needs to happen alongside it, on pages this checklist has now made technically sound enough to actually benefit from that work.</p>
+
+<p>One caveat worth stating plainly for a large catalog encountering all of this for the first time: don't try to fix every item in one pass. Prioritize by expected impact and the number of pages affected, work through the list in that order, and treat it as a running checklist revisited each quarter rather than a single project with a fixed end date &mdash; the catalog keeps changing, and so does the set of issues worth checking for.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">

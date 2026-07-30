@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/meta-attribution-window-explained.html",
   "datePublished": "2026-07-20",
-  "dateModified": "2026-07-20"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -227,6 +227,33 @@
 </div>
 
 <p>Attribution windows are a reporting lens, not a performance lever &mdash; changing the setting doesn&#39;t make a <a href="../paid-media-ppc/">paid media</a> account more efficient, it just changes how the same results get described.</p>
+
+<h2>A distinction worth knowing: attribution window vs. the conversion lag report</h2>
+<p>Meta&#39;s attribution window and its conversion lag (time-to-convert) report answer different questions, and conflating them is a common mistake. The attribution window is the crediting rule you set going forward. The lag report shows, historically, how long conversions took to happen &mdash; but that history was itself collected under whatever window was active at the time, so it&#39;s not a clean, unbiased answer to &quot;what window should I use.&quot; A 1-day window will, unsurprisingly, show a lag report where almost everything converted within a day, because anything slower was never captured to begin with.</p>
+<p>A more honest way to use the lag report: temporarily widen the window (or run a parallel test at a wider setting) to observe the real, unbounded distribution of how long conversions actually take before narrowing back down to whatever window matches the business&#39;s actual sales cycle. Setting the window from the sales cycle itself &mdash; not from a lag report shaped by the window already in place &mdash; avoids a subtle circular-logic trap that&#39;s easy to fall into.</p>
+
+<h2>A nuance the basic explanation skips: modeled conversions</h2>
+<p>Since Apple&#39;s App Tracking Transparency changes and the broader move away from third-party cookies, Meta can no longer observe every conversion directly &mdash; a real share of what shows up inside an attribution window today is a modeled estimate, not a directly tracked event. Meta fills gaps in observed data using aggregated signals and statistical modeling, then reports the result inside the same attribution window setting as if it were fully observed.</p>
+<p>This matters because two accounts using the identical 7-day click window can still have meaningfully different modeling accuracy behind that number, depending on how much of their traffic is trackable in the first place (iOS share, browser mix, consent rates). The attribution window setting controls the crediting rule; it doesn&#39;t guarantee the underlying data feeding that rule is fully observed rather than partly estimated. Server-side tracking (the Conversions API) narrows this gap by sending events directly from your server rather than relying solely on browser or device-level signals, but it doesn&#39;t eliminate modeling entirely.</p>
+
+<h2>How to actually audit your current attribution setup</h2>
+<p>Most accounts have never had anyone actually check which attribution window is set where, or whether it&#39;s consistent across campaigns. A short audit, run quarterly at minimum:</p>
+<ul>
+<li><strong>List the attribution setting on every active campaign</strong> &mdash; not just the ad account default, since individual campaigns can override it.</li>
+<li><strong>Cross-check against your CRM&#39;s actual close data</strong> for a sample of conversions, to see whether the chosen window plausibly captures your real sales cycle length or is systematically too short or too long.</li>
+<li><strong>Compare the same date range across platforms</strong> (Meta, Google Ads, GA4) using matched attribution logic where possible &mdash; a 7-day-click Meta number sitting next to a data-driven Google Ads number isn&#39;t a fair side-by-side, even though both look like straightforward &quot;conversions&quot; columns.</li>
+<li><strong>Re-run the check after any major account restructure</strong>, since a rebuild is a common point where attribution settings quietly reset to a platform default nobody chose deliberately.</li>
+</ul>
+<div class="table-wrap">
+<table>
+<tr><th>Audit Check</th><th>What It Catches</th></tr>
+<tr><td>Per-campaign attribution setting review</td><td>Inconsistent windows hiding inside one account</td></tr>
+<tr><td>CRM close-data cross-check</td><td>A window that&#39;s too short or too long for the real sales cycle</td></tr>
+<tr><td>Cross-platform comparison</td><td>Numbers that look comparable but use different underlying logic</td></tr>
+<tr><td>Post-restructure re-check</td><td>Settings silently reset to a platform default</td></tr>
+</table>
+</div>
+<p>None of this changes what actually happened in the business &mdash; it changes whether the number in the dashboard reflects reality closely enough to make a spend decision on. That distinction is worth confirming before, not after, a budget gets reallocated based on a single attribution report.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">

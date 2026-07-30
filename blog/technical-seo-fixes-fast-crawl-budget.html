@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/technical-seo-fixes-fast-crawl-budget.html",
   "datePublished": "2026-07-20",
-  "dateModified": "2026-07-20"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -227,10 +227,28 @@
 <tr><td>Soft 404s / broken internal links</td><td>Fix or return proper 404/410 status</td></tr>
 <tr><td>Thin, near-duplicate pages</td><td>Consolidate into one stronger page with a redirect</td></tr>
 <tr><td>Slow server response time</td><td>Improve hosting/server performance</td></tr>
+<tr><td>JavaScript rendering queue lag</td><td>Server-side render or pre-render key pages</td></tr>
+<tr><td>Broken or one-directional hreflang</td><td>Audit and fix reciprocal hreflang tags</td></tr>
 </table>
 </div>
 
 <p>Crawl budget fixes rarely move rankings directly &mdash; what they do is make sure the pages you actually want indexed and updated are the ones getting a search engine&#39;s attention, which is foundational to any serious <a href="../seo-search-growth/">SEO &amp; Search Growth</a> program on a larger site.</p>
+
+<h2>Fix 7 &mdash; The edge case most checklists skip: JavaScript rendering cost</h2>
+<p>A client-side-rendered page doesn&#39;t get crawled and indexed in one pass the way a static HTML page does &mdash; Google first fetches the raw HTML, then queues the page for a separate rendering step to execute the JavaScript and see the final content, and that render queue operates on its own schedule that can lag well behind the initial crawl. On a heavily JavaScript-rendered site, this rendering step consumes its own budget on top of the standard crawl budget, and a page can sit &quot;crawled but not yet rendered&quot; for a meaningfully longer stretch than a static-HTML equivalent would.</p>
+<p>This is a distinct problem from the URL-variant and redirect issues covered above &mdash; it&#39;s not that the crawler is wasting requests on low-value pages, it&#39;s that legitimate, valuable pages are queued behind an extra processing step the site&#39;s architecture created. Server-side rendering or pre-rendering for the pages that matter most for organic traffic removes this specific bottleneck entirely, rather than just managing it.</p>
+
+<h2>Fix 8 &mdash; International and hreflang setups that quietly multiply crawl demand</h2>
+<p>A site running five language or regional variants doesn&#39;t just have five times the pages &mdash; it can generate crawl demand well beyond that multiple, because hreflang implementations create a dense web of cross-references between every variant of every page. A crawler validating hreflang tags often re-requests related-language versions to confirm the reciprocal tags are correct, which is easy to overlook when estimating how much crawl budget an international expansion will actually consume.</p>
+<p>Broken or one-directional hreflang (Page A points to Page B&#39;s language variant, but Page B doesn&#39;t point back) makes this worse, not better &mdash; it doesn&#39;t just fail to help international rankings, it adds crawl requests spent validating a relationship that doesn&#39;t confirm correctly on both ends. Auditing hreflang reciprocity is worth doing specifically as a crawl-budget check, not just as an international SEO check, on any site with more than a couple of regional variants.</p>
+
+<h2>How to actually measure whether the fixes worked</h2>
+<p>Crawl budget fixes are easy to ship and easy to never verify. Two data sources make the impact measurable rather than assumed:</p>
+<ul>
+<li><strong>Search Console&#39;s Crawl Stats report, before and after</strong> &mdash; specifically the breakdown by response code and by file type, watching for a falling share of requests going to the low-value URL patterns that were targeted, and a rising share going to real content pages.</li>
+<li><strong>Server log analysis over a matched time window</strong> &mdash; comparing crawler request volume to the same pages in the weeks before and after the fix, which is a more granular and more trustworthy signal than the Search Console UI alone, especially on a large site where Search Console&#39;s own reporting can be a sampled view rather than exhaustive.</li>
+</ul>
+<p>The metric that actually matters isn&#39;t total crawl requests &mdash; a drop in total requests could mean wasted crawling was eliminated (good) or that the site is being crawled less overall (potentially bad). Watch specifically for important pages moving from &quot;Discovered, not indexed&quot; or a stale last-crawled date to a fresh crawl timestamp; that&#39;s the outcome the whole exercise was for.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">

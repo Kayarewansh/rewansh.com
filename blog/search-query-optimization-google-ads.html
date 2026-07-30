@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/search-query-optimization-google-ads.html",
   "datePublished": "2026-07-21",
-  "dateModified": "2026-07-21"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -223,6 +223,37 @@
 </div>
 
 <p>Search query optimization is unglamorous, recurring maintenance &mdash; but it&#39;s one of the more reliable ways to keep spend efficient without any creative or bidding changes, and it&#39;s a standing task in every <a href="../paid-media-ppc/">Paid Media &amp; PPC</a> account I manage.</p>
+
+<h2>The mistake that wastes the most time: rebuilding the same negative list per campaign</h2>
+<p>Accounts running several campaigns for the same business tend to attract the same handful of irrelevant query patterns &mdash; generic informational searches, job-seeker queries, competitor brand names used in an unrelated context. Handling these one campaign at a time means re-discovering and re-adding the same negatives repeatedly across every campaign, which wastes review time and guarantees some campaigns lag weeks behind others in cleanup.</p>
+<p>A shared negative keyword list, built once and attached to every relevant campaign, fixes this directly. Populate it from the irrelevant patterns that show up account-wide, and reserve campaign-level negatives for exclusions that are genuinely specific to one ad group&#39;s targeting rather than the account as a whole. This connects directly to the cross-campaign cannibalization problem above &mdash; a topic covered in more depth in this <a href="keyword-cannibalization-fix-guide.html">keyword cannibalization fix guide</a> &mdash; since a shared list applied inconsistently is itself a common source of that exact issue: one campaign filtered on the current list and another running an outdated, unsynced version will behave differently on the identical query.</p>
+<p>The habit worth building isn&#39;t just &quot;add negatives when you see them&quot; &mdash; it&#39;s &quot;check whether this negative already exists in the shared list before adding it anywhere else.&quot; That single check is what turns negative keyword management from a per-campaign chore into an account-wide asset that compounds instead of resetting with every new campaign.</p>
+
+<h2>A faster way to review at scale: group by pattern, don&#39;t read line by line</h2>
+<p>Scanning a search terms report row by row works fine for a few hundred queries a week; it breaks down once an account is generating thousands. At that volume, grouping queries by shared word patterns (n-grams) surfaces the same irrelevant themes far faster than reading each query individually &mdash; if a dozen queries all contain the word &quot;free&quot; or &quot;jobs&quot; and none of them convert, that&#39;s one negative decision covering a dozen queries, not twelve separate judgment calls made one at a time.</p>
+<p>Most Google Ads reporting views and third-party scripts support grouping the search terms report by n-gram, sorted by spend with zero conversions. Reviewing that sorted list first, before scanning the full unsorted report, is where most wasted-spend discoveries actually happen &mdash; it surfaces recurring, high-cost patterns immediately instead of burying them among hundreds of one-off queries that individually don&#39;t move the account&#39;s numbers either way.</p>
+
+<h2>How to tell whether the new habit is actually sticking</h2>
+<p>The simplest check: each time a negative keyword gets added, note whether it&#39;s the first time that exact term has been excluded anywhere in the account, or whether it duplicates something added weeks earlier to a different campaign. A high duplicate rate is a sign the shared list isn&#39;t being applied consistently &mdash; new campaigns are launching without it attached, or someone is still adding negatives at the campaign level out of habit rather than checking the account-wide list first. Tracking this for a month is usually enough to tell whether the maintenance habit has genuinely changed, or just moved to a different, equally scattered place.</p>
+
+<div class="table-wrap">
+<table>
+<tr><th>Approach</th><th>What It Costs</th><th>Where It Breaks Down</th></tr>
+<tr><td>Campaign-by-campaign negatives</td><td>Repeated discovery of the same irrelevant terms</td><td>Some campaigns lag weeks behind others in cleanup</td></tr>
+<tr><td>Shared negative list, applied consistently</td><td>One decision covers every attached campaign</td><td>Breaks if new campaigns launch without the list attached</td></tr>
+<tr><td>N-gram grouped review</td><td>Minutes instead of hours on high-volume accounts</td><td>Can miss low-frequency but individually costly one-off queries</td></tr>
+</table>
+</div>
+
+<h2>Watch for auto-applied recommendations undoing your work</h2>
+<p>Google Ads&#39; auto-apply recommendations feature can silently add keywords, broaden match types, or apply other account changes on a recurring schedule if it&#39;s left enabled &mdash; and several of the changes it applies work directly against the discipline described above. An account that just spent a month tightening broad match keywords back to phrase match can have some of that work quietly reversed if an auto-applied recommendation re-broadens targeting a few weeks later, with no obvious notification pointing back to search query optimization as the cause.</p>
+<p>The fix is straightforward but easy to forget: review which recommendation categories are set to auto-apply, and turn off auto-apply specifically for anything touching keywords, match types, or bidding strategy. Recommendations can still be reviewed manually and applied selectively; the point isn&#39;t to ignore Google&#39;s suggestions, it&#39;s to make sure a human is the one deciding whether a change lines up with what the search terms review just found, rather than a scheduled automation applying it in the background.</p>
+<ul>
+<li>Keyword and match type recommendations &mdash; leave off auto-apply; review manually against current search term data.</li>
+<li>Bid strategy recommendations &mdash; leave off auto-apply; a change here can interact unpredictably with a recent match type or negative keyword change.</li>
+<li>Ad extension or asset recommendations &mdash; lower risk; auto-apply is more defensible here since it rarely conflicts with query-level optimization work.</li>
+</ul>
+<p>This is worth checking on the same cadence as the broader account review, since a newly launched campaign sometimes inherits an account-level auto-apply setting without anyone deliberately choosing it for that campaign. A five-minute check of the Recommendations tab&#39;s auto-apply settings, done alongside the monthly review, catches this before months of manual query optimization work gets undone one small, automatic change at a time.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">

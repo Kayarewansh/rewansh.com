@@ -53,7 +53,7 @@
   "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
   "mainEntityOfPage": "https://rewansh.com/blog/marketing-automation-workflows-for-saas.html",
   "datePublished": "2026-07-22",
-  "dateModified": "2026-07-22"
+  "dateModified": "2026-07-30"
 }
 </script>
 <script type="application/ld+json">
@@ -219,6 +219,27 @@
 <tr><td>Churn-risk re-engagement</td><td>Usage drop relative to account's own baseline</td><td>A single account-wide usage threshold applied to all customers equally</td></tr>
 </table>
 </div>
+
+<h2>The mistake that breaks all five: missing suppression logic</h2>
+<p>A common mistake is building each of these five workflows in isolation, with no suppression logic to keep them from firing on top of each other. A customer who just had a card fail (workflow 3) getting simultaneously hit with an upsell email (workflow 4) reads as tone-deaf, and it undermines the seriousness of the dunning email at exactly the moment that email needs to be taken seriously. The fix isn't complicated &mdash; most automation platforms support basic suppression rules &mdash; but it has to be designed deliberately alongside the individual workflows, not bolted on after the conflict has already annoyed a customer. A simple rule of thumb: dunning and churn-risk workflows should suppress everything else non-essential for that account until resolved, since both represent a customer relationship that's already under strain and doesn't need competing messages.</p>
+
+<h2>Measuring whether a workflow is actually working, not just live</h2>
+<p>A workflow existing and being switched on inside the automation platform isn't the same as it working. Each of the five needs its own specific success metric, evaluated on its own cadence, rather than folded into one blended automation performance number that hides which piece is actually pulling weight. Onboarding activation should be measured by the percentage of new signups reaching the specific activation action within a defined window, not by open rate on the welcome email. Dunning recovery should be measured by the percentage of failed payments recovered within the retry window, tracked separately from voluntary churn so the two don't get blended into one confusing churn figure. Expansion workflows should be measured by conversion rate among accounts that actually hit the trigger, not total expansion revenue alone, since total revenue can rise or fall for reasons unrelated to the workflow itself. Without stage-specific metrics like these, it's easy to leave a workflow running indefinitely on the assumption it's helping, when an isolated look at its own numbers would show it's quietly underperforming or barely firing at all.</p>
+
+<h2>Which workflow to build first, by company stage</h2>
+<ul>
+<li><strong>Very early, pre-product-market-fit</strong> &mdash; onboarding activation first, since without a clear read on what makes a new user stick, none of the other four workflows have a reliable signal to trigger from.</li>
+<li><strong>Early revenue, low volume</strong> &mdash; dunning recovery next, since the effort to build it is small relative to the direct revenue it protects, and low volume makes it the fastest of the five to implement well.</li>
+<li><strong>Growth stage, larger install base</strong> &mdash; trial-to-paid nurture and churn-risk re-engagement become proportionally more valuable, since the trial pool and existing account base are now large enough that even a modest lift compounds meaningfully.</li>
+<li><strong>Mature, expansion-focused stage</strong> &mdash; the product-led upsell workflow, since the existing base is large and stable enough that expansion revenue starts to rival new-logo revenue in importance.</li>
+</ul>
+<p>Building all five simultaneously from day one is rarely the right call for a small team. Sequencing them by what the business actually needs most at its current size produces a better return on the build effort than trying to launch everything at once and maintaining none of it well.</p>
+
+<h2>When a workflow should hand off to a human instead of staying automated</h2>
+<p>Not every trigger inside these five workflows should end in another automated email. For churn-risk re-engagement specifically, an account above a certain revenue or strategic threshold showing the early warning signs described above is usually better served by a human check-in from customer success than another automated message, since the value of a personal outreach at that moment often outweighs what pure automation can offer, and a low-effort automated email to a high-value account can read as an under-resourced response to a real risk. The practical fix is an account-value threshold inside the churn-risk workflow that routes above-threshold accounts to a task in a CRM for a real person to handle directly, while everything below the threshold continues through the fully automated sequence. The same logic applies more loosely to dunning: an unusually large account with a failed payment is often worth a direct phone call or personal email in addition to the automated retry sequence, not instead of it.</p>
+
+<h2>Auditing the existing five before adding a sixth</h2>
+<p>Before building anything new, it's worth auditing whether the existing workflows are still configured the way they were originally designed, since automation platforms accumulate small manual edits over time that quietly drift a workflow away from its intended trigger logic. A dunning sequence someone paused during a promotional period and never re-enabled, or a churn-risk threshold manually loosened for one difficult account and left that way for everyone afterward, are the kind of silent decay a periodic audit catches and a dashboard alone won't, since the workflow still shows as "active" the entire time it's quietly misconfigured underneath.</p>
 
 <h2>FAQ</h2>
 <div class="aeo-block">
