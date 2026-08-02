@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PKRYMX051"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PKRYMX051');
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    }
+  }, true);
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0A0A0C"/>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined-subset.woff2" crossorigin=""/>
+<title>Uptime Monitoring and Backups: Pre-Launch Setup | Rewansh</title>
+<meta name="description" content="Set up uptime monitoring, automated backups, and error logging before launch — so downtime reaches you from a bot alert, not a client's angry email."/>
+<link rel="canonical" href="https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="author" content="Rewansh Kayare"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Rewansh"/>
+<meta property="og:title" content="Uptime Monitoring and Backups: Pre-Launch Setup | Rewansh"/>
+<meta property="og:description" content="Set up uptime monitoring, automated backups, and error logging before launch — so downtime reaches you from a bot alert, not a client's angry email."/>
+<meta property="og:url" content="https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html"/>
+<meta property="og:image" content="https://rewansh.com/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Uptime Monitoring and Backups: Pre-Launch Setup | Rewansh"/>
+<meta name="twitter:description" content="Set up uptime monitoring, automated backups, and error logging before launch — so downtime reaches you from a bot alert, not a client's angry email."/>
+<meta name="twitter:image" content="https://rewansh.com/og-image.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Uptime Monitoring and Backups: The Setup You Need Before Launch",
+  "image": "https://rewansh.com/og-image.jpg",
+  "description": "Set up uptime monitoring, automated backups, and error logging before launch — so downtime reaches you from a bot alert, not a client's angry email.",
+  "author": { "@type": "Person", "name": "Rewansh Kayare", "url": "https://rewansh.com/" },
+  "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
+  "mainEntityOfPage": "https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html",
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewansh.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rewansh.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Uptime Monitoring and Backups: The Setup You Need Before Launch", "item": "https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the difference between uptime monitoring and error logging?", "acceptedAnswer": { "@type": "Answer", "text": "Uptime monitoring checks from the outside whether the site is reachable at all \u2014 it tells you the site is down. Error logging captures what's happening inside the application (a broken script, a failed API call, a server error) even while the site is technically still up and loading \u2014 it tells you something is quietly broken before it becomes a full outage." } },
+    { "@type": "Question", "name": "How often should website backups run?", "acceptedAnswer": { "@type": "Answer", "text": "Match backup frequency to how often content actually changes \u2014 a site updated daily (an active blog, an ecommerce catalog) needs daily backups, while a mostly-static brochure site can reasonably run weekly. The frequency matters less than actually testing a restore at least once; an untested backup is an assumption, not a safety net." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link href="../style.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url('../fonts/material-symbols-outlined-subset.woff2') format('woff2');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+        }
+        body {
+            background-color: #0A0A0C;
+            color: #EDEBE6;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .article-body h2 { font-size: 1.75rem; font-weight: 800; color: #EDEBE6; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #8E8B84; }
+        .article-body ul, .article-body ol { margin: 0 0 1.25rem 1.25rem; color: #8E8B84; }
+        .article-body ul { list-style: disc; }
+        .article-body ol { list-style: decimal; }
+        .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .article-body a { color: #E8B84B; font-weight: 600; }
+        .article-body code { background: #131318; color: #EDEBE6; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
+        .article-body .table-wrap { overflow-x: auto; margin: 1.5rem 0; -webkit-overflow-scrolling: touch; }
+        .article-body table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+        .article-body th { background: #181820; color: #EDEBE6; text-align: left; padding: 0.75rem 1rem; font-weight: 700; }
+        .article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid #26262F; color: #8E8B84; }
+        .article-body tr:nth-child(even) td { background: #131318; }
+        .article-body .aeo-block { background: #131318; border-left: 4px solid #E8B84B; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
+        .article-body .aeo-block p { margin-bottom: 0.75rem; }
+        .article-body .aeo-block ul { margin-bottom: 0; }
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="/brand.css" rel="stylesheet"/>
+</head>
+<body class="font-body text-base">
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="Rewansh home"><img class="logo-img" src="/images/logo.png" alt="Rewansh"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/about/">About</a></li>
+      <li class="has-dropdown">
+      <a href="/#services">Services</a>
+      <button class="drop-toggle" aria-expanded="false" aria-controls="servicesNavDropdown" aria-label="Toggle services menu"><svg class="drop-arw" width="9" height="6" viewBox="0 0 9 6" fill="none" aria-hidden="true"><path d="M1 1L4.5 5L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="dropdown" id="servicesNavDropdown">
+      <div class="dropdown-cols">
+        <div class="dropdown-col">
+          <a href="/seo-search-growth/">SEO &amp; Search Growth</a>
+          <a href="/paid-media-ppc/">Paid Media &amp; PPC</a>
+          <a href="/social-media-marketing/">Social Media Marketing</a>
+          <a href="/marketing-automation/">Marketing Automation</a>
+          <a href="/content-marketing/">Content Marketing</a>
+          <a href="/conversion-rate-optimization/">Conversion Rate Optimization</a>
+        </div>
+        <div class="dropdown-col">
+          <a href="/email-marketing/">Email Marketing</a>
+          <a href="/growth-marketing/">Growth Marketing</a>
+          <a href="/fractional-cmo/">Fractional CMO</a>
+          <a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+          <a href="/wikipedia-page-creation/">Wikipedia Page Creation</a>
+        </div>
+      </div>
+      <a class="dropdown-all" href="/pricing/"><span>All 11 Services &amp; Pricing</span><span class="arw">→</span></a>
+    </div>
+    </li>
+      <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a class="btn btn-gold" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener"><span>Free Consultation</span></a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">MENU</button>
+  </div>
+</nav>
+
+<main class="pt-32 pb-20">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<a href="./" class="text-xs font-bold text-primary uppercase tracking-widest">&larr; Back to Blog</a>
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mt-6 mb-4">Website Launch</p>
+<h1 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight mb-6">Uptime Monitoring and Backups: The Setup You Need Before Launch</h1>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant mb-12 pb-8 border-b border-outline">
+<span>By Rewansh Kayare</span><span>&middot;</span><span>August 2, 2026</span><span>&middot;</span><span>6 min read</span>
+</div>
+<div class="article-body">
+
+<p>"It hasn't gone down yet" is not a monitoring strategy — it's the absence of one, and the first time it fails is usually discovered from a client's email or a lost sale, hours or days after the fact. Monitoring and backups are the two pieces of infrastructure that only prove their value on the one day something goes wrong, which is exactly why they're worth setting up before that day arrives.</p>
+
+<h2>Uptime monitoring checklist</h2>
+<ul>
+<li>A monitor is set up hitting the homepage at a regular interval (every 1-5 minutes is typical for free/low-cost tools like UptimeRobot or Better Stack), not a one-time manual check.</li>
+<li>At least one additional monitor checks a key transactional page (checkout, contact form, login) separately — a site can return a 200 on the homepage while a specific critical page or API is broken.</li>
+<li>Alert thresholds are set to avoid false positives from brief network blips, while still catching real outages quickly.</li>
+<li>Alerts are configured to reach a channel that actually gets checked promptly — a phone notification or SMS, not only an email inbox that might not be checked for hours.</li>
+</ul>
+
+<h2>Backup checklist</h2>
+<ul>
+<li>Backups run automatically on a schedule, not manually and irregularly.</li>
+<li>Backups are stored off-site — a copy stored only on the same server as the live site doesn't survive a server-level failure.</li>
+<li>Backup frequency matches how often content actually changes — daily for an active blog or store, weekly is often reasonable for a mostly-static site.</li>
+<li>A restore has actually been tested at least once — an untested backup is an assumption, not a verified safety net, and restore failures are often only discovered during the actual emergency they were meant to prevent.</li>
+</ul>
+
+<h2>Error logging checklist</h2>
+<ul>
+<li>Client-side JavaScript errors are captured, not just server errors — a broken script can silently disable a form or interactive element while the page itself loads fine.</li>
+<li>Server-side errors (500s, failed API calls, database connection issues) are logged and surfaced, not just silently returned to the visitor as a generic error page.</li>
+<li>Alert volume is tuned to avoid noise — logging every minor warning at the same priority as a real outage causes real alerts to get lost or ignored over time.</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<tr><th>System</th><th>What It Catches</th><th>Setup Effort</th></tr>
+<tr><td>Uptime monitor (homepage + key page)</td><td>The site or a critical page is completely down</td><td>Low — most tools set up in under 10 minutes</td></tr>
+<tr><td>Automated off-site backups</td><td>Data loss from a server failure, bad update, or attack</td><td>Low to moderate, depending on hosting platform</td></tr>
+<tr><td>Client-side error logging</td><td>A broken script silently disabling a form or feature</td><td>Moderate — needs a logging tool or service integrated into the site</td></tr>
+<tr><td>Server-side error logging</td><td>Backend failures invisible to a simple uptime check</td><td>Moderate, usually built into most hosting/backend platforms</td></tr>
+</table>
+</div>
+
+<p>None of this prevents every possible failure, but it changes who finds out first and how fast — a monitored, backed-up site turns an outage into a fast, contained fix; an unmonitored one turns it into a discovery made by a client, at the worst possible moment. This is part of the same broader <a href="../it-infrastructure-growth/">IT infrastructure</a> foundation that a site needs regardless of what platform it's built on.</p>
+
+<h2>FAQ</h2>
+<div class="aeo-block">
+<p><strong>What's the difference between uptime monitoring and error logging?</strong></p>
+<p><strong>Uptime monitoring checks from the outside whether the site is reachable at all — it tells you the site is down. Error logging captures what's happening inside the application (a broken script, a failed API call, a server error) even while the site is technically still up and loading — it tells you something is quietly broken before it becomes a full outage.</strong></p>
+<ul>
+<li>A site can pass every uptime check while a specific form, script, or feature is completely broken — uptime monitoring alone isn't sufficient coverage.</li>
+<li>Both systems together give a much fuller picture than either alone.</li>
+</ul>
+</div>
+<div class="aeo-block">
+<p><strong>How often should website backups run?</strong></p>
+<p><strong>Match backup frequency to how often content actually changes — a site updated daily (an active blog, an ecommerce catalog) needs daily backups, while a mostly-static brochure site can reasonably run weekly. The frequency matters less than actually testing a restore at least once; an untested backup is an assumption, not a safety net.</strong></p>
+<ul>
+<li>Off-site storage matters as much as frequency — a backup stored on the same server it's protecting doesn't survive a full server failure.</li>
+<li>A tested restore process is what actually determines whether a backup is useful in a real emergency.</li>
+</ul>
+</div>
+
+</div>
+<div class="mt-16 pt-10 border-t border-outline">
+<h3 class="text-xs font-bold text-secondary uppercase tracking-[0.2em] mb-5">Related Reading</h3>
+<ul class="space-y-3">
+<li><a class="text-primary font-semibold hover:underline" href="cross-browser-device-testing-checklist.html">Cross-Browser and Cross-Device QA Before You Launch</a></li>
+<li><a class="text-primary font-semibold hover:underline" href="website-security-checklist-before-launch.html">The Website Security Checklist to Run Before Launch</a></li>
+<li><a class="text-primary font-semibold hover:underline" href="../it-infrastructure-growth/">IT Infrastructure &amp; Growth</a></li>
+</ul>
+</div>
+<div class="mt-16 p-10 bg-panel border border-outline rounded-2xl">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="flex-1 text-center md:text-left">
+<p class="text-primary-ink font-bold text-xs uppercase tracking-[0.2em] mb-2">Free Resource</p>
+<h3 class="text-xl font-extrabold text-secondary mb-2">Get the Marketing Audit Checklist</h3>
+<p class="text-on-surface-variant text-sm">50 checks across SEO, paid media, content, email, and analytics — free PDF, instant download.</p>
+</div>
+<a href="/marketing-audit-checklist/" class="shrink-0 inline-flex px-7 py-3.5 bg-primary text-ink font-bold text-sm rounded-lg hover:bg-accent-gold transition-all whitespace-nowrap">Download Free →</a>
+</div>
+</div>
+<div class="mt-16 p-10 bg-panel2 rounded-2xl text-center">
+<h3 class="text-2xl font-extrabold text-white mb-3">Ready to put this into practice?</h3>
+<p class="text-white/60 mb-6">Book a free consultation and get a growth plan built around your business, not a generic playbook.</p>
+<a href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener" class="inline-flex px-8 py-4 bg-primary text-ink font-bold rounded-lg hover:bg-accent-gold transition-all">Book a Free Consultation</a>
+</div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><img class="foot-logo" src="/images/logo.png" alt="Rewansh"></a>
+        <p>Digital marketing consultant helping startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems.</p>
+        <div class="socials">
+          <a href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" title="Instagram">IG</a>
+          <a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" title="LinkedIn">IN</a>
+          <a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" title="YouTube">YT</a>
+        </div>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="/seo-search-growth/">SEO &amp; Search Growth</a></li>
+        <li><a href="/paid-media-ppc/">Paid Media &amp; PPC</a></li>
+        <li><a href="/growth-marketing/">Growth Marketing</a></li>
+        <li><a href="/content-marketing/">Content Marketing</a></li>
+        <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+        <li><a href="/email-marketing/">Email Marketing</a></li>
+      </ul></div>
+      <div><h4>More</h4><ul>
+        <li><a href="/marketing-automation/">Marketing Automation</a></li>
+        <li><a href="/conversion-rate-optimization/">CRO</a></li>
+        <li><a href="/fractional-cmo/">Fractional CMO</a></li>
+        <li><a href="/wikipedia-page-creation/">Wikipedia Page Creation</a></li>
+        <li><a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/marketing-audit-checklist/">Free Audit Checklist</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/faqs/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Rewansh. All rights reserved.</span><span>Digital Marketing Consultant — India &amp; Worldwide</span></div>
+  </div>
+</footer>
+<script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+    </script>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+  if(menuBtn && navLinks){
+    menuBtn.addEventListener('click',function(){var o=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
+    navLinks.addEventListener('click',function(e){if(e.target.closest('a')){navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}});
+  }
+  document.querySelectorAll('.drop-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      var li=btn.closest('.has-dropdown');
+      var o=li.classList.toggle('open');
+      btn.setAttribute('aria-expanded',o);
+    });
+  });
+})();
+</script>
+</body></html>

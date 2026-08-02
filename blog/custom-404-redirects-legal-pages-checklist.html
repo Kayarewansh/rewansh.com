@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PKRYMX051"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7PKRYMX051');
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    }
+  }, true);
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0A0A0C"/>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined-subset.woff2" crossorigin=""/>
+<title>Custom 404s, Redirects, and Legal Pages Checklist | Rewansh</title>
+<meta name="description" content="Set up a branded 404 page, redirects for old URLs, and privacy, terms, and cookie consent pages before launch — especially for US or EU traffic."/>
+<link rel="canonical" href="https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="author" content="Rewansh Kayare"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Rewansh"/>
+<meta property="og:title" content="Custom 404s, Redirects, and Legal Pages Checklist | Rewansh"/>
+<meta property="og:description" content="Set up a branded 404 page, redirects for old URLs, and privacy, terms, and cookie consent pages before launch — especially for US or EU traffic."/>
+<meta property="og:url" content="https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html"/>
+<meta property="og:image" content="https://rewansh.com/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Custom 404s, Redirects, and Legal Pages Checklist | Rewansh"/>
+<meta name="twitter:description" content="Set up a branded 404 page, redirects for old URLs, and privacy, terms, and cookie consent pages before launch — especially for US or EU traffic."/>
+<meta name="twitter:image" content="https://rewansh.com/og-image.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Custom 404s, Redirects, and Legal Pages Before Launch",
+  "image": "https://rewansh.com/og-image.jpg",
+  "description": "Set up a branded 404 page, redirects for old URLs, and privacy, terms, and cookie consent pages before launch — especially for US or EU traffic.",
+  "author": { "@type": "Person", "name": "Rewansh Kayare", "url": "https://rewansh.com/" },
+  "publisher": { "@type": "Person", "name": "Rewansh Kayare" },
+  "mainEntityOfPage": "https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html",
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rewansh.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rewansh.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Custom 404s, Redirects, and Legal Pages Before Launch", "item": "https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Does a custom 404 page need to return a real 404 status code?", "acceptedAnswer": { "@type": "Answer", "text": "Yes \u2014 a branded 404 page still needs to return an actual HTTP 404 status in its server response, not a 200 (success) status with 404-looking content. A 200 status on a missing page is called a \"soft 404\" and can confuse search engines into treating a broken page as valid content." } },
+    { "@type": "Question", "name": "Which legal pages does a small business website actually need?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum a privacy policy and terms of service, and a cookie consent banner if the site uses cookies for analytics or advertising and serves visitors from regions with consent requirements \u2014 the US and EU specifically have differing but real requirements, and having none of these pages is a bigger practical risk than most small sites assume." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link href="../style.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url('../fonts/material-symbols-outlined-subset.woff2') format('woff2');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+        }
+        body {
+            background-color: #0A0A0C;
+            color: #EDEBE6;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .article-body h2 { font-size: 1.75rem; font-weight: 800; color: #EDEBE6; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #8E8B84; }
+        .article-body ul, .article-body ol { margin: 0 0 1.25rem 1.25rem; color: #8E8B84; }
+        .article-body ul { list-style: disc; }
+        .article-body ol { list-style: decimal; }
+        .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .article-body a { color: #E8B84B; font-weight: 600; }
+        .article-body code { background: #131318; color: #EDEBE6; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
+        .article-body .table-wrap { overflow-x: auto; margin: 1.5rem 0; -webkit-overflow-scrolling: touch; }
+        .article-body table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 480px; }
+        .article-body th { background: #181820; color: #EDEBE6; text-align: left; padding: 0.75rem 1rem; font-weight: 700; }
+        .article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid #26262F; color: #8E8B84; }
+        .article-body tr:nth-child(even) td { background: #131318; }
+        .article-body .aeo-block { background: #131318; border-left: 4px solid #E8B84B; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
+        .article-body .aeo-block p { margin-bottom: 0.75rem; }
+        .article-body .aeo-block ul { margin-bottom: 0; }
+        #services-menu.force-open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="/brand.css" rel="stylesheet"/>
+</head>
+<body class="font-body text-base">
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="Rewansh home"><img class="logo-img" src="/images/logo.png" alt="Rewansh"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/about/">About</a></li>
+      <li class="has-dropdown">
+      <a href="/#services">Services</a>
+      <button class="drop-toggle" aria-expanded="false" aria-controls="servicesNavDropdown" aria-label="Toggle services menu"><svg class="drop-arw" width="9" height="6" viewBox="0 0 9 6" fill="none" aria-hidden="true"><path d="M1 1L4.5 5L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="dropdown" id="servicesNavDropdown">
+      <div class="dropdown-cols">
+        <div class="dropdown-col">
+          <a href="/seo-search-growth/">SEO &amp; Search Growth</a>
+          <a href="/paid-media-ppc/">Paid Media &amp; PPC</a>
+          <a href="/social-media-marketing/">Social Media Marketing</a>
+          <a href="/marketing-automation/">Marketing Automation</a>
+          <a href="/content-marketing/">Content Marketing</a>
+          <a href="/conversion-rate-optimization/">Conversion Rate Optimization</a>
+        </div>
+        <div class="dropdown-col">
+          <a href="/email-marketing/">Email Marketing</a>
+          <a href="/growth-marketing/">Growth Marketing</a>
+          <a href="/fractional-cmo/">Fractional CMO</a>
+          <a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a>
+          <a href="/wikipedia-page-creation/">Wikipedia Page Creation</a>
+        </div>
+      </div>
+      <a class="dropdown-all" href="/pricing/"><span>All 11 Services &amp; Pricing</span><span class="arw">→</span></a>
+    </div>
+    </li>
+      <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a class="btn btn-gold" href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener"><span>Free Consultation</span></a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">MENU</button>
+  </div>
+</nav>
+
+<main class="pt-32 pb-20">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<a href="./" class="text-xs font-bold text-primary uppercase tracking-widest">&larr; Back to Blog</a>
+<p class="text-primary font-bold text-xs uppercase tracking-[0.3em] mt-6 mb-4">Website Launch</p>
+<h1 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight mb-6">Custom 404s, Redirects, and Legal Pages Before Launch</h1>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant mb-12 pb-8 border-b border-outline">
+<span>By Rewansh Kayare</span><span>&middot;</span><span>August 2, 2026</span><span>&middot;</span><span>6 min read</span>
+</div>
+<div class="article-body">
+
+<p>These are the pages nobody visits on purpose, which is exactly why they're easy to forget — and exactly why their absence becomes a problem the first time someone follows an old bookmark, a broken link, or looks for a privacy policy before trusting a form with their email address.</p>
+
+<h2>Custom 404 checklist</h2>
+<ul>
+<li>A branded 404 page exists, matching the site's actual design rather than the hosting platform's generic default error page.</li>
+<li>The 404 page includes clear navigation back into the site — a link to the homepage at minimum, ideally also a search box or links to popular pages.</li>
+<li>The page returns a real HTTP 404 status code in the server response, not a 200 status with 404-looking content (a "soft 404") — this distinction matters for how search engines interpret the page.</li>
+<li>The 404 page is tested by visiting a deliberately broken URL, not just previewed in a page builder.</li>
+</ul>
+
+<h2>Redirects checklist</h2>
+<ul>
+<li>Every URL from a previous version of the site (or a prior domain, if one is being retired) is mapped to its closest equivalent new URL — not just left to 404.</li>
+<li>Redirects are implemented as 301 (permanent), not 302 (temporary), so search engines transfer ranking signals to the new URL correctly.</li>
+<li>Redirect chains are flattened — a redirects to b redirects to c should become a single redirect straight to c, both for speed and to avoid signal loss across multiple hops.</li>
+<li>Redirects are spot-checked after launch, not just configured and assumed correct.</li>
+</ul>
+
+<h2>Legal pages checklist</h2>
+<ul>
+<li>A privacy policy exists, describing what data is collected (including via analytics and forms) and how it's used.</li>
+<li>Terms of service exist, particularly if the site processes payments, collects user accounts, or offers any kind of service agreement.</li>
+<li>A cookie consent mechanism is in place if the site uses cookies for analytics or advertising and serves visitors from regions with consent requirements — the EU's requirements and various US state-level laws differ in specifics but both are real compliance considerations, not optional extras.</li>
+<li>Contact information on legal pages matches the actual business — a mismatched or outdated business name/address on a privacy policy is a common, easily-avoided credibility gap.</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<tr><th>Item</th><th>Why It's Often Skipped</th><th>Real Risk</th></tr>
+<tr><td>Custom 404 page</td><td>No one browses to a broken link on purpose during testing</td><td>Visitors from old links or typos hit a dead end with no way back into the site</td></tr>
+<tr><td>Complete redirect map</td><td>Only top-traffic pages get redirected, long-tail ones forgotten</td><td>Lost backlinks and rankings tied to those forgotten URLs</td></tr>
+<tr><td>Privacy policy / terms</td><td>Feels like paperwork rather than "real" launch work</td><td>Legal exposure and reduced visitor trust, especially before a form submission</td></tr>
+<tr><td>Cookie consent</td><td>Easy to overlook for a small or regional-feeling business</td><td>Non-compliance risk for EU/US visitors regardless of company size</td></tr>
+</table>
+</div>
+
+<p>None of these items are complicated individually, but together they're the difference between a site that feels finished and one that quietly has loose ends. Redirects specifically deserve extra care any time a site undergoes a bigger structural change later — see the full <a href="technical-seo-checklist-site-migration.html">technical SEO checklist for site migrations</a> for that deeper scenario.</p>
+
+<h2>FAQ</h2>
+<div class="aeo-block">
+<p><strong>Does a custom 404 page need to return a real 404 status code?</strong></p>
+<p><strong>Yes — a branded 404 page still needs to return an actual HTTP 404 status in its server response, not a 200 (success) status with 404-looking content. A 200 status on a missing page is called a "soft 404" and can confuse search engines into treating a broken page as valid content.</strong></p>
+<ul>
+<li>Check this with a header-inspection tool, not just by looking at the page visually — the visual design and the status code are configured separately.</li>
+<li>Soft 404s can also pollute analytics data by counting broken-link visits as valid pageviews.</li>
+</ul>
+</div>
+<div class="aeo-block">
+<p><strong>Which legal pages does a small business website actually need?</strong></p>
+<p><strong>At minimum a privacy policy and terms of service, and a cookie consent banner if the site uses cookies for analytics or advertising and serves visitors from regions with consent requirements — the US and EU specifically have differing but real requirements, and having none of these pages is a bigger practical risk than most small sites assume.</strong></p>
+<ul>
+<li>Even a simple, small-business-appropriate privacy policy is better than none, and templates are a reasonable starting point for very small sites.</li>
+<li>Contact details on these pages should match the real business — an outdated or generic placeholder is a small but noticeable credibility gap for visitors who check.</li>
+</ul>
+</div>
+
+</div>
+<div class="mt-16 pt-10 border-t border-outline">
+<h3 class="text-xs font-bold text-secondary uppercase tracking-[0.2em] mb-5">Related Reading</h3>
+<ul class="space-y-3">
+<li><a class="text-primary font-semibold hover:underline" href="website-security-checklist-before-launch.html">The Website Security Checklist to Run Before Launch</a></li>
+<li><a class="text-primary font-semibold hover:underline" href="test-website-forms-integrations-before-launch.html">How to Test Every Form and Integration Before You Launch</a></li>
+<li><a class="text-primary font-semibold hover:underline" href="technical-seo-checklist-site-migration.html">The Technical SEO Checklist for a Site Migration (Without Losing Rankings)</a></li>
+</ul>
+</div>
+<div class="mt-16 p-10 bg-panel border border-outline rounded-2xl">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="flex-1 text-center md:text-left">
+<p class="text-primary-ink font-bold text-xs uppercase tracking-[0.2em] mb-2">Free Resource</p>
+<h3 class="text-xl font-extrabold text-secondary mb-2">Get the Marketing Audit Checklist</h3>
+<p class="text-on-surface-variant text-sm">50 checks across SEO, paid media, content, email, and analytics — free PDF, instant download.</p>
+</div>
+<a href="/marketing-audit-checklist/" class="shrink-0 inline-flex px-7 py-3.5 bg-primary text-ink font-bold text-sm rounded-lg hover:bg-accent-gold transition-all whitespace-nowrap">Download Free →</a>
+</div>
+</div>
+<div class="mt-16 p-10 bg-panel2 rounded-2xl text-center">
+<h3 class="text-2xl font-extrabold text-white mb-3">Ready to put this into practice?</h3>
+<p class="text-white/60 mb-6">Book a free consultation and get a growth plan built around your business, not a generic playbook.</p>
+<a href="https://wa.me/919165882832?text=I%27m%20interested%20in%20your%20service" target="_blank" rel="noopener" class="inline-flex px-8 py-4 bg-primary text-ink font-bold rounded-lg hover:bg-accent-gold transition-all">Book a Free Consultation</a>
+</div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo"><img class="foot-logo" src="/images/logo.png" alt="Rewansh"></a>
+        <p>Digital marketing consultant helping startups, D2C brands, and enterprises grow through SEO, paid media, content strategy, and AI-powered marketing systems.</p>
+        <div class="socials">
+          <a href="https://instagram.com/rewanshpro" target="_blank" rel="noopener" title="Instagram">IG</a>
+          <a href="https://in.linkedin.com/in/rewansh" target="_blank" rel="noopener" title="LinkedIn">IN</a>
+          <a href="https://www.youtube.com/@RewanshKayare" target="_blank" rel="noopener" title="YouTube">YT</a>
+        </div>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="/seo-search-growth/">SEO &amp; Search Growth</a></li>
+        <li><a href="/paid-media-ppc/">Paid Media &amp; PPC</a></li>
+        <li><a href="/growth-marketing/">Growth Marketing</a></li>
+        <li><a href="/content-marketing/">Content Marketing</a></li>
+        <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+        <li><a href="/email-marketing/">Email Marketing</a></li>
+      </ul></div>
+      <div><h4>More</h4><ul>
+        <li><a href="/marketing-automation/">Marketing Automation</a></li>
+        <li><a href="/conversion-rate-optimization/">CRO</a></li>
+        <li><a href="/fractional-cmo/">Fractional CMO</a></li>
+        <li><a href="/wikipedia-page-creation/">Wikipedia Page Creation</a></li>
+        <li><a href="/it-infrastructure-growth/">IT Infrastructure &amp; Growth</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/marketing-audit-checklist/">Free Audit Checklist</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/faqs/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Rewansh. All rights reserved.</span><span>Digital Marketing Consultant — India &amp; Worldwide</span></div>
+  </div>
+</footer>
+<script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+                menuIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    menuIcon.style.transform = 'rotate(0deg)';
+                });
+            });
+        }
+
+        // Services dropdown: keyboard + click accessible, hover still works via CSS
+        const servicesDropdown = document.getElementById('services-dropdown');
+        if (servicesDropdown) {
+            const servicesBtn = servicesDropdown.querySelector('button[aria-controls="services-menu"]');
+            const servicesMenu = document.getElementById('services-menu');
+            const openServicesMenu = () => {
+                servicesMenu.classList.add('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'true');
+            };
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove('force-open');
+                servicesBtn.setAttribute('aria-expanded', 'false');
+            };
+            servicesBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                } else {
+                    openServicesMenu();
+                }
+            });
+            servicesBtn.addEventListener('focus', openServicesMenu);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && servicesMenu.classList.contains('force-open')) {
+                    closeServicesMenu();
+                    servicesBtn.focus();
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (!servicesDropdown.contains(e.target)) {
+                    closeServicesMenu();
+                }
+            });
+            servicesDropdown.addEventListener('focusout', (e) => {
+                if (!servicesDropdown.contains(e.relatedTarget)) {
+                    closeServicesMenu();
+                }
+            });
+        }
+    </script>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+  if(menuBtn && navLinks){
+    menuBtn.addEventListener('click',function(){var o=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
+    navLinks.addEventListener('click',function(e){if(e.target.closest('a')){navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}});
+  }
+  document.querySelectorAll('.drop-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      var li=btn.closest('.has-dropdown');
+      var o=li.classList.toggle('open');
+      btn.setAttribute('aria-expanded',o);
+    });
+  });
+})();
+</script>
+</body></html>
