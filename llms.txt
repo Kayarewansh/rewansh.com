@@ -29,6 +29,7 @@ Full text of every page on this site, concatenated for systems that prefer a sin
 
 ## Markets
 
+- [India](https://rewansh.com/india/): Digital marketing consulting for Indian startups and brands, covering Tier-1 and Tier-2/3 metros nationwide.
 - [United States](https://rewansh.com/us/): Remote digital marketing consulting with full US business-hours overlap and USD invoicing.
 - [United Kingdom](https://rewansh.com/uk/): Remote digital marketing consulting with full UK business-hours overlap.
 - [UAE](https://rewansh.com/uae/): Remote digital marketing consulting covering Dubai, Abu Dhabi, and the wider UAE.
@@ -169,6 +170,16 @@ Full text of every page on this site, concatenated for systems that prefer a sin
 - [SEO vs. Paid Ads for B2B SaaS: Which First?](https://rewansh.com/blog/seo-vs-paid-ads-b2b-saas-which-first.html): A comparison on speed, cost, compounding value, and control.
 - [When Should a B2B SaaS Startup Hire a Growth Marketing Consultant?](https://rewansh.com/blog/when-to-hire-growth-marketing-consultant-saas.html): An ARR-stage readiness framework.
 - [B2B SaaS Content Marketing That Generates Pipeline, Not Just Traffic](https://rewansh.com/blog/b2b-saas-content-marketing-pipeline-not-traffic.html): A content-type to funnel-stage mapping framework.
+- [DNS, SSL, and HTTPS: The Checklist to Run Before Every Launch](https://rewansh.com/blog/dns-ssl-https-checklist-before-launch.html): Verify DNS resolves, the SSL certificate is valid, and HTTP redirects to HTTPS before launch.
+- [How to Test Every Form and Integration Before You Launch](https://rewansh.com/blog/test-website-forms-integrations-before-launch.html): A step-by-step way to test forms and integrations end-to-end and confirm the data actually lands where it should.
+- [GA4 and Conversion Tracking: What to Set Up Before Traffic Arrives](https://rewansh.com/blog/ga4-analytics-tracking-setup-checklist.html): Installing GA4 and a tag manager, and setting up conversion tracking, before launch rather than after.
+- [Submitting to Google Search Console and Bing Webmaster Tools](https://rewansh.com/blog/submit-website-google-search-console-bing-webmaster.html): Verifying ownership, submitting a sitemap, and the robots.txt mistake that blocks a whole site.
+- [The Technical SEO Pass to Run Before (and Right After) Launch](https://rewansh.com/blog/technical-seo-pass-before-launch-checklist.html): Meta titles, canonical tags, Open Graph tags, structured data, and a live sitemap.xml.
+- [Testing Performance and Core Web Vitals Before You Launch](https://rewansh.com/blog/core-web-vitals-performance-checklist-before-launch.html): Running PageSpeed Insights and Lighthouse, and the fixes that matter before traffic arrives.
+- [Cross-Browser and Cross-Device QA Before You Launch](https://rewansh.com/blog/cross-browser-device-testing-checklist.html): A pre-launch QA checklist for Chrome, Safari, Firefox, Edge, and real mobile devices.
+- [Uptime Monitoring and Backups: The Setup You Need Before Launch](https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html): Setting up uptime monitoring, automated backups, and error logging before launch.
+- [The Website Security Checklist to Run Before Launch](https://rewansh.com/blog/website-security-checklist-before-launch.html): Security headers, a firewall or WAF, spam protection on forms, and locked-down admin access.
+- [Custom 404s, Redirects, and Legal Pages Before Launch](https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html): A branded 404 page, a complete redirect map, and the legal pages a launch needs.
 
 ## FAQ
 
