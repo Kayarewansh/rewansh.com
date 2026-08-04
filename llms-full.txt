@@ -3902,6 +3902,7 @@ Check your inbox — Rewansh will confirm a time within 24 hours.
 # Blog Articles
 
 
+
 ## A/B Test Sample Size: How to Avoid Calling Tests Too Early
 
 URL: https://rewansh.com/blog/ab-test-sample-size-calculator.html
@@ -11638,6 +11639,79 @@ Yes — when Google's AI Overview fully answers a query at the top of the result
 
 - This affects the entire category of results for that query, not just one specific site's ranking.
 - A potential response is restructuring the page to be citable inside the AI Overview itself, which is the focus of GEO-specific work.
+
+## Why Wikipedia Pages Get Deleted (And How to Avoid It)
+
+URL: https://rewansh.com/blog/why-wikipedia-pages-get-deleted.html
+
+Wikipedia pages get deleted through speedy deletion, PROD, or an AfD discussion — here's why each one happens, how to avoid it, and how to appeal.
+
+Wikipedia pages get deleted through one of three processes — speedy deletion, proposed deletion, or a full Articles for Deletion discussion — and the reason almost always comes down to notability, sourcing, tone, or an undisclosed conflict of interest. Understanding which process applies and why tells you whether the page can realistically be revived, and what to fix before trying again.
+
+## The three ways a Wikipedia page gets deleted
+
+Not all deletions work the same way, and the process that was used determines what your options are afterward.
+
+Process | Speed | Who Decides | Can Be Contested?
+Speedy Deletion (CSD) | Immediate, no discussion | A single administrator | Yes — request undeletion or dispute the criteria applied
+Proposed Deletion (PROD) | 7-day waiting period | Uncontested by default | Yes — anyone can remove the PROD tag to stop it; can't be used twice on the same article
+Articles for Deletion (AfD) | ~7-day community discussion | Consensus among participating editors | Only via formal Deletion Review, arguing the process was flawed
+
+Speedy deletion is reserved for clear-cut cases — blatant advertising, obvious hoaxes, copyright violations, or pages with no credible claim of significance at all. PROD is for deletions nobody is expected to contest. AfD is the process for genuinely disputed cases, where editors debate the sources and notability in the open before a decision is made.
+
+## The most common deletion reasons
+
+- Notability isn't established. The subject doesn't have enough significant coverage in independent, reliable sources — the single most common reason a page doesn't survive AfD.
+- Sources aren't actually independent. Press releases, sponsored or "contributed" articles, and interviews where the subject is the only voice don't count toward notability, even when a source-checking editor initially misses this.
+- Promotional tone (G11). Language that reads like marketing copy — "leading," "innovative," "award-winning" without a cited source — can get a page speedily deleted even when the underlying subject might be notable.
+- Undisclosed conflict of interest. A page created or heavily edited by someone connected to the subject, without the disclosure Wikipedia's Terms of Use require, is treated as a policy violation independent of the content's quality.
+- Copyright violation (G12). Text copied from a company website or press release, even with permission, is deleted on sight until it's rewritten from scratch or released under a compatible license.
+
+## How to avoid deletion before you submit
+
+- Run a genuine notability check against existing coverage before drafting anything — if the sources aren't there yet, no amount of good writing fixes that.
+- Write in neutral, encyclopedic tone from the first draft, not marketing copy edited down afterward.
+- Disclose any paid or affiliated editing on your user page and in edit summaries, as Wikipedia's Terms of Use require.
+- Submit through Articles for Creation (AfC) rather than publishing directly — AfC review catches most of these issues before the page goes live and becomes AfD bait.
+- Cite every claim to an independent, reliable source — unsourced claims are often what triggers a promotional-tone read even when the underlying fact is true.
+
+## What to do if your page was already deleted
+
+The right next step depends entirely on which process deleted it. A speedy-deleted test page or an uncontested PROD is usually recoverable through WP:REFUND if you can address the original reason. A page deleted after a full AfD discussion needs either genuinely new independent coverage that didn't exist at the time, or a Deletion Review arguing the process itself was flawed — not a restatement of the same notability argument that already lost. Recreating the same content without addressing the original reason typically gets speedily deleted again under G4 (recreation of deleted content), so it's worth being honest about whether the underlying notability gap has actually closed before trying again.
+
+This is also where an outside eligibility review earns its keep — it's easy to be too close to a subject to see why a draft reads as promotional, or to overestimate how independent a source really is. A second, honest read against Wikipedia's actual standards, like the one built into the Wikipedia page creation process , catches most of this before a second submission fails the same way the first one did.
+
+## FAQ
+
+Why was my Wikipedia page deleted?
+
+Wikipedia pages are most often deleted for one of five reasons: the subject doesn't meet Wikipedia's notability guidelines, the sources cited aren't independent (press releases, sponsored content, or self-published material), the tone reads as promotional rather than neutral, there's an undisclosed conflict of interest, or the content copies text from elsewhere without permission. The deletion log on the page's history tab usually states which one applied.
+
+- Check the deletion log first — it names the specific criteria or process used, which determines what your actual options are.
+- Notability and sourcing issues are the most common reasons pages don't survive a full AfD discussion.
+
+Can a deleted Wikipedia page be restored?
+
+Sometimes. If the page was deleted uncontroversially (via proposed deletion, or speedy deletion of an obvious test page) you can request restoration through WP:REFUND. If it was deleted after a full Articles for Deletion discussion, you'd need to either show new evidence of notability that didn't exist at deletion time, or file a deletion review (WP:DRV) arguing the original discussion was flawed — simply resubmitting the same content usually gets it speedily deleted again under G4.
+
+- WP:REFUND works for uncontested deletions; a full AfD deletion needs new evidence or a process-based appeal, not a resubmission.
+- Recreating deleted content unchanged typically triggers speedy deletion under G4.
+
+What is Wikipedia's G11 speedy deletion criteria?
+
+G11 is the speedy deletion criteria for pages that are "exclusively promotional and would need to be fundamentally rewritten to conform with Wikipedia's neutral point of view policy." It's one of the most commonly applied speedy deletion criteria against company and founder pages, and unlike most CSD criteria it can apply even to a notable subject if the writing itself is advertising copy rather than neutral, encyclopedic prose.
+
+- G11 is about the writing, not the subject — a genuinely notable subject can still be G11-deleted if the draft reads like marketing copy.
+- Rewriting in neutral tone, cited to independent sources, is the direct fix.
+
+How long do I have to appeal a Wikipedia deletion?
+
+There's no hard deadline — deletion review requests can technically be filed at any time — but in practice, review requests are expected to happen within a reasonable window of the deletion and need to focus on whether the deletion process was followed correctly, not just re-argue notability from scratch. For notability-based deletions, waiting until genuinely new independent coverage exists is usually more productive than an immediate appeal.
+
+- Deletion review evaluates whether the process was followed correctly, not a fresh notability debate.
+- For notability gaps specifically, time and new coverage usually do more than an immediate appeal.
+
+
 
 ## Wikipedia Page Creation: A Complete Guide for Businesses
 

@@ -180,6 +180,7 @@ Full text of every page on this site, concatenated for systems that prefer a sin
 - [Uptime Monitoring and Backups: The Setup You Need Before Launch](https://rewansh.com/blog/website-uptime-monitoring-backups-setup-guide.html): Setting up uptime monitoring, automated backups, and error logging before launch.
 - [The Website Security Checklist to Run Before Launch](https://rewansh.com/blog/website-security-checklist-before-launch.html): Security headers, a firewall or WAF, spam protection on forms, and locked-down admin access.
 - [Custom 404s, Redirects, and Legal Pages Before Launch](https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html): A branded 404 page, a complete redirect map, and the legal pages a launch needs.
+- [Why Wikipedia Pages Get Deleted (And How to Avoid It)](https://rewansh.com/blog/why-wikipedia-pages-get-deleted.html): Speedy deletion, PROD, or an AfD discussion — why each happens, how to avoid it, and how to appeal.
 
 ## FAQ
 
