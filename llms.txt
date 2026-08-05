@@ -182,6 +182,10 @@ Full text of every page on this site, concatenated for systems that prefer a sin
 - [Custom 404s, Redirects, and Legal Pages Before Launch](https://rewansh.com/blog/custom-404-redirects-legal-pages-checklist.html): A branded 404 page, a complete redirect map, and the legal pages a launch needs.
 - [Why Wikipedia Pages Get Deleted (And How to Avoid It)](https://rewansh.com/blog/why-wikipedia-pages-get-deleted.html): Speedy deletion, PROD, or an AfD discussion — why each happens, how to avoid it, and how to appeal.
 - [How to Evaluate a Marketing Agency's Pricing and ROI Claims](https://rewansh.com/blog/how-to-evaluate-marketing-agency-roi-claims.html): What "average ROAS" or "revenue driven" claims actually mean, what a high monthly minimum buys, and questions to ask before signing.
+- [GEO vs. SEO: What's Actually Different](https://rewansh.com/blog/geo-vs-seo-whats-the-difference.html): Being cited in an AI answer vs. ranking in a list of links — the real difference and how they work together.
+- [What Is Agentic SEO? (And Where It Actually Helps)](https://rewansh.com/blog/what-is-agentic-seo.html): AI agents executing multi-step SEO tasks with less human oversight per step — where that helps and where it's risky.
+- [Google Ads Cost in India: What to Actually Budget For](https://rewansh.com/blog/google-ads-cost-in-india.html): Typical CPCs by industry, realistic monthly budget minimums, and why national averages mislead.
+- [Instagram Reels vs. YouTube Shorts: Where Should Indian Brands Invest?](https://rewansh.com/blog/instagram-reels-vs-youtube-shorts-india.html): Audience behavior, discovery mechanics, and a practical way to decide where to put short-form video budget.
 
 ## FAQ
 
