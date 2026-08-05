@@ -3903,6 +3903,7 @@ Check your inbox — Rewansh will confirm a time within 24 hours.
 
 
 
+
 ## A/B Test Sample Size: How to Avoid Calling Tests Too Early
 
 URL: https://rewansh.com/blog/ab-test-sample-size-calculator.html
@@ -4362,6 +4363,70 @@ Live-search-augmented AI tools (Perplexity, ChatGPT with browsing, Google AI Ove
 Base ChatGPT or base Claude — without live browsing — only know what was in their training data, which comes from large-scale web crawls captured at a point in time. There's no submission form or verification step that speeds this up; a site becomes "known" to these models only when a future training run happens to include a crawl that captured it. Nothing about this is instant, and no one — not Rewansh, not the model providers, not an SEO tool — can accelerate it on demand.
 
 The practical takeaway: build the structured data and direct-answer content now, keep the AI crawler allowlist clean, and treat traditional indexing as the real bottleneck it still is.
+
+
+## How to Evaluate a Marketing Agency's Pricing and ROI Claims
+
+URL: https://rewansh.com/blog/how-to-evaluate-marketing-agency-roi-claims.html
+
+How to read agency pricing minimums and ROI claims like average ROAS or total revenue driven — what they actually mean, and the questions to ask first.
+
+Every agency pitch eventually shows you two kinds of numbers: a monthly minimum, and a results claim — average ROAS, total revenue driven, client retention rate. Both are marketing for the agency itself, and both are worth reading the same way you'd read any other vendor's numbers: what's the methodology, what's missing, and what does it actually predict about your outcome.
+
+## Reading a "revenue driven" or "total ROAS" number
+
+- It's an aggregate, not a forecast. A headline number like "$X in revenue driven" sums results across every client the agency has ever had, weighted heavily toward whichever accounts happened to spend the most or perform the best — it says nothing about the distribution.
+- Averages hide the range. An "average ROAS" of 12x might mean most clients land at 3-4x and a handful of outliers at 30x+ pull the average up. Ask for the median, or the range for a client similar to your size and industry.
+- Blended vs. incremental matters. A ROAS number that blends branded search (people who were going to convert anyway) with cold prospecting looks much better than the incremental lift the agency is actually responsible for.
+- Timeframe is often unstated. "$1B+ revenue driven" over 3 years reads very differently once you know how many clients and how many years produced it — ask for the denominator.
+
+## What a high monthly minimum actually buys
+
+A $5,000-$10,000+/month minimum isn't arbitrary — it reflects the agency's real cost structure: a strategist, an account manager, and a production team all need to be paid regardless of your specific budget. What it buys you is capacity and coverage, not a guarantee of better strategy than a smaller engagement would produce.
+
+What a High Minimum Usually Includes | What It Doesn't Automatically Mean
+A larger team with more available hours | Your account gets the agency's most senior talent by default
+More channels covered simultaneously | Every channel gets equally rigorous strategy, not just execution
+Faster turnaround on production work | Faster or better strategic decision-making
+Dedicated account management | Less time spent by you managing the relationship — account management is still a layer to communicate through
+
+## Questions worth asking before you sign anything
+
+- How is your headline number calculated — blended or incremental, average or median, and over what time period?
+- Can you share a result for a client at my size, budget, and industry specifically, not your best case overall?
+- Who works on my account day to day, and is that the same senior person I'm talking to in this sales process?
+- What does month one actually look like before there's enough data to show results?
+- What are the exit terms if it isn't working after 60-90 days — is there a lock-in, and what does unwinding it cost?
+
+## When the higher-minimum agency model actually makes sense
+
+None of this means a high-minimum agency is the wrong choice — at a certain size and channel complexity, a full team genuinely outperforms a single senior person's available hours, and the coordination overhead of managing five specialist freelancers yourself starts costing more than it saves. The fit question is really about where your business is: a company that needs coverage across many simultaneous channels with a dedicated production team benefits from that structure. A company still figuring out which channels are worth the spend is often better served starting with an audit and a smaller, senior-led engagement before scaling into that kind of retainer — see the fuller breakdown in consultant vs. agency vs. freelancer for how to match the format to your actual stage.
+
+The honest version of this evaluation applies to any vendor making a results claim, not just agencies — the same "ask for the methodology, not just the number" approach is exactly what a real marketing audit is supposed to do before recommending any spend at all.
+
+## FAQ
+
+What does an agency's "average ROAS" claim actually tell you?
+
+Very little on its own. An average blends every client, channel, and campaign type together, so it says nothing about what's realistic for your specific industry, budget, or starting point — and it says nothing about how many clients performed below that average. Ask for the range, not just the average, and ask how the number is calculated (blended across all spend, or only the campaigns that performed well).
+
+- A wide range behind an average is common and worth asking about directly.
+- Blended ROAS (including branded/organic-leaning traffic) inflates the number relative to true incremental performance.
+
+Is a higher monthly minimum a sign of a better agency?
+
+Not by itself. A high minimum mostly reflects the agency's own cost structure — account managers, strategists, a production team — not a guarantee of better results for your specific business. It buys you a bigger team and more available hours, which is genuinely valuable at a certain company size and complexity, but it isn't evidence of outcome quality on its own.
+
+- Team size and result quality are correlated but not the same thing — ask what the team structure means for your specific account.
+- The right minimum depends on how many channels and how much complexity your business actually needs covered right now.
+
+What questions should I ask before signing with a marketing agency?
+
+Ask how their headline results numbers are calculated and whether they can share results for a client similar to your size and industry, not just their best case. Ask exactly who works on your account day-to-day and whether that's the same senior person you're talking to now. Ask what happens in month one before any results exist, and what the exit terms are if it isn't working after 90 days.
+
+- The sales conversation is often with the most senior person you'll ever talk to — confirm who actually executes.
+- Exit terms matter as much as entry pricing, especially for a first engagement with an unproven fit.
+
 
 
 ## How to Test Every Form and Integration Before You Launch
